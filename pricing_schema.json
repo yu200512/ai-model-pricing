@@ -1,0 +1,316 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/yu200512/ai-model-pricing/main/schemas/pricing_schema.json",
+  "title": "AI Model Pricing Data Schema",
+  "description": "通用 AI 模型 API 定价数据结构，支持 13 家主流供应商的多模态定价模型",
+  "type": "object",
+  "required": ["version", "updated", "providers"],
+  "additionalProperties": false,
+
+  "definitions": {
+
+    "billingUnit": {
+      "type": "string",
+      "enum": [
+        "per_1m_tokens",
+        "per_1k_tokens",
+        "per_call",
+        "per_minute",
+        "per_character",
+        "per_video_second",
+        "per_image",
+        "per_1k_characters",
+        "per_10k_characters",
+        "fixed"
+      ],
+      "description": "计费单位"
+    },
+
+    "contextRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "type": "integer",
+          "description": "上下文 token 下限（含），0 表示无下限"
+        },
+        "max": {
+          "type": "integer",
+          "description": "上下文 token 上限（含），null 表示无上限"
+        },
+        "description": {
+          "type": "string",
+          "description": "范围说明，如 '≤32K' 或 '16K+'"
+        }
+      }
+    },
+
+    "pricingTier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["contextRange"],
+      "properties": {
+        "contextRange": {
+          "$ref": "#/definitions/contextRange"
+        },
+        "billingMode": {
+          "type": "string",
+          "description": "计费模式标识，如 'standard'、'batch'、'free'"
+        },
+        "input": {
+          "type": "number",
+          "description": "输入价格"
+        },
+        "output": {
+          "type": "number",
+          "description": "输出价格"
+        },
+        "unified": {
+          "type": "number",
+          "description": "统一价格（输入+输出合并计费）"
+        },
+        "cacheHit": {
+          "type": "number",
+          "description": "缓存命中价格"
+        },
+        "cacheWrite": {
+          "type": "number",
+          "description": "缓存写入价格"
+        },
+        "batchDiscount": {
+          "type": "number",
+          "description": "Batch 折扣率（如 0.5 表示 5 折）"
+        },
+        "unit": {
+          "$ref": "#/definitions/billingUnit"
+        },
+        "currency": {
+          "type": "string",
+          "enum": ["USD", "CNY", "USD_CNY"]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+
+    "rateLimit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rpm": {
+          "type": "integer",
+          "description": "每分钟请求数限制"
+        },
+        "tpm": {
+          "type": "integer",
+          "description": "每分钟 token 数限制"
+        },
+        "rpd": {
+          "type": "integer",
+          "description": "每天请求数限制"
+        }
+      }
+    },
+
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type", "pricing"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "模型唯一标识名称（如 kimi-k2.6、gpt-5.4）"
+        },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "曾用名/别名"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "text",
+            "vision",
+            "video",
+            "audio",
+            "embedding",
+            "tts",
+            "stt",
+            "image_generation",
+            "music_generation",
+            "code",
+            "reasoning",
+            "search",
+            "fine_tuning",
+            "agent",
+            "realtime",
+            "3d_generation",
+            "mixed"
+          ],
+          "description": "模型主类型"
+        },
+        "subtypes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "附加类型标签（如 ['thinking']）"
+        },
+        "contextLength": {
+          "type": "integer",
+          "description": "标准上下文窗口（tokens）"
+        },
+        "maxOutput": {
+          "type": "integer",
+          "description": "最大输出 token 数"
+        },
+        "modalities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["text", "image", "video", "audio", "file"]
+          },
+          "description": "支持的输入/输出模态"
+        },
+        "capabilities": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "能力标签，如 ['function_call', 'vision', 'thinking', 'web_search']"
+        },
+        "pricing": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/pricingTier" },
+          "description": "定价层级（按上下文长度分段）"
+        },
+        "rateLimit": {
+          "$ref": "#/definitions/rateLimit"
+        },
+        "free": {
+          "type": "boolean",
+          "description": "是否免费"
+        },
+        "deprecated": {
+          "type": "boolean",
+          "description": "是否已弃用"
+        },
+        "discontinued": {
+          "type": "boolean",
+          "description": "是否已下线"
+        },
+        "discontinuedAt": {
+          "type": "string",
+          "format": "date",
+          "description": "下线日期"
+        },
+        "notes": {
+          "type": "string",
+          "description": "补充说明"
+        }
+      }
+    },
+
+    "provider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "category", "currency", "dataSource", "models"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "供应商展示名称"
+        },
+        "id": {
+          "type": "string",
+          "description": "供应商唯一标识符（如 deepseek、openai）"
+        },
+        "category": {
+          "type": "string",
+          "enum": ["国内", "国外"],
+          "description": "国内=中国厂商，国外=海外厂商"
+        },
+        "currency": {
+          "type": "string",
+          "enum": ["USD", "CNY", "MIXED"],
+          "description": "主要结算货币"
+        },
+        "dataSource": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["url", "method"],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "官方定价页面 URL"
+            },
+            "method": {
+              "type": "string",
+              "enum": ["curl", "playwright", "api"],
+              "description": "采集方式"
+            },
+            "scraperScript": {
+              "type": "string",
+              "description": "对应采集脚本路径"
+            },
+            "verifiedAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "最后验证时间"
+            }
+          }
+        },
+        "officialUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "官网 URL"
+        },
+        "region": {
+          "type": "string",
+          "description": "主体所在地区"
+        },
+        "models": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/model" },
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+
+  },
+
+  "properties": {
+
+    "version": {
+      "type": "string",
+      "description": "Schema 版本号（遵循 semver）"
+    },
+
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "数据最后更新日期（YYYY-MM-DD）"
+    },
+
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "完整时间戳"
+    },
+
+    "sourceRepo": {
+      "type": "string",
+      "format": "uri",
+      "description": "数据来源 GitHub 仓库"
+    },
+
+    "providers": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/provider" },
+      "minItems": 1
+    }
+
+  }
+
+}

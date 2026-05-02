@@ -1,0 +1,1106 @@
+最新活动
+大模型
+产品
+解决方案
+定价
+文档与社区
+生态伙伴
+服务支持
+了解智能云
+热门搜索
+HOT
+百度搭子
+DuClaw
+AI加速季
+百度伐谋
+百度AI搜索
+百度千帆·大模型服务及Agent开发平台
+百度智能云数字员工
+客悦智能外呼
+客悦智能客服
+客悦客户洞察
+一见·多模态视觉管理平台
+云服务器限时特惠
+文心快码-智能代码助手
+向量数据库
+AI加速器
+人脸识别
+备案
+控制台
+登录
+免费注册
+查看全部活动
+AI加速季 企业权益普惠
+
+8千万Tokens包免费领
+
+查看详情
+精选活动
+云服务器品类特惠
+
+轻量云服务器OpenClaw首购9.9元起
+
+免费试用体验馆
+
+注册并完成实名认证，立即体验热门产品
+
+人工智能热销榜
+
+新购1元，AI能力引擎量包75折起
+
+大模型增值服务上新
+
+工信部教考中心大模型证书9折
+
+新手专享
+新客限时体验
+
+企业数字员工9.9元
+
+企业专享权益
+
+权益礼包至高可减6000元
+
+云推广大使限时招募中
+
+推荐新客下单返利 最高8万元
+
+免费大模型课程
+
+入门到进阶，大模型系列课程一站观看
+
+企服推荐
+域名注册服务
+
+.COM域名注册29元起
+
+智能商标注册
+
+首购275元，多买多省
+
+建站特惠
+
+企业首购SSL证书5折
+
+国内短信套餐包
+
+企业首购限时0.99元起
+
+进入千帆大模型平台
+百度千帆
+
+以Agent为核心的一站式企业级大模型服务平台
+
+百度搭子
+
+你的超级AI助手 真干活 用搭子
+
+AI体验中心
+
+提供一站式、开箱即用的AI服务
+
+文心大模型
+DeepSeek-V4
+
+结构创新和超高上下文效率、Agent 能力得到专项优化
+
+ERNIE-Image文生图模型
+
+具备更强的指令理解、更准的文字渲染和更稳的结构生成能力
+
+ERNIE 5.0-正式版
+
+原生全模态大模型，基础能力全面升级
+
+ERNIE 4.5 Turbo VL
+
+全新多模理解模型，图片理解、创作、翻译、代码等能力显著
+
+ERNIE 4.5 Turbo
+
+多模态基础大模型，去幻觉、逻辑推理和代码能力明显增强
+
+ERNIE X1 Turbo
+
+具备更长的思维链，更强的深度思考能力
+
+ERNIE X1.1
+
+在事实性、指令遵循、智能体等能力上均有显著提升
+
+PaddleOCR-VL
+
+先进、高效的文档解析模型，专为文档元素识别设计
+
+PP-StructureV3
+
+高效文档解析模型，复杂结构和多栏布局文档处理优势显著
+
+端到端语音语言大模型
+
+基于Cross-Attention跨模态语音大模型，体验超拟人对话
+
+大模型语音合成
+
+音色具备更高的自然度、丰富的情感表达等特点
+
+大模型声音复刻
+
+录制5秒音频，即可极速复刻音色
+
+其他大模型
+DeepSeek V3.2 Think
+
+文本生成模型，长文本训练和推理效率的大幅提升
+
+Kimi-K2.5
+
+原生多模态智能体模型，融合视觉与语言理解能力
+
+MiniMax-M2.1
+
+文本生成模型，聚焦于多语言编程和办公场景
+
+通义千问3-VL-32B
+
+思考版视觉理解模型，全面升级图像/视频理解
+
+MCP及Agent开发
+MCP组件
+
+聚合优质工具与MCP服务
+
+百度搜索
+
+25年搜索沉淀，权威高质多模态信源
+
+百度百科
+
+超3000万全行业词条，800万用户共吸纳
+
+智能生成PPT
+
+智能大纲汇总，文库资源沉淀
+
+精选Agent
+
+官方能力直达，快速体验AI方案
+
+全能AI助手
+
+内置多种AI助手常见能力，深入理解用户意图，智能调度多种MCP工具
+
+深度研究Agent
+
+实时整合文本、图像、PDF等多模态数据，生成高质量结构化报告
+
+百度AI搜索
+
+可结合全网实时信息进行智能问答，能力丰富强大
+
+Agent开发工具链
+
+丰富的Agent开发工具、一站式创建
+
+自主规划Agent
+
+自主思考并规划任务，适用于基础或日常的业务流程
+
+工作流Agent
+
+严格按照人工编排工作流对话，适用于严谨的业务流程
+
+多智能体协作
+
+支持自定义导入并官方预置多个子Agent,协同完成复杂 场景任务
+
+模型开发
+百度千帆·大模型服务及Agent开发平台
+
+以Agent为核心的一站式企业级大模型服务平台
+
+百度千帆·数据智能平台
+
+支持用户完成一站式数据治理、数据加工和数据应用
+
+零门槛AI开发平台EasyDL
+
+零算法基础定制高精度AI模型
+
+全功能AI开发平台BML
+
+提供一站式AI开发、训练及推理环境，
+
+AI原生应用
+伐谋
+
+全球领先的可商用自我演化超级智能体
+
+秒哒
+
+无代码应用搭建平台
+
+百度智能云数字员工
+
+内容运营等8款数字员工焕新上线！免费体验！
+
+一见·多模态视觉管理平台
+
+围绕企业生产运行全环节，管安全、质量、物料、服务、工序
+
+百度智能云客悦
+
+大模型驱动的服务营销一体化AI应用
+
+九州·政务大模型原生产品
+
+构建“1+1+5+∞”政务大模型原生产品体系
+
+百度智能云灵医
+
+医疗AI大模型，构建覆盖全场景的医疗AI生态
+
+百战·数智营销
+
+赋能合作伙伴打造客户全生命周期营销闭环
+
+AI云原生与一体机
+百度百舸·AI计算平台
+
+大模型训推一体化基础设施，十万卡大规模集群
+
+百度百舸一体机
+
+搭载百舸异构计算平台，提供高效的异构资源管理
+
+千帆一体机
+
+搭载千帆大模型工具链平台，内置文心与精选开源大模型
+
+向量数据库
+
+VectorDB 纯自研高性能、高性价比、生态丰富且即开即用
+
+大模型安全护栏
+
+多模态大模型的安全围栏，助力企业内容合规
+
+MapReduce计算集群服务
+
+供全托管的Hadoop/Spark计算集群服务，安全可靠
+
+百度智能云全部产品
+精选推荐
+人工智能
+百度千帆
+智能应用
+智能体
+语音技术
+图像技术
+文字识别
+人脸与人体
+语言与知识
+云计算
+计算
+存储
+网络
+数据库
+大数据
+容器
+安全
+CDN与边缘
+管理运维
+混合云
+应用产品
+智能应用
+行业应用
+视频云平台
+企业服务
+地图服务
+优惠上云
+上云领万元新购券
+DuClaw
+
+一键部署DuClaw，零门槛部署7x24小时个人超级助手
+
+云服务器BCC
+
+安全稳定，提供高弹性的云计算服务
+
+GPU云服务器
+
+配备GPU的云端服务器，计算密集型应用专享
+
+轻量应用服务器
+
+提供官网搭建、web应用搭建、云上学习和测试等场景的服务
+
+对象存储BOS
+
+稳定、安全、高效、高可拓展的云存储服务
+
+弹性公网IP
+
+为用户访问公网提供IP地址和公网带宽，增加用户使用弹性
+
+内容分发网络
+
+源站内容分发至全球节点，用户请求由最近节点响应，提升访问速度
+
+云手机
+
+面向企业客户在游戏、营销、直播、办公等场景提供高效稳定的一站式解决方案
+
+AI赋能
+全栈AI能力赋能应用开发
+端到端语音语言大模型
+
+基于跨模态大模型，体验超拟人对话
+
+大模型语音合成
+
+大模型升级语音合成，音色更自然
+
+大模型文档解析
+
+18 种格式解析，结构化输出文档关键信息
+
+看图识万物
+
+视觉+多模态大模型，万物精准识别
+
+智能文档分析
+
+文心大模型驱动，一站式文档处理
+
+文字识别
+
+覆盖多种场景、多种语言的高精度整图文字检测和识别服务
+
+图像增强
+
+去雾增强放大，重建高清无损图像
+
+大模型声音复刻
+
+基于大模型zero-shot技术，随时随地录制数秒音频
+
+模型与应用
+一站式企业级大模型服务
+百度搭子
+
+你的超级AI助手 真干活 用搭子
+
+百度千帆·大模型服务及Agent开发平台
+
+以Agent为核心的一站式企业级大模型服务平台
+
+百度千帆·数据智能平台
+
+一站式多模态数据管理、加工和分析应用平台
+
+百度伐谋
+
+全球领先的可商用自我演化超级智能体
+
+一见·多模态视觉管理平台
+
+基于多模态大模型的全视觉管理数字化平台
+
+秒哒
+
+无代码应用搭建平台
+
+百度智能云客悦
+
+大模型驱动的服务营销一体化AI应用
+
+RedClaw
+
+万能AI助手，让想法直接发生
+
+全部解决方案
+精选推荐
+行业解决方案
+通用解决方案
+解决方案实践
+AI技术实践
+10分钟快速部署OpenClaw
+自主规划应用，让手机开启自动驾驶
+快速搭建“金牌销售”工作流Agent
+航司行李规格查询助手实战
+AI应用方案
+百度千帆·大模型服务及Agent开发平台
+客悦智能客服
+百度百舸AI算力管理
+智慧工业方案
+能源行业企业管理系统智能化升级
+船舶与海洋工程大模型解决方案
+智慧政务
+政务智能体的百度搜索解决方案
+智慧水务智能体解决方案
+了解定价
+价格计算器
+
+自由搭配产品组合，轻松预估成本
+
+价格详情
+
+了解定价模式，合理选择计费模式
+
+文档与社区
+文档
+百度千帆·大模型服务及Agent开发平台
+百度伐谋
+客悦
+数字员工-营销内容创作
+数字员工-组件开放平台
+云服务器BCC
+语音识别
+人脸识别
+文字识别
+图像识别
+开发者资源
+千帆AI应用开发者中心
+SDK中心
+API平台
+示例代码中心
+新手入门
+入门指南
+最佳实践
+千帆社区
+实践案例
+千帆杯AI参赛作品
+了解合作伙伴体系
+关于合作伙伴
+我们的伙伴体系
+查询合作伙伴
+优秀伙伴展示
+精品案例展示
+AI原生应用商店
+特惠榜单
+营销服务
+行业智能
+分析决策
+智能办公
+生活休闲
+成为合作伙伴
+代理销售伙伴
+解决方案销售伙伴
+技术合作伙伴
+服务伙伴
+大模型合作生态伙伴
+云市场
+网站建设
+安全服务
+企业应用
+公司服务
+人工智能
+API商城
+合作伙伴赋能
+合作伙伴培训
+合作伙伴课程中心
+合作伙伴人才认证
+飞桨企业赋能
+生态伙伴方案
+船舶与海洋工程大模型解决方案
+政务智能体的百度搜索解决方案
+能源行业企业管理系统智能化升级解决方案
+智慧水务智能体解决方案
+千帆AI加速器
+线上大模型案例课程
+线上产品实操课程
+线下培育
+人才认证
+学习中心
+考试中心
+BaiduLinuxCloudOS生态适配
+生态适配指南
+生态兼容性全景图
+百度智能云大模型系列课程
+
+500+节免费观看 持续更新
+
+百度智能云千帆AI原生应用商店
+
+近千款AI应用，解锁多元体验
+
+进入服务与支持
+基础服务
+自助工具
+
+提供常见使用问题快速解决通道
+
+智能助手
+
+提供常见使用问题快速解决通道
+
+工单服务
+
+7 × 24 小时在线提供服务
+
+增值服务-百度智能云知一
+大模型专家服务
+
+提供常见使用问题快速解决通道
+
+云专家服务
+
+一对一定制化支持服务
+
+企业支持计划
+
+复杂业务专属支持
+
+学习认证
+培训认证
+
+学练考认一站式平台
+
+课程学习
+
+全场景课程体系
+
+联系我们
+我要建议
+
+产品及服务官方反馈渠道
+
+我要投诉
+
+产品及服务官方投诉渠道
+
+信息公告
+公告通知
+
+产品公告与服务动态一站获取
+
+大模型专家服务
+
+赋能企业AI原生应用创新
+
+查看详情
+云智一体3.0
+市场活动
+文心 Moment 大会
+
+文心大模型 5.0 正式版上线
+
+2025 百度世界大会
+
+效果涌现｜AI in Action
+
+最佳实践
+智能中国 | 数字化转型进行时
+
+联合央视聚焦企业数字化转型
+
+智能中国 | 标杆案例
+
+云智一体赋能千行百业
+
+行业解读
+行业白皮书
+
+权威、全面的行业报告解读
+
+分析师报告
+
+权威机构云市场趋势解读
+
+新闻动态
+最新资讯
+
+百度智能云业内最新动态
+
+公告通知
+
+最新公告通知及时了解
+
+热门AI能力
+
+提供一站式、开箱即用的AI服务
+
+查看详情
+文档中心
+
+推荐文档
+
+云服务器
+千帆大模型平台
+文字识别
+人脸识别
+实名认证介绍
+备案介绍
+财务功能概述
+大模型培训服务 限时9折特惠
+搜索本产品文档关键词
+所有文档
+人工智能
+百度千帆模型服务及Agent开发平台
+百度千帆数据智能平台
+DuClaw
+秒哒
+百度伐谋
+一见·多模态视觉管理平台
+智能代码助手
+文字识别
+语音技术
+人脸识别
+人体分析
+度目软硬一体
+语言处理技术
+图像识别
+图像搜索
+图像增强
+BML全功能AI开发平台
+零门槛AI开发平台 EasyDL
+知识理解
+机器人平台 ABC Robot
+内容审核
+机器翻译
+居民服务Agent
+曦灵数字人
+计算
+云服务器 BCC
+专属服务器 DCC
+弹性裸金属服务器
+GPU云服务器
+FPGA云服务器
+云手机
+弹性伸缩 AS
+云编排服务 COS
+应用引擎 BAE
+轻量应用服务器 LS
+本地计算集群 LCC
+百度百舸·AI计算平台
+云高性能计算平台
+磐玉一体机
+网络
+弹性公网IP
+私有网络 VPC
+服务网卡 SNIC
+负载均衡 BLB
+智能云解析 DNS
+专线接入 ET
+云智能网 CSN
+智能流量管理
+云防火墙 CFW
+智能网络接入服务
+网络诊断服务
+存储
+对象存储 BOS
+云磁盘 CDS
+文件存储 CFS
+并行文件存储 PFS
+存储网关 BSG
+数据流转平台 CloudFlow
+数据湖存储加速工具 RapidFS
+云备份 BCB
+表格存储 TableStorage
+CDN与边缘服务
+内容分发网络 CDN
+海外CDN
+动态加速 DRCDN
+边缘计算节点 BEC
+边缘服务器 ECS
+数据库
+云数据库 RDS
+云数据库 Redis
+云数据库 DocDB for MongoDB
+云原生数据库 GaiaDB
+数据传输服务 DTS
+数据库智能驾驶舱 DBSC
+消息服务 for RabbitMQ
+向量数据库 VectorDB
+云原生
+容器引擎服务 CCE
+容器镜像服务CCR
+Prometheus监控服务
+容器实例BCI
+函数计算 CFC
+服务网格 CSM
+微服务引擎 MSE
+AI原生网关 AIGW
+管理运维
+云监控BCM
+运维编排服务
+效率云
+API网关
+标签管理
+资源管理
+配额中心
+云迁移中心
+服务与支持
+智能视频
+音视频处理
+智能视频 SDK
+媒体内容分析
+媒体内容审核
+音视频直播
+智能直播应用平台 ILAP
+实时音视频 RTC
+智能点播平台 VOD
+多模态资源检索
+智能视联网平台
+智能大数据
+MapReduce
+流式计算 BSC
+数据可视化 Sugar BI
+Elasticsearch
+数据仓库 PALO
+日志服务 BLS
+消息服务 for Kafka
+消息服务 for RocketMQ
+千帆数据智能平台 DataBuilder
+城市时空大数据分析 DMI
+安全
+DDoS防护服务
+应用防火墙WAF
+云安全中心
+安全检测服务
+流量审计分析
+云审计
+业务安全风控
+号码安全服务SPNS
+密钥管理服务
+SSL证书
+应急响应服务
+渗透测试服务
+云堡垒机
+安全漏洞预警
+操作系统安全加固
+应用加固与安全检测
+短网址服务
+史宾格安全及隐私合规平台
+OTA远程升级服务
+大模型内容安全平台
+云通信
+短信服务 SMS
+号码隐私保护服务 PNS
+号码认证服务
+语音通话
+语言通知服务
+5G消息服务
+域名与网站
+智能门户
+域名服务
+备案服务
+移动域名解析
+商标服务
+云主机管家
+数字营销云
+智能对话营销服务
+企业智能应用
+智能对话平台UNIT私有化
+智能对话平台UNIT云端版
+智能外呼
+智能推荐引擎
+工商财税服务 CBS
+问卷调研服务
+移动APP测试服务
+物联网服务
+物联网核心套件
+时序时空数据库 TSDB
+物联网安全套件
+天工智能物联网解决方案
+度家-AIOT语音平台
+区块链
+超级链BaaS平台
+超级链数字商品可信登记平台
+超级链可信存证
+混合云
+广目混合云管理平台
+云市场
+云市场
+解决方案
+金融云
+工业视觉智能平台
+云游戏
+金融智能体
+账户管理
+账号管理
+多用户访问控制
+企业组织
+证书管理
+实名认证
+通用参考
+ICP备案帮助
+区域选择说明
+鉴权认证机制
+获取AK/SK
+术语表
+法律条款
+API入门指南
+财务参考
+计费说明
+发票
+充值
+续费
+代金券
+账单与收支
+订单管理
+提现
+退款
+配置升/降级
+赔付
+企业组织财务管理
+合同
+常见问题
+百度千帆·大模型服务及Agent开发平台
+平台介绍
+模型介绍
+Coding Plan
+计费说明
+最佳实践
+平台操作
+API参考
+SDK参考
+常见问题
+相关协议
+文档中心
+百度千帆·大模型服务及Agent开发平台
+百度千帆·大模型服务及Agent开发平台
+产品详情
+
+全新的“百度千帆”以Agent为核心，为企业提供模型、Agent开发及数据智能服务等一站式服务。百度千帆基于百度智能云的全栈AI云布局，围绕Agent引擎、工具及MCP、模型服务与企业级服务等四大关键要素，为Agent的应用落地构建了坚实的能力底座。
+
+立即体验专家咨询下载产品文档
+学习路径
+
+循序渐进，带您全面了解百度千帆·大模型服务及Agent开发平台
+
+了解
+
+了解百度千帆·大模型服务及Agent开发平台的产品特性，优势和使用场景，让您对它有一个全局的认识。
+
+平台简介
+产品公告
+费用说明
+
+针对不同的应用场景，您可以灵活选择计费模式
+
+模型服务计费
+退款申请说明
+模型token计算说明
+平台操作
+
+当前新用户注册百度千帆·大模型服务及Agent开发平台 ，实名认证后即送20元代金券！全平台无门槛使用，有效期一个月。
+
+模型服务
+应用开发
+组件广场
+系统管理
+
+7*24小时服务
+企业支持计划
+ICP备案中心
+建议与反馈
+售前咨询热线
+400-920-8999转1
+售前在线咨询
+售后智能助手
+技术工单
+违规举报
+关于百度智能云
+云智大会
+AI体验中心
+最新资讯
+产品动态
+市场活动
+客户案例
+行业解读
+公告通知
+联系我们
+服务与支持
+文档中心
+入门指南
+工单服务
+健康看板
+企业支持计划
+专家服务
+重大保障服务
+自助工具
+智能助手
+账户管理
+管理控制台
+实名认证
+域名管理
+ICP备案管理
+个人中心
+财务与订单
+发票申请
+消息中心
+快速入口
+成为合作伙伴
+信任中心
+最新活动
+企业服务
+千帆社区
+SDK中心
+API平台
+大模型课程
+飞桨大赛
+实用工具
+短网址
+域名信息查询
+SSL证书
+通用文字识别
+语音识别
+卡证文字识别
+财务票据识别
+文档翻译
+图片翻译
+关注我们
+热门推荐
+百度千帆·大模型服务与Agent开发平台
+百度千帆·数据智能平台
+数字员工-营销内容创作
+客悦·服销一体化应用
+一见·多模态视觉管理平台
+文心快码
+Elasticsearch
+云数据库HBase
+人脸与人体识别
+GPU云服务器
+容器引擎
+通用场景OCR
+云服务器
+文字识别
+语音识别
+图像增强
+图像识别
+智能推荐引擎
+文件存储
+智能云解析
+MapReduce
+简单消息服务
+轻量应用服务器
+智能视联网平台
+云数据库GaiaDB-X
+日志服务
+消息服务
+负载均衡
+对象存储
+云虚拟主机
+数据仓库Palo
+容器镜像服务
+云数据库DocDB
+超级链BaaS平台
+云原生微服务应用平台
+解决方案
+智慧城市
+智慧金融
+智能制造
+智慧能源
+智慧媒体
+智慧水务
+智能图云
+企业上云
+区块链
+物联网
+热门搜索
+百度伐谋
+百度AI搜索
+数字人
+云手机
+数据分析
+边缘计算
+域名解析
+数据可视化
+自然语言处理
+数据采集
+快速链接
+百度搜索
+百度大脑
+百度VR
+百度AI市场
+百度统计
+百度指数
+百度云加速
+百度阿波罗
+百度地图慧眼
+百度翻译开放平台
+百度营销
+百度如流
+百度安全
+百度短网址
+百度有驾
+百度联盟
+百度地图开放平台
+百度数据众包
+百度网盘企业版
+百度搜索资源平台
+百度超级链
+
+© 2026 Baidu 使用百度前必读增值电信业务经营许可证：B1.B2-20100266京ICP证030173号域名注册服务机构许可：京D3-20210001代理域名注册服务机构：商务中国 新网数码 江苏邦宁 西部数码京公网安备11000002000001号隐私政策
+
+AI助手
+入群有礼
+电话客服
+微信咨询
+活动权益
+业务咨询
+
+--- API RESPONSE ---
+
+URL: https://cloud.baidu.com/doc/qianfan/index.html
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><title>百度千帆·大模型服务及Agent开发平台 -百度智能云</title><link rel="shortcut icon" href="https://bce.bdstatic.com/img/newfavicon.ico" type="image/x-icon"/><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/><meta name="baidu-site-verification" content="codeva-WdReimoQXv"/><meta name="360-site-verification" content="a28659ee618a3ad4fe3f566fedcf2a23"/><meta name="sogou_site_verification" content="1WgYtnMFf3"/><meta name="shenma-site-verification" content="6de355ac393346d8f9218cbbd7b3f966_1654776643"/><meta name="keywords" content="百度千帆·大模型服务及Agent开发平台 "/><meta name="description" content="全新的“百度千帆”以Agent为核心，为企业提供模型、Agent开发及数据智能服务等一站式服务。百度千帆基于百度智能云的全栈AI云布局，围绕Agent引擎、工具及MCP、模型服务与企业级服务等四大关键要素，为Agent的应用落地构建了坚实的能力底座。"/><meta name="renderer" content="webkit"/><meta name="viewport" content="width=1280"/><link rel="stylesheet" href="https://bce.bdstatic.com/portal-server/common/header/portal-default.css"/><meta name="next-head-count" content="13"/><link rel="preload" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/55fa87806f071d32.css" as="style"/><link rel="stylesheet" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/55fa87806f071d32.css" data-n-g=""/><link rel="preload" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/01f4558e2f476d30.css" as="style"/><link rel="stylesheet" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/01f4558e2f476d30.css" data-n-p=""/><link rel="preload" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/e27f6c7d39e46c9d.css" as="style"/><link rel="stylesheet" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/e27f6c7d39e46c9d.css" data-n-p=""/><link rel="preload" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/d170331a23abc317.css" as="style"/><link rel="stylesheet" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/d170331a23abc317.css"/><link rel="preload" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/6142bac89365c939.css" as="style"/><link rel="stylesheet" href="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/css/6142bac89365c939.css"/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script id="headerDefault" src="https://bce.bdstatic.com/portal-server/common/header/portal-default.js" defer="" data-nscript="beforeInteractive"></script><script defer="" src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/47822.e01ef2d16cb60279.js"></script><script defer="" src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/98980.d8d751dfa552395c.js"></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/webpack-b6dfeb7b15bcde7d.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/framework-6c28bbfab1406021.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/main-cba350316035a59c.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/pages/_app-2a11cd82efab4d73.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/7a7c95a0-f05e4c56dd59d479.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/76019-828117b51311312e.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/12039-5221bc3832d4260f.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/75366-9557b7ee881fe0cd.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/96197-12a2769cb32109d9.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/56088-0abe05a963df7041.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/98024-14faba53311601f5.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/40415-22ed029fd2794460.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/92535-f268b3aaca50a376.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/81953-fc1f0c4dcc440f91.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/99262-a7d0fc683a452065.js" defer=""></script><script src="https://bce.bdstatic.com/portal-cloud-server/online/_next/static/chunks/54024-f182dc47b0c61935.js" defer=""></script><script src="https://bce.bds
+
+--- API RESPONSE ---
+
+URL: https://cloud.baidu.com/api/doc/org/tmh8kh7mk
+{"success":true,"status":200,"result":{"orgName":"bce-doc","pageNo":0,"pageSize":0}}
+
+--- API RESPONSE ---
+
+URL: https://cloud.baidu.com/api/doc/operation_info?orgName=bce-doc&repoName=qianfan
+{"success":true,"status":200,"result":{"keyword":null,"keywordInfo":null,"wordLinkContent":"大模型培训服务 <span style=\"color:#F33E3E\">限时9折特惠</span> ","wordLinkUrl":"https://cloud.baidu.com/campaign/event/qianfan/index.html?track=d4945c45ecdc3affe1372d6123d488c728504fcfa5bf1f50","operationId":"5ca53b2e-7cda-418d-a505-776a1ac872d2","repoName":"REPO-ALL"}}
+
+--- API RESPONSE ---
+
+URL: https://passport.baidu.com/static/sdk-machine/js/mkd_v2.js?_=1777742837311
+/*! For license information please see mkd_v2.js.LICENSE.txt */
+(function(){var __webpack_modules__={9669:function(t,e,n){t.exports=n(1609)},5448:function(t,e,n){"use strict";var r=n(4867),o=n(6026),i=n(4372),a=n(5327),s=n(4097),c=n(4109),u=n(7985),l=n(7874),f=n(2648),p=n(644),d=n(205);t.exports=function(t){return new Promise((function(e,n){var h,v=t.data,g=t.headers,y=t.responseType;function m(){t.cancelToken&&t.cancelToken.unsubscribe(h),t.signal&&t.signal.removeEventListener("abort",h)}r.isFormData(v)&&r.isStandardBrowserEnv()&&delete g["Content-Type"];var b=new XMLHttpRequest;if(t.auth){var _=t.auth.username||"",w=t.auth.password?unescape(encodeURIComponent(t.auth.password)):"";g.Authorization="Basic "+btoa(_+":"+w)}var x=s(t.baseURL,t.url);function A(){if(b){var r="getAllResponseHeaders"in b?c(b.getAllResponseHeaders()):null,i={data:y&&"text"!==y&&"json"!==y?b.response:b.responseText,status:b.status,statusText:b.statusText,headers:r,config:t,request:b};o((function(t){e(t),m()}),(function(t){n(t),m()}),i),b=null}}if(b.open(t.method.toUpperCase(),a(x,t.params,t.paramsSerializer),!0),b.timeout=t.timeout,"onloadend"in b?b.onloadend=A:b.onreadystatechange=function(){b&&4===b.readyState&&(0!==b.status||b.responseURL&&0===b.responseURL.indexOf("file:"))&&setTimeout(A)},b.onabort=function(){b&&(n(new f("Request aborted",f.ECONNABORTED,t,b)),b=null)},b.onerror=function(){n(new f("Network Error",f.ERR_NETWORK,t,b,b)),b=null},b.ontimeout=function(){var e=t.timeout?"timeout of "+t.timeout+"ms exceeded":"timeout exceeded",r=t.transitional||l;t.timeoutErrorMessage&&(e=t.timeoutErrorMessage),n(new f(e,r.clarifyTimeoutError?f.ETIMEDOUT:f.ECONNABORTED,t,b)),b=null},r.isStandardBrowserEnv()){var E=(t.withCredentials||u(x))&&t.xsrfCookieName?i.read(t.xsrfCookieName):void 0;E&&(g[t.xsrfHeaderName]=E)}"setRequestHeader"in b&&r.forEach(g,(function(t,e){void 0===v&&"content-type"===e.toLowerCase()?delete g[e]:b.setRequestHeader(e,t)})),r.isUndefined(t.withCredentials)||(b.withCredentials=!!t.withCredentials),y&&"json"!==y&&(b.responseType=t.responseType),"function"==typeof t.onDownloadProgress&&b.addEventListener("progress",t.onDownloadProgress),"function"==typeof t.onUploadProgress&&b.upload&&b.upload.addEventListener("progress",t.onUploadProgress),(t.cancelToken||t.signal)&&(h=function(t){b&&(n(!t||t&&t.type?new p:t),b.abort(),b=null)},t.cancelToken&&t.cancelToken.subscribe(h),t.signal&&(t.signal.aborted?h():t.signal.addEventListener("abort",h))),v||(v=null);var k=d(x);k&&-1===["http","https","file"].indexOf(k)?n(new f("Unsupported protocol "+k+":",f.ERR_BAD_REQUEST,t)):b.send(v)}))}},1609:function(t,e,n){"use strict";var r=n(4867),o=n(1849),i=n(321),a=n(7185);var s=function t(e){var n=new i(e),s=o(i.prototype.request,n);return r.extend(s,i.prototype,n),r.extend(s,n),s.create=function(n){return t(a(e,n))},s}(n(5546));s.Axios=i,s.CanceledError=n(644),s.CancelToken=n(4972),s.isCancel=n(6502),s.VERSION=n(7288).version,s.toFormData=n(7675),s.AxiosError=n(2648),s.Cancel=s.CanceledError,s.all=function(t){return Promise.all(t)},s.spread=n(8713),s.isAxiosError=n(6268),t.exports=s,t.exports.default=s},4972:function(t,e,n){"use strict";var r=n(644);function o(t){if("function"!=typeof t)throw new TypeError("executor must be a function.");var e;this.promise=new Promise((function(t){e=t}));var n=this;this.promise.then((function(t){if(n._listeners){var e,r=n._listeners.length;for(e=0;e<r;e++)n._listeners[e](t);n._listeners=null}})),this.promise.then=function(t){var e,r=new Promise((function(t){n.subscribe(t),e=t})).then(t);return r.cancel=function(){n.unsubscribe(e)},r},t((function(t){n.reason||(n.reason=new r(t),e(n.reason))}))}o.prototype.throwIfRequested=function(){if(this.reason)throw this.reason},o.prototype.subscribe=function(t){this.reason?t(this.reason):this._listeners?this._listeners.push(t):this._listeners=[t]},o.prototype.unsubscribe=function(t){if(this._listeners){var e=this._listeners.indexOf(t);-1!==e&&this._listeners.splice(e,1)}},o.source=function(){var t;return{token:new o((function(e){t=e})),cancel:t}},t.exports=o},644:function(t,e,n){"use strict";var r=n(2648);function o(t){r.call(this,null==t?"canceled":t,r.ERR_CANCELED),this.name="CanceledError"}n(4867).inherits(o,r,{__CANCEL__:!0}),t.exports=o},6502:function(t){"use strict";t.exports=function(t){return!(!t||!t.__CANCEL__)}},321:function(t,e,n){"use strict";var r=n(4867),o=n(5327),i=n(782),a=n(3572),s=n(7185),c=n(4097),u=n(4875),l=u.validators;function f(t){this.defaults=t,this.interceptors={request:new i,response:new i}}f.prototype.request=function(t,e){"string"==typeof t?(e=e||{}).url=t:e=t||{},(e=s(this.defaults,e)).method?e.method=e.method.toLowerCase():this.defaults.method?e.method=this.defaults.method.toLowerCase():e.method="get";var n=e.transitional;void 0!==n&&u.assertOptions(n,{silentJSONParsing:l.transitional(l.boolean),forcedJSONParsing:l.transitional(l.boolean),clarifyTimeoutError:l.transitional(l.boolean)},!1);var r=[],o=!0;this.interceptors.request.for
+
+--- API RESPONSE ---
+
+URL: https://cloud.baidu.com/doc/qianfan/pdf_settings
+{"success":true,"result":{"pdfLink":"https://bce-cdn.bj.bcebos.com/p3m/pdf/bce-doc/online/qianfan/qianfan.pdf"}}
+
+--- API RESPONSE ---
+
+URL: https://bce.bdstatic.com/fe-static/baidu/bce-portal/portal-common/load.online.js
+/*! For license information please see load.js.LICENSE.txt */
+!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define("portalCommon",[],t):"object"==typeof exports?exports.portalCommon=t():e.portalCommon=t()}(globalThis,(()=>(()=>{var e,t,n,r,o={4259(e,t,n){"use strict";n.d(t,{B:()=>u,p:()=>c});var r=n(8920),o=n.n(r),a=n(4915),i=n(634),l=(0,a.isSandBoxEnv)(),u=l?"https://login.bcetest.baidu.com/logout":"https://login.bce.baidu.com/logout",s=l?"https://login.bcetest.baidu.com":"https://login.bce.baidu.com";function c(){var e,t=(0,i.useState)(null===(e=window)||void 0===e?void 0:e.location.href),n=o()(t,2),r=n[0],a=n[1],l=(0,i.useState)(s),c=o()(l,2),f=c[0],d=c[1],p=(0,i.useState)(u),h=o()(p,2),m=h[0],v=h[1];function y(e,t){return encodeURIComponent(e.replace(t,"")+t)}function g(e,t){var n=location.href,r="".concat(s,"?redirect=").concat(y(e,t),"&cloudUrl=").concat(encodeURIComponent(n));return(n.includes("/product/BCC/moltbot.html")||n.includes("/product/bcc/moltbot.html"))&&(r+="&fromService=openclaw"),r}function b(e,t){return"".concat(u,"?redirect=").concat(y(e,t))}return(0,i.useEffect)((function(){var e=function(e){var t;if(e.data&&"portal-header-update-url"===e.data.type&&null!==(t=e.data.payload)&&void 0!==t&&t.url)try{var n=new URL(e.data.payload.url),r=n.href,o=n.hash;a(r),d(g(r,o)),v(b(r,o))}catch(e){console.error(e)}},t=window.location.href,n=window.location.hash;return d(g(t,n)),v(b(t,n)),window.addEventListener("message",e),function(){window.removeEventListener("message",e)}}),[]),{curPageUrl:r,loginUrl:f,logoutUrl:m}}},4915(e,t,n){"use strict";n.r(t),n.d(t,{getEnv:()=>a,isIE:()=>u,isPortal:()=>c,isSandBoxEnv:()=>l,isSandboxDataSource:()=>i,isWindowsSystem:()=>s});var r=["qifu-sandbox.baidu.com","cloudtest.baidu.com","market.baidu-int.com","qasandbox.bcetest.baidu.com","icr-activity.now.baidu.com","intl.cloudtest.baidu.com","cloudtest.baidu.com"],o=["qifu.baidu.com","cloud.baidu.com","market.baidu.com","market.cloud.baidu.com","bce.baidu.com","m.bce.baidu.com","appbuilder.cloud.baidu.com","appmiaoda.com","aipe-eng.baidu-int.com","www.appmiaoda.com","tms.baidu.com"];function a(){var e=location.host;return o.indexOf(e)>-1?"ONLINE":e.indexOf("localhost")>-1?"DEVELOPMENT":"SANDBOX"}function i(){return window.location.search.substring(1).indexOf("source=cms_sandbox")>-1}function l(){return r.indexOf(location.host)>-1}function u(){return!(!window.ActiveXObject&&!("ActiveXObject"in window))}function s(){return/windows|win32/i.test(navigator.userAgent)}function c(){return/^cloud(test)?.baidu.com$/.test(location.host)}},9783(e,t,n){"use strict";n.d(t,{k:()=>s,w:()=>l});var r=n(7796),o=["cloud.baidu.com","cloudtest.baidu.com"],a="appbuilder.cloud.baidu.com"===location.host,i=location.pathname.startsWith("/doc/"),l=function(){var e=new URLSearchParams(location.search).get("track");return new Promise((function(t,n){if(o.includes(location.host)&&(location.pathname.startsWith("/product/")||location.pathname.startsWith("/campaign/")||"/"===location.pathname||i||location.pathname.startsWith("/cloudlive/"))||a){var l=a?location.origin+location.pathname:i?location.pathname.split("/").slice(0,3).join("/"):location.pathname;(0,r.ajax)({url:"/api/portal/leads",type:"POST",contentType:"application/json",data:{sourcePath:l},headers:{track:e},success:function(){(0,r.sendMonitor)({category:"iframe",name:"发送激活线索",value:"发送成功",action:"popup"}),t(!0)},fail:function(e){(0,r.sendMonitor)({category:"iframe",name:"发送激活线索",value:"发送失败",action:"popup"}),n(e)}})}}))},u=["/product/ithp.html","/product/spns.html","/product/ddos.html","/product/springer.html","/product/iap.html","/product/ota.html","/product/afd.html","/product/hosteye.html","/product/waf.html","/product/srd.html","/product/AIGCSEC/platform.html","/product/dscmprivate.html","/product/dwz.html","/product/dpg.html","/product/cag.html","/product/AIGCSEC/platform.html","/product/kms.html","/product/csc.html","/product/dsad.html"],s=function(){u.includes(location.pathname)&&setTimeout((function(){(0,r.ajax)({url:"/api/portal/leads/stay_duration   ",type:"POST",contentType:"application/json",data:{url:location.origin+location.pathname,stayDuration:"40"}})}),4e4)}},5931(e,t,n){var r;r=function(e){var t=n(7796),r=n(4915),o=-1===["bce.baidu.com","bcetest.baidu.com"].indexOf(location.host)&&-1===location.host.indexOf("localhost")&&!(location.port&&location.search.indexOf("env=dev")>-1),a={},i="requested",l="requesting",u="request_bofore",s=[],c={},f="ONLINE"===r.getEnv()?"bce.baidu.com":"bcetest.baidu.com",d=o?{url:"//"+f+"/api/account/v2/displayName",dataType:"jsonp",withCredentials:!0}:{url:"/api/account/displayName",type:"POST",dataType:"json"};return a.init=function(e){var n=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(e&&s.push({loginSuccessCb:e,once:r}),u===i&&n)e(c);else if(u!==l){u=l;var a=t.getParamValue(window.location.href,"
+
+--- API RESPONSE ---
+
+URL: https://dlswbr.baidu.com/heicha/mm/2103/acs-2103.js?_=246908
+(function(){var a=function(c,d){var e='\x31\x2e\x32\x2e\x30';function f(g,h){var j=g['\x6c\x65\x6e\x67\x74\x68'];var l=[];for(var m=0x0;m<j;m++){var n=h(g[m]);l['\x70\x75\x73\x68'](n);}return l;}var p,q,r,s,t,u=decodeURIComponent,v='\x43\x68\x61\x72',w='';var x=[a];p='\x64\x65';q='\x66\x72';r='\x6f';t=q+r+'\x6d';s='\x43\x6f'+p;var y=function(z){return(z+w)['\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72'][t+v+s](z);};var A=function(B){return f(B,function(C){return y(C);});};var D=A['\x63\x61\x6c\x6c'](y,[0x27,0x22,0x25,0x60,0x3c,0x78,0x61,0x41,0x62,0x42,0x63,0x43,0x64,0x44,0x65,0x45,0x66,0x46,0x67,0x6e,0x6d,0x6f,0x70,0x30,0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39]);var E=f([0x706e,0x6c36,0x6730,0x624f,0x5e77],function(p){return u(p);});var G=A['\x63\x61\x6c\x6c'](E,[0x5752,0x58dd,0x5f5f,0x5b32,0x56f1,0x58a0,0x5ef2,0x6256,0x5c2b,0x63cb,0x59c8,0x645a,0x56c4,0x6b9b,0x545a,0x6a4a,0x5a32,0x7209,0x577a,0x72b8,0x735c,0x7313,0x735a,0x5e52,0x5fb4,0x66f0,0x6b31,0x7074,0x72ba,0x6c19,0x692d,0x62a1,0x5f6e]),H={};E=A(E);var I=new RegExp(E['\x6a\x6f\x69\x6e']('\x7c'));for(var p=0x0;p<D['\x6c\x65\x6e\x67\x74\x68'];p++){H[G[p]]=D[p];}d=f(d['\x73\x70\x6c\x69\x74'](w),function(K){return H[K]||K;})['\x6a\x6f\x69\x6e'](w);return f(d['\x73\x70\x6c\x69\x74'](I),function(p){return u(p);});}(this,'\x69\u72b8\x69\x74\u706e\u5f5f\u66f0\u7074\x73\x75\u735a\u545a\x72\u6c36\u5ef2\u735a\u735a\x6c\x79\u5e77\x74\u7313\x53\x74\x72\x69\u72b8\u577a\u6c36\u545a\u58a0\x74\u545a\u72b8\u56c4\u6c36\x77\u7313\x72\u56c4\x73\u6c36\x73\x69\u577a\u63cb\x79\x74\u545a\x73\u624f\x6c\u545a\u72b8\u577a\x74\x68\u6730\x73\x74\x72\x69\u72b8\u577a\x69\u5a32\x79\u706e\u59c8\x6c\u5ef2\u735c\u735a\u6c36\u59c8\u545a\x69\x6c\u6730\u59c8\x6c\u7313\u72b8\u545a\u6c36\u59c8\u5ef2\x6c\x6c\u5e77\x72\u5ef2\u72b8\u56c4\u7313\u735c\u6c36\u735a\x75\x73\x68\u624f\x6a\u7313\x69\u72b8\u6c36\u59c8\x68\u5ef2\x72\u645a\u7313\u56c4\u545a\u6256\x74\u706e\x5f\u56c4\u5ef2\x74\u5ef2\u6730\u735a\u5ef2\x72\x73\u545a\u6c36\u59c8\u7313\u72b8\u59c8\u5ef2\x74\u706e\u735c\u5ef2\u58a0\u6730\x5f\u56c4\u7313\x50\x72\u7313\u59c8\u545a\x73\x73\u63cb\x6c\u7313\u59c8\x6b\u6730\x73\u735a\x6c\x69\u59c8\u545a\u6730\x5f\u735c\u5ef2\u735a\u624f\u59c8\x68\u5ef2\x72\u6256\x74\u5e77\x5f\x72\u545a\x76\u545a\x72\x73\u545a\x4d\u5ef2\u735a\u706e\x69\u72b8\u56c4\u545a\u58a0\x4f\u5a32\u6c36\u6256\u63cb\u645a\u6b9b\u6a4a\u7209\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\u5ef2\u5c2b\u59c8\u56c4\u545a\u5a32\u577a\x68\x69\x6a\x6b\x6c\u735c\u72b8\u7313\u735a\x71\x72\x73\x74\x75\x76\x77\u58a0\x79\x7a\u5e52\u5fb4\u66f0\u6b31\u7074\u72ba\u6c19\u692d\u62a1\u5f6e\u5f5f\u66f0\u63cb\u5f5f\u66f0\u7209\u5f5f\u6b31\u6b9b\u706e\x73\x6c\x69\u59c8\u545a\u706e\u59c8\u5a32\u577a\u6c36\u5a32\x69\u72b8\u5ef2\x6c\x69\x7a\u545a\u6c36\u735a\u5ef2\u56c4\u56c4\x69\u72b8\u577a\u624f\u5c2b\x6c\u7313\u59c8\x6b\x53\x69\x7a\u545a\u6c36\x5f\u735a\u5ef2\x72\x73\u545a\u706e\u59c8\x72\u545a\u5ef2\x74\u545a\u6b9b\u545a\u59c8\x72\x79\u735a\x74\u7313\x72\u706e\x5f\u6a4a\x4e\u645a\x5f\x58\u7209\x4f\x52\x4d\x5f\x4d\x4f\u6b9b\u6a4a\u6c36\x5f\u6b9b\u6a4a\u645a\x5f\x58\u7209\x4f\x52\x4d\x5f\x4d\x4f\u6b9b\u6a4a\u706e\x5f\u58a0\u5a32\u7313\x72\u735c\x4d\u7313\u56c4\u545a\u624f\x5f\x6b\u545a\x79\u6c36\x5f\u56c4\u7313\x52\u545a\x73\u545a\x74\u706e\x5f\u5ef2\u735a\u735a\u545a\u72b8\u56c4\u706e\x5f\u735a\x72\u7313\u59c8\u545a\x73\x73\u624f\x5f\u56c4\u7313\u7209\x69\u72b8\u5ef2\x6c\x69\x7a\u545a\u624f\u545a\u72b8\u59c8\x72\x79\u735a\x74\u6c36\u56c4\u545a\u59c8\x72\x79\u735a\x74\u624f\x73\x74\x72\x69\u72b8\u577a\u6c36\u6b9b\u545a\u59c8\x72\x79\u735a\x74\u7313\x72\u624f\x5f\u59c8\x69\u735a\x68\u545a\x72\u6c36\u6a4a\u72b8\u59c8\x72\x79\u735a\x74\u7313\x72\u6c36\u545a\u72b8\u59c8\x72\x79\u735a\x74\u63cb\x6c\u7313\u59c8\x6b\u5e77\x5f\u735a\x72\u545a\x76\u63cb\x6c\u7313\u59c8\x6b\u706e\u56c4\u545a\u59c8\x72\x79\u735a\x74\u63cb\x6c\u7313\u59c8\x6b\u6730\x5f\x69\x76\u624f\x72\u545a\x73\u545a\x74\u624f\u59c8\x72\u545a\u5ef2\x74\u545a\u6a4a\u72b8\u59c8\x72\x79\u735a\x74\u7313\x72\u6c36\x5f\u735c\x69\u72b8\u63cb\x75\u5a32\u5a32\u545a\x72\x53\x69\x7a\u545a\u706e\x5f\u735c\u7313\u56c4\u545a\u5e77\u735a\u5ef2\u56c4\u5e77\x75\u72b8\u735a\u5ef2\u56c4\u6c36\x5f\x68\u5ef2\x73\x68\u545a\x72\u706e\x5f\u7313\x4b\u545a\x79\u5e77\x75\u735a\u56c4\u5ef2\x74\u545a\u706e\x5f\x69\x4b\u545a\x79\u706e\x5f\u72b8\x52\u7313\x75\u72b8\u56c4\x73\u6c36\x5f\x6b\u545a\x79\x50\x72\x69\u7313\x72\x52\u545a\x73\u545a\x74\u6c36\x5f\x6b\u545a\x79\x53\u59c8\x68\u545a\u56c4\x75\x6c\u545a\u706e\x5f\x69\u72b8\x76\x4b\u545a\x79\x53\u59c8\x68\u545a\u56c4\x75\x6c\u545a\u706e\x5f\u56c4\u7313\u645a\x72\x79\u735a\x74\u63cb\x6c\u7313\u59c8\x6b\u706e\x5f\u59c8\x72\u545a\u5ef2\x74\u545a\x48\u545a\x6c\u735a\u545a\x72\u624f\u7313\u5c2b\x6a\u545a\u59c8\x74\u624f\u545a\x76\u545a\u72b8\x74\x4d\u5ef2\u735a\u624f\u5ef2\u545a\x73\x5f\u545a\u72b8\u59c8\x72\x79\u735a\x74\u5e77\u5ef2\u545a\x73\x5f\u56c4\u545a\u59c8\x72\x79\u735a\x74\u624f\u5a32\x69\u56c4\u5e77\x73\u545a\x74\u6c36\x71\x75\u545a\
+
+--- API RESPONSE ---
+
+URL: https://dlswbr.baidu.com/heicha/mw/abclite-2103-s.js?_=246908
+(function _qsh3(){var a=function(c,d){var e='\x31\x2e\x31\x2e\x32';function f(g,h){var j=g['\x6c\x65\x6e\x67\x74\x68'];var l=[];for(var m=0x0;m<j;m++){var n=h(g[m]);l['\x70\x75\x73\x68'](n);}return l;}var p,q,r,s,t,u=decodeURIComponent,v='\x43\x68\x61\x72',w='';var x=[a];p='\x64\x65';q='\x66\x72';r='\x6f';t=q+r+'\x6d';s='\x43\x6f'+p;var y=function(z){return(z+w)['\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72'][t+v+s](z);};var A=function(B){return f(B,function(C){return y(C);});};var D=A['\x63\x61\x6c\x6c'](y,[0x27,0x22,0x25,0x60,0x3c,0x78,0x61,0x41,0x62,0x42,0x63,0x43,0x64,0x44,0x65,0x45,0x66,0x46,0x67,0x6e,0x6d,0x6f,0x70,0x30,0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39]);var E=f([0x706e,0x6c36,0x6730,0x624f,0x5e77],function(p){return u(p);});var G=A['\x63\x61\x6c\x6c'](E,[0x5752,0x58dd,0x5f5f,0x5b32,0x56f1,0x58a0,0x5ef2,0x6256,0x5c2b,0x63cb,0x59c8,0x645a,0x56c4,0x6b9b,0x545a,0x6a4a,0x5a32,0x7209,0x577a,0x72b8,0x735c,0x7313,0x735a,0x5e52,0x5fb4,0x66f0,0x6b31,0x7074,0x72ba,0x6c19,0x692d,0x62a1,0x5f6e]),H={};E=A(E);var I=new RegExp(E['\x6a\x6f\x69\x6e']('\x7c'));for(var p=0x0;p<D['\x6c\x65\x6e\x67\x74\x68'];p++){H[G[p]]=D[p];}d=f(d['\x73\x70\x6c\x69\x74'](w),function(K){return H[K]||K;})['\x6a\x6f\x69\x6e'](w);return f(d['\x73\x70\x6c\x69\x74'](I),function(p){return u(p);});}(this,'\x50\u545a\x72\u735c\x69\x73\x73\x69\u7313\u72b8\x73\u624f\u5ef2\x74\u5f5f\u66f0\u5e52\u5a32\x75\u72b8\u59c8\x74\x69\u7313\u72b8\x54\u7313\x53\x74\x72\x69\u72b8\u577a\u624f\x50\x6c\x75\u577a\x69\u72b8\u6256\x72\x72\u5ef2\x79\u624f\x4d\x69\u735c\u545a\x54\x79\u735a\u545a\u6256\x72\x72\u5ef2\x79\u706e\x4f\u5c2b\x6a\u545a\u59c8\x74\u624f\u735a\x6c\x75\u577a\x69\u72b8\x73\u624f\u577a\u545a\x74\x4f\x77\u72b8\x50\x72\u7313\u735a\u545a\x72\x74\x79\x4e\u5ef2\u735c\u545a\x73\u624f\x57\u545a\u5c2b\x47\x4c\u66f0\x52\u545a\u72b8\u56c4\u545a\x72\x69\u72b8\u577a\u645a\u7313\u72b8\x74\u545a\u58a0\x74\u624f\x68\u545a\x69\u577a\x68\x74\u5e77\x74\u7313\u6b9b\u5ef2\x74\u5ef2\x55\x52\x4c\u5e77\u545a\u58a0\u735a\u545a\x72\x69\u735c\u545a\u72b8\x74\u5ef2\x6c\x2d\x77\u545a\u5c2b\u577a\x6c\u6730\x76\x69\u56c4\u545a\u7313\u624f\u735c\u5ef2\u58a0\x54\u7313\x75\u59c8\x68\x50\u7313\x69\u72b8\x74\x73\u6730\u577a\u545a\x74\u63cb\u5ef2\x74\x74\u545a\x72\x79\u6c36\u5a32\x75\u72b8\u59c8\x74\x69\u7313\u72b8\u5f5f\u72ba\u645a\x73\u5f5f\u6b31\u7209\u5f5f\u72ba\u645a\x28\u5f5f\u72ba\u645a\x29\u5f5f\u72ba\u645a\u5f5f\u692d\u63cb\x72\u545a\x74\x75\x72\u72b8\u5f5f\u72ba\u645a\x73\u56c4\u7313\u59c8\x75\u735c\u545a\u72b8\x74\u706e\u59c8\u7313\u7313\x6b\x69\u545a\u6730\u5f5f\u66f0\u7074\x5f\x5f\x77\u545a\u5c2b\u6b9b\x72\x69\x76\u545a\x72\u6256\x72\u577a\x75\u735c\u545a\u72b8\x74\x73\u706e\u6a4a\x56\u6256\x4b\x5f\u645a\u6256\x4c\x4c\u706e\x57\u545a\u5c2b\x47\x4c\x52\u545a\u72b8\u56c4\u545a\x72\x69\u72b8\u577a\u645a\u7313\u72b8\x74\u545a\u58a0\x74\u6730\u6b31\u5e52\u5e52\u5e77\u7074\u5e52\u5fb4\u624f\u692d\u6b31\x5f\u7074\u5e52\u5fb4\u624f\u692d\u6b31\x5f\u6c19\u5e52\u5e52\u6730\u6c19\u5e52\u5fb4\u6730\u692d\u6b31\x5f\u6c19\u5e52\u5fb4\u706e\u577a\u545a\x74\u6a4a\x6c\u545a\u735c\u545a\u72b8\x74\x73\u63cb\x79\x54\u5ef2\u577a\x4e\u5ef2\u735c\u545a\u706e\u577a\u545a\x74\u63cb\u7313\x75\u72b8\u56c4\x69\u72b8\u577a\u645a\x6c\x69\u545a\u72b8\x74\x52\u545a\u59c8\x74\u5e77\x73\x74\u5ef2\x72\x74\u6730\x73\x74\x79\x6c\u545a\u5e77\u56c4\x69\x73\u735a\x6c\u5ef2\x79\u6c36\x69\u72b8\x6c\x69\u72b8\u545a\u706e\x72\u545a\u59c8\x74\u5e77\x69\x73\x50\u7313\x69\u72b8\x74\x49\u72b8\x50\u5ef2\x74\x68\u5e77\u545a\x76\u545a\u72b8\u7313\u56c4\u56c4\u6c36\x79\u545a\x73\u6c36\x74\u545a\u58a0\x74\u63cb\u5ef2\x73\u545a\x6c\x69\u72b8\u545a\u624f\u5a32\x69\x6c\x6c\x53\x74\x79\x6c\u545a\u624f\u5a32\x69\x6c\x6c\x52\u545a\u59c8\x74\u6c36\u5f5f\u66f0\u6b31\u5e52\u6c19\u5f6e\u6c36\x72\u577a\u5c2b\u5ef2\x28\u5fb4\u5e52\u66f0\u5f5f\u66f0\u645a\u5f5f\u66f0\u5e52\u66f0\u5e52\u7074\u5f5f\u66f0\u645a\u5f5f\u66f0\u5e52\u5e52\u5f5f\u66f0\u645a\u5f5f\u66f0\u5e52\u5e52\x2e\u66f0\x29\u5e77\u5a32\u7313\u72b8\x74\u5e77\u5ef2\u72b8\x74\x69\u5a32\x72\u5ef2\x75\u56c4\u6c36\u577a\x6c\u7313\u5c2b\u5ef2\x6c\u645a\u7313\u735c\u735a\u7313\x73\x69\x74\u545a\x4f\u735a\u545a\x72\u5ef2\x74\x69\u7313\u72b8\u706e\u735c\x75\x6c\x74\x69\u735a\x6c\x79\u624f\u5ef2\x72\u59c8\u6c36\u59c8\x6c\u7313\x73\u545a\x50\u5ef2\x74\x68\u5e77\u5c2b\u545a\u577a\x69\u72b8\x50\u5ef2\x74\x68\u6c36\x72\u577a\u5c2b\x28\u66f0\u72ba\u72ba\u5f5f\u66f0\u645a\u66f0\u72ba\u72ba\u5f5f\u66f0\u645a\u5e52\x29\u6730\x72\u577a\u5c2b\x28\u66f0\u72ba\u72ba\u5f5f\u66f0\u645a\u5e52\u5f5f\u66f0\u645a\u66f0\u72ba\u72ba\x29\u6730\u59c8\u5ef2\u72b8\x76\u5ef2\x73\u5f5f\u66f0\u5e52\u5a32\u735a\u5f5f\u6b31\u6256\u5e77\u545a\u72b8\u56c4\u6c36\x68\x74\x74\u735a\x73\u5f5f\u6b31\u6256\u5f5f\u66f0\u7209\u5f5f\u66f0\u7209\u735c\x69\u5ef2\u7313\x2e\u5c2b\u5ef2\x69\u56c4\x75\x2e\u59c8\u7313\u735c\u5f5f\u66f0\u7209\u5ef2\u5c2b\u56c4\x72\u5f5f\u6b31\u7209\u56c4\u5ef2\x74\u5ef2\u5f5f\u6b31\u6b9b\u6730\u5f5f\u66f0\u6c19\x5f\u5f5f\u6b31\u6b9b\u6730\x73\x74\x72\x69\u72b8\u577a\u624f\u56c4\u5ef2\x7
+
+--- API RESPONSE ---
+
+URL: https://hm.baidu.com/hm.js?28a17f66627d87f1d046eae152a1c93d
+(function(){var h={},mt={},c={id:"28a17f66627d87f1d046eae152a1c93d",dm:["bce.baidu.com","cloud.baidu.com","console.bce.baidu.com","qianfanmarket.baidu.com"],js:"tongji.baidu.com/hm-web/js/",etrk:["%7b%22http%3a%5c%2f%5c%2fbce.baidu.com%5c%2f%22%3a%5b%22%23CDN-BOS-150707_button_banner_0%22%5d%2c%22http%3a%5c%2f%5c%2fbce.baidu.com%5c%2f*%22%3a%5b%22%23passport-reg%22%2c%22%23uc-reg%22%5d%2c%22http%3a%5c%2f%5c%2fbce.baidu.com%5c%2fapply%5c%2f%22%3a%5b%22%23applyBtn%22%5d%2c%22http%3a%5c%2f%5c%2fbce.baidu.com%5c%2fevent%5c%2fEduSoho_baiduyun.html%22%3a%5b%22%23apply-submit%22%5d%2c%22http%3a%5c%2f%5c%2fbce.baidu.com%5c%2fevent%5c%2fworldconference2015%22%3a%5b%22%23confirm-button%22%5d%2c%22http%3a%5c%2f%5c%2fbce.baidu.com%5c%2fqualify-reward-20150618%5c%2f*%22%3a%5b%22%23qualify-reward-20150618-top%22%2c%22%23qualify-reward-20150618-bottom%22%5d%2c%22http%3a%5c%2f%5c%2fconsole.bce.baidu.com%5c%2f*%22%3a%5b%22%23home-verify%22%2c%22%23announcement-verify%22%2c%22%23announcement-survey%22%5d%2c%22http%3a%5c%2f%5c%2fconsole.bce.baidu.com%5c%2fbilling%5c%2f*%22%3a%5b%22%23billing-verify%22%2c%22%23billing-survey%22%5d%2c%22http%3a%5c%2f%5c%2fconsole.bce.baidu.com%5c%2fqualify%5c%2f%3f_%3d*%5c%2fqualify%5c%2fperson%22%3a%5b%22%23ctrl-e-form%22%5d%2c%22https%3a%5c%2f%5c%2fcloud.baidu.com%5c%2fsolution%5c%2fapply%5c%2fmarketing*%22%3a%5b%22%23submit%22%5d%2c%22https%3a%5c%2f%5c%2fconsole.bce.baidu.com%5c%2fapm%5c%2f*%22%3a%5b%22%23overview-refresh-fortongji%22%2c%22%23overview-collapse-fortongji%22%2c%22%23MobilePausePlay-dig-fortongji%22%2c%22%23overview-expand-fortongji%22%2c%22%23mobile-topN-fortongji%22%2c%22%23mobile-more-fortongji%22%2c%22%23mobile-monitor-select-fortongji%22%2c%22%23mobile-search-fortongji%22%2c%22%23mobile-back-fortongji%22%2c%22%23mobile-detail-select-fortongji%22%2c%22%23transaction-topN-fortongji%22%2c%22%23transaction-more-fortongji%22%2c%22%23transaction-dimension-fortongji%22%2c%22%23transaction-monitor-select-fortongji%22%2c%22%23transaction-back-fortongji%22%2c%22%23transaction-detail-select-fortongji%22%2c%22%23transaction-filter-button-fortongji%22%2c%22%23transaction-search-fortongji%22%2c%22%23MobileSpeed-dig-fortongji%22%2c%22%23ServerPauseRatio-dig-fortongji%22%2c%22%23overview-filter-button-fortongji%22%2c%22%23overview-filter-button-fortongji%22%2c%22%23mobile-filter-button-fortongji%22%5d%7d"],cetrk:["%7b%22bce.baidu.com%22%3a%5b%7b%22k%22%3a%22c_event_2079_859%22%2c%22p%22%3a%22html%3ebody%3eheader%3ediv%3enav%3eul%5b1%5d%3eli%5b1%5d%3ea%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22bce.baidu.com%5c%2f%22%3a%5b%7b%22k%22%3a%22c_event_52523_809%22%2c%22p%22%3a%22%23CDN-BOS-150707_button_banner_0%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22bce.baidu.com%5c%2f*%22%3a%5b%7b%22k%22%3a%22c_event_52514_313%22%2c%22p%22%3a%22%23passport-reg%22%2c%22a%22%3a%5b%5d%7d%2c%7b%22k%22%3a%22c_event_52515_512%22%2c%22p%22%3a%22%23uc-reg%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22bce.baidu.com%5c%2fapply%5c%2f%22%3a%5b%7b%22k%22%3a%22c_event_52513_273%22%2c%22p%22%3a%22%23applyBtn%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22bce.baidu.com%5c%2fevent%5c%2fEduSoho_baiduyun.html%22%3a%5b%7b%22k%22%3a%22c_event_52525_999%22%2c%22p%22%3a%22%23apply-submit%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22bce.baidu.com%5c%2fevent%5c%2fworldconference2015%22%3a%5b%7b%22k%22%3a%22c_event_52524_483%22%2c%22p%22%3a%22%23confirm-button%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22bce.baidu.com%5c%2fqualify-reward-20150618%5c%2f*%22%3a%5b%7b%22k%22%3a%22c_event_52516_689%22%2c%22p%22%3a%22%23qualify-reward-20150618-top%22%2c%22a%22%3a%5b%5d%7d%2c%7b%22k%22%3a%22c_event_52517_729%22%2c%22p%22%3a%22%23qualify-reward-20150618-bottom%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22console.bce.baidu.com%5c%2f*%22%3a%5b%7b%22k%22%3a%22c_event_52518_487%22%2c%22p%22%3a%22%23home-verify%22%2c%22a%22%3a%5b%5d%7d%2c%7b%22k%22%3a%22c_event_52519_702%22%2c%22p%22%3a%22%23announcement-verify%22%2c%22a%22%3a%5b%5d%7d%2c%7b%22k%22%3a%22c_event_52520_197%22%2c%22p%22%3a%22%23announcement-survey%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22console.bce.baidu.com%5c%2fbilling%5c%2f*%22%3a%5b%7b%22k%22%3a%22c_event_52521_891%22%2c%22p%22%3a%22%23billing-verify%22%2c%22a%22%3a%5b%5d%7d%2c%7b%22k%22%3a%22c_event_52522_502%22%2c%22p%22%3a%22%23billing-survey%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22console.bce.baidu.com%5c%2fqualify%5c%2f%3f_%3d*%5c%2fqualify%5c%2fperson%22%3a%5b%7b%22k%22%3a%22c_event_52526_577%22%2c%22p%22%3a%22%23ctrl-e-form%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22login.bce.baidu.com%22%3a%5b%7b%22k%22%3a%22c_event_66912_672%22%2c%22p%22%3a%22%23campaign%3eimg%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22cloud.baidu.com%5c%2fsolution%5c%2fapply%5c%2fmarketing*%22%3a%5b%7b%22k%22%3a%22c_event_52527_218%22%2c%22p%22%3a%22%23submit%22%2c%22a%22%3a%5b%5d%7d%5d%2c%22console.bce.baidu.com%5c%2fapm%5c%2f*%22%3a%5b%7b%22k%22%3a%22c_event_52528_233%22%2c%22p%22%3a%22%23overview-refresh-fortongji%22%2c%22a%22%3a%5b%5d%7d%2c%7b%22k%22%3a%22c_event_52529_285%22%2c%22p%22%3a%22%23overview-collapse-fortongji%22%2c%22a%22%3a%5b%5d%7d%2c%7b%22k%22%3
+
+--- API RESPONSE ---
+
+URL: https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD
+window._agl = window._agl || [];window._agl.push(["ext", {xAngeliaLogid: "1637954790281437962", bclid: "", bdsfrcvid: ""}]);!function(){"use strict";function z(t){return(z="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function l(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function r(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function e(t,e,n){return e&&r(t.prototype,e),n&&r(t,n),t}function s(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}function f(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{},r=Object.keys(n);"function"==typeof Object.getOwnPropertySymbols&&(r=r.concat(Object.getOwnPropertySymbols(n).filter(function(t){return Object.getOwnPropertyDescriptor(n,t).enumerable}))),r.forEach(function(t){s(e,t,n[t])})}return e}function n(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&i(t,e)}function o(t){return(o=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function i(t,e){return(i=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function a(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function u(t,e){return!e||"object"!=typeof e&&"function"!=typeof e?a(t):e}function h(t,e){return function(t){if(Array.isArray(t))return t}(t)||function(t,e){var n=[],r=!0,o=!1,i=void 0;try{for(var a,s=t[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!e||n.length!==e);r=!0);}catch(t){o=!0,i=t}finally{try{r||null==s.return||s.return()}finally{if(o)throw i}}return n}(t,e)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance")}()}function d(t){return function(t){if(Array.isArray(t)){for(var e=0,n=new Array(t.length);e<t.length;e++)n[e]=t[e];return n}}(t)||function(t){if(Symbol.iterator in Object(t)||"[object Arguments]"===Object.prototype.toString.call(t))return Array.from(t)}(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance")}()}var v="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{};function t(t,e){return t(e={exports:{}},e.exports),e.exports}var c=t(function(t){function f(t,e){var n=(65535&t)+(65535&e);return(t>>16)+(e>>16)+(n>>16)<<16|65535&n}function s(t,e,n,r,o,i){return f(function(t,e){return t<<e|t>>>32-e}(f(f(e,t),f(r,i)),o),n)}function h(t,e,n,r,o,i,a){return s(e&n|~e&r,t,e,o,i,a)}function d(t,e,n,r,o,i,a){return s(e&r|n&~r,t,e,o,i,a)}function p(t,e,n,r,o,i,a){return s(e^n^r,t,e,o,i,a)}function g(t,e,n,r,o,i,a){return s(n^(e|~r),t,e,o,i,a)}function u(t,e){var n,r,o,i,a;t[e>>5]|=128<<e%32,t[14+(e+64>>>9<<4)]=e;var s=1732584193,u=-271733879,c=-1732584194,l=271733878;for(n=0;n<t.length;n+=16)u=g(u=g(u=g(u=g(u=p(u=p(u=p(u=p(u=d(u=d(u=d(u=d(u=h(u=h(u=h(u=h(o=u,c=h(i=c,l=h(a=l,s=h(r=s,u,c,l,t[n],7,-680876936),u,c,t[n+1],12,-389564586),s,u,t[n+2],17,606105819),l,s,t[n+3],22,-1044525330),c=h(c,l=h(l,s=h(s,u,c,l,t[n+4],7,-176418897),u,c,t[n+5],12,1200080426),s,u,t[n+6],17,-1473231341),l,s,t[n+7],22,-45705983),c=h(c,l=h(l,s=h(s,u,c,l,t[n+8],7,1770035416),u,c,t[n+9],12,-1958414417),s,u,t[n+10],17,-42063),l,s,t[n+11],22,-1990404162),c=h(c,l=h(l,s=h(s,u,c,l,t[n+12],7,1804603682),u,c,t[n+13],12,-40341101),s,u,t[n+14],17,-1502002290),l,s,t[n+15],22,1236535329),c=d(c,l=d(l,s=d(s,u,c,l,t[n+1],5,-165796510),u,c,t[n+6],9,-1069501632),s,u,t[n+11],14,643717713),l,s,t[n],20,-373897302),c=d(c,l=d(l,s=d(s,u,c,l,t[n+5],5,-701558691),u,c,t[n+10],9,38016083),s,u,t[n+15],14,-660478335),l,s,t[n+4],20,-405537848),c=d(c,l=d(l,s=d(s,u,c,l,t[n+9],5,568446438),u,c,t[n+14],9,-1019803690),s,u,t[n+3],14,-187363961),l,s,t[n+8],20,1163531501),c=d(c,l=d(l,s=d(s,u,c,l,t[n+13],5,-1444681467),u,c,t[n+2],9,-51403784),s,u,t[n+7],14,1735328473),l,s,t[n+12],20,-1926607734),c=p(c,l=p(l,s=p(s,u,c,l,t[n+5],4,-378558),u,c,t[n+8],11,-2022574463),s,u,t[n+11],16,1839030562),l,s,t[n+14],23,-35309556),c=p(c,l=p(l,s=p(s,u,c,l,t[n+1],4,-1530992060),u,c,t[n+4],11,1272893353),s,u,t[n+7],16,-155497632),l,s,t[n+10],23,-1094730640),c=p(c,l=p(l,s=p(s,u,c,l,t[n+13],4,681279174),u,c,t[n],11,-358537222),s,u,t[n+3],16,-722521979),l,s,t[n+6],23,76029189),c=p(c,l=p(l,s=p(s,u,c,l,t[n+9],4,-640364487),u,c,t[n+12],11,-421815835),s,u,t[n+15],16,530742520),l,s,t[n+2],23,-995338651),c=g(c,l=g(l,s=g(s,u,c,l,t[n],6,-198630844),u,c,t[n+7],10,1126891415),s,u,t[n+14],15,-1416354905),l,s,t[n+5],21,-57434055),c=g(c,l=g(l,s=g(s,u,c,l,t
+
+--- API RESPONSE ---
+
+URL: https://bce.bdstatic.com/fe-static/baidu/bce-portal/portal-common/1.0.2165.1/158.css
+*{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,SF Pro SC,SF Pro Text,Helvetica Neue,Helvetica,PingFang SC,Segoe UI,Roboto,Hiragino Sans GB,arial,microsoft yahei ui,Microsoft YaHei,SimSun,sans-serif;font-weight:400}a{outline:none!important;text-decoration:none}dd,dl,dt,h1,h2,h3,ol,p,ul{margin:0;padding:0}ol,ul{list-style:none}
+
+--- API RESPONSE ---
+
+URL: https://bce.bdstatic.com/fe-static/baidu/bce-portal/portal-common/1.0.2165.1/987.load.js
+/*! For license information please see 987.load.js.LICENSE.txt */
+(globalThis.webpackChunkportalCommon=globalThis.webpackChunkportalCommon||[]).push([[987],{6684(t,n,e){"use strict";e.d(n,{A:()=>i});var r=/^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|inert|itemProp|itemScope|itemType|itemID|itemRef|on|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/;const i=function(t){var n={};return function(e){return void 0===n[e]&&(n[e]=t(e)),n[e]}}((function(t){return r.test(t)||111===t.charCodeAt(0)&&110===t.charCodeAt(1)&&t.charCodeAt(2)<91}))},9035(t,n,e){"use strict";e.d(n,{N:()=>p});var r=e(1766),i=e(634),o=e(7057);var a=e(2403),s=e(3483),u=0;function c(){var t=u;return u++,t}var l=function(t){var n=t.children,e=t.initial,r=t.isPresent,o=t.onExitComplete,u=t.custom,l=t.presenceAffectsLayout,d=(0,s.M)(f),v=(0,s.M)(c),p=(0,i.useMemo)((function(){return{id:v,initial:e,isPresent:r,custom:u,onExitComplete:function(t){d.set(t,!0);var n=!0;d.forEach((function(t){t||(n=!1)})),n&&(null==o||o

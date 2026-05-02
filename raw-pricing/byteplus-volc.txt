@@ -1,0 +1,389 @@
+文档中心
+ArkClaw
+节省计划
+Viking
+火山方舟大模型服务平台
+API网关
+ArkClaw
+节省计划
+Viking
+火山方舟大模型服务平台
+API网关
+简体
+文档
+备案
+控制台
+登录
+立即注册
+火山方舟
+文档指南
+API参考
+资源
+二级导航功能
+导航栏会按照模块拆分文档内容，方便你快速切换到所需信息哦
+我知道了
+不再提醒
+请输入
+开始使用
+产品简介
+快速入门
+模型列表
+模型价格
+模型调用
+文本生成
+多模态理解
+视频生成
+图片生成
+领域模型
+工具调用
+进阶使用
+接入三方工具
+使用 Responses API
+部署方式
+部署方式概述
+在线推理（常规）
+在线推理（低延迟）
+在线推理（TPM 保障包）
+模型单元
+批量推理
+高级能力
+模型精调
+模型精调概述
+有监督微调最佳实践
+直接偏好优化最佳实践
+强化学习最佳实践
+精调 SDK 使用指南
+模型精调数据集格式说明
+管理自定义模型
+Coding Plan 个人版
+套餐概览
+快速开始
+接入 AI 工具
+专属权益
+特惠活动
+常见问题
+功能发布公告
+实践教程
+快速入门(新手版)
+Seedance-1.5-pro 提示词指南
+Seedance-1.0-pro&pro-fast 提示词指南
+Seedance-1.0-lite 提示词指南
+Seedream 4.0-5.0 提示词指南
+Seedream 3.0 提示词指南
+Seedream 4.0 助力 Seedance 生视频最佳实践
+RAG（检索增强）解决方案
+在应用中使用 RTC 实现 AI 实时对话
+数据回流操作流程
+如何设置控制台登录保持时间
+角色扮演场景提示词指南
+环境变量配置指南
+突发流量处理最佳实践
+火山方舟分账最佳实践
+方舟文档 MCP
+文档首页
+火山方舟
+开始使用
+产品简介
+复制全文
+下载 pdf
+我的收藏
+产品简介
+快速调用​
+完成首次 API 调用：快速入门​
+​
+Python
+Curl
+Go
+Java
+OpenAI SDK
+curl https://ark.cn-beijing.volces.com/api/v3/responses \
+  -H "Authorization: Bearer $ARK_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+      "model": "doubao-seed-2-0-lite-260215",
+      "input": "hello"
+  }'
+ 
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    "github.com/volcengine/volcengine-go-sdk/service/arkruntime"
+    "github.com/volcengine/volcengine-go-sdk/service/arkruntime/model/responses"
+)
+
+func main() {
+    client := arkruntime.NewClientWithApiKey(
+        // Get API Key：https://console.volcengine.com/ark/region:ark+cn-beijing/apikey
+        os.Getenv("ARK_API_KEY"),
+        arkruntime.WithBaseUrl("https://ark.cn-beijing.volces.com/api/v3"),
+    )
+    ctx := context.Background()
+
+    resp, err := client.CreateResponses(ctx, &responses.ResponsesRequest{
+        Model: "doubao-seed-2-0-lite-260215",
+        Input: &responses.ResponsesInput{Union: &responses.ResponsesInput_StringValue{StringValue: "hello"}}, // Replace with your prompt
+        // Thinking: &responses.ResponsesThinking{Type: responses.ThinkingType_disabled.Enum()}, // Manually disable deep thinking
+    })
+    if err != nil {
+        fmt.Printf("response error: %v\n", err)
+        return
+    }
+    fmt.Println(resp)
+}
+ 
+package com.ark.sample;
+
+import com.volcengine.ark.runtime.service.ArkService;
+import com.volcengine.ark.runtime.model.responses.request.*;
+import com.volcengine.ark.runtime.model.responses.response.ResponseObject;
+
+public class demo {
+    public static void main(String[] args) {
+        String apiKey = System.getenv("ARK_API_KEY");
+        // The base URL for model invocation
+        ArkService arkService = ArkService.builder().apiKey(apiKey).baseUrl("https://ark.cn-beijing.volces.com/api/v3").build();
+
+        CreateResponsesRequest request = CreateResponsesRequest.builder()
+                .model("doubao-seed-2-0-lite-260215")
+                .input(ResponsesInput.builder().stringValue("hello").build()) // Replace with your prompt
+                // .thinking(ResponsesThinking.builder().type(ResponsesConstants.THINKING_TYPE_DISABLED).build()) //  Manually disable deep thinking
+                .build();
+
+        ResponseObject resp = arkService.createResponse(request);
+        System.out.println(resp);
+
+        arkService.shutdownExecutor();
+    }
+}
+ 
+import os
+from openai import OpenAI
+
+client = OpenAI(
+    base_url='https://ark.cn-beijing.volces.com/api/v3',
+    api_key=os.getenv('ARK_API_KEY'),
+)
+
+response = client.responses.create(
+    model="doubao-seed-2-0-lite-260215",
+    input="hello", # Replace with your prompt
+    extra_body={
+        # "thinking": {"type": "disabled"}, #  Manually disable deep thinking
+    },
+)
+
+print(response)
+ 
+
+​
+​
+Python
+复制
+import os​
+from volcenginesdkarkruntime import Ark​
+​
+client = Ark(​
+    base_url='https://ark.cn-beijing.volces.com/api/v3',​
+    api_key=os.getenv('ARK_API_KEY'),​
+)​
+​
+response = client.responses.create(​
+    model="doubao-seed-2-0-lite-260215",​
+    input="hello", # Replace with your prompt​
+    # thinking={"type": "disabled"}, #  Manually disable deep thinking​
+)​
+print(response)​
+​
+​
+浏览模型​
+更多查看模型列表​
+doubao-seed-2.0​
+豆包旗舰级 Agent 通用模型​
+面向 Agent 时代的复杂推理与长链路任务执行场景​
+​
+doubao-seedance-2.0​
+豆包最强视频生成模型​
+极致拟真的视听稳定，赋予创作者如同导演般的掌控权​
+​
+doubao-seedream-5.0​
+豆包最强图片生成模型​
+搭载联网检索，增强知识广度、参考一致性及专业场景生成质量​
+​
+​
+基础使用​
+了解模型使用方法、限制以及常见场景的示例代码​
+深度思考​
+先思考再回答，质量显著提升​
+​
+图片理解​
+接收图片，根据图片信息回复​
+​
+视频理解​
+接收视频，根据视频信息回复​
+​
+文档理解​
+接收 PDF，根据文档信息回复​
+​
+视频生成​
+生成高清流畅的影视级视频​
+​
+图片生成​
+基于图文，生成高质量图片​
+​
+联网搜索​
+联网获取实时知识​
+​
+函数调用​
+调用自定义工具，增强模型能力​
+​
+​
+进阶使用​
+了解如何拓展模型能力、提升性能、降低成本​
+续写模式​
+预填部分assistant 消息内容，引导和控制模型输出​
+​
+视觉定位​
+在图片中找到对应的目标，并返回目标的坐标​
+​
+GUI 任务处理​
+在计算机等真实 GUI 环境中完成自动化任务​
+​
+3D 生成​
+快速生成具备多边形面片与 PBR 材质的高精度 3D 资产​
+​
+批量推理​
+大幅提升吞吐，降低成本，适合无需即时响应的任务​
+​
+上下文缓存​
+缓存固定上下文，减少重复计算开销，降低成本​
+​
+云部署 MCP​
+调用各类垂直领域 MCP 工具，增强模型能力​
+​
+文件输入​
+使用 File API 上传并预处理视频、图片、PDF​
+​
+​
+​
+最近更新时间：2026.03.19 14:15:39
+这个页面对您有帮助吗？
+有用
+无用
+快速入门
+下一篇
+在线咨询
+鼠标选中内容，快速反馈问题
+选中存在疑惑的内容，即可快速反馈问题，我们将会跟进处理
+不再提示
+好的，知道了
+文档反馈
+全天候售后服务
+7x24小时专业工程师品质服务
+极速服务应答
+秒级应答为业务保驾护航
+客户价值为先
+从服务价值到创造客户价值
+全方位安全保障
+打造一朵“透明可信”的云
+关于我们
+为什么选火山
+文档中心
+联系我们
+人才招聘
+云信任中心
+友情链接
+产品
+云服务器
+GPU云服务器
+机器学习平台
+客户数据平台 VeCDP
+飞连
+视频直播
+全部产品
+解决方案
+汽车行业
+金融行业
+文娱行业
+医疗健康行业
+传媒行业
+智慧文旅
+大消费
+服务与支持
+备案服务
+服务咨询
+建议与反馈
+廉洁舞弊举报
+举报平台
+联系我们
+业务咨询：service@volcengine.com
+市场合作：marketing@volcengine.com
+电话：400-850-0030
+地址：北京市海淀区北三环西路甲18号院大钟寺广场1号楼
+微信公众号
+抖音号
+视频号
+© 北京火山引擎科技有限公司 2026 版权所有
+代理域名注册服务机构：新网数码 商中在线
+服务条款
+隐私政策
+更多协议
+京公网安备11010802032137号
+京ICP备20018813号-3
+营业执照
+增值电信业务经营许可证京B2-20202418，A2.B1.B2-20202637
+网络文化经营许可证：京网文（2023）4872-140号
+rangeDom
+
+--- API RESPONSE ---
+
+URL: https://www.volcengine.com/docs/82379/1099455?lang=zh
+<!doctype html><html lang="zh"><head><script>window.gfdatav1={"env":"prod","envName":"prod","runtime":"node","ver":"1.0.0.523","canary":0,"idc":"hl","region":"cn","vdc":"hl","vregion":"China-North","extra":{"canaryType":null}}</script><script type="application/json" id="__MODERN_SERVER_DATA__">{"router":{"baseUrl":"/","params":{}}}</script><script>!function(e,r,n,t,s,a,o,c,i,l,d,p,f,m){a="precollect",o="getAttribute",c="addEventListener",l=function(e){(d=[].slice.call(arguments)).push(Date.now(),location.href),(e==a?l.p.a:l.q).push(d)},l.q=[],l.p={a:[]},e[s]=l,(p=document.createElement("script")).src=n+"?bid=volc_fe_portal_doccenter&globalName="+s,p.crossOrigin=n.indexOf("sdk-web")>0?"anonymous":"use-credentials",r.getElementsByTagName("head")[0].appendChild(p),c in e&&(l.pcErr=function(r){r=r||e.event,(f=r.target||r.srcElement)instanceof Element||f instanceof HTMLElement?f[o]("integrity")?e[s](a,"sri",f[o]("href")||f[o]("src")):e[s](a,"st",{tagName:f.tagName,url:f[o]("href")||f[o]("src")}):e[s](a,"err",r.error||r.message)},l.pcRej=function(r){r=r||e.event,e[s](a,"err",r.reason||r.detail&&r.detail.reason)},e[c]("error",l.pcErr,!0),e[c]("unhandledrejection",l.pcRej,!0)),"PerformanceLongTaskTiming"in e&&((m=l.pp={entries:[]}).observer=new PerformanceObserver(function(e){m.entries=m.entries.concat(e.getEntries())}),m.observer.observe({entryTypes:["longtask","largest-contentful-paint","layout-shift"]}))}(window,document,"https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/browser.cn.js",0,"Slardar")</script><script >
+            ;(function(){
+              window._MODERNJS_ROUTE_MANIFEST = {"routeAssets":{"main":{"chunkIds":[691,378,740,74,801,896,792],"assets":["static/css/lib-arco.e82a9c00.css","static/js/lib-arco.f555872d.js","static/js/lib-polyfill.a9de56a8.js","static/js/lib-lodash.8366289f.js","static/js/lib-axios.c5cfc0d7.js","static/css/896.d861109f.css","static/js/896.a1f2c74f.js","static/css/main.8414df6c.css","static/js/main.f1c151b6.js"],"referenceCssAssets":["static/css/lib-arco.e82a9c00.css","static/css/896.d861109f.css","static/css/main.8414df6c.css"]},"$":{"chunkIds":[161],"assets":["static/css/async/$.48f76470.css","static/js/async/$.0595f5f1.js"],"referenceCssAssets":["static/css/async/$.48f76470.css"]},"docs/page":{"chunkIds":[188],"assets":["static/css/async/docs/page.a17001e3.css","static/js/async/docs/page.3511f0ed.js"],"referenceCssAssets":["static/css/async/docs/page.a17001e3.css"]},"docs/(libid)/(docid$)/page":{"chunkIds":[831],"assets":["static/css/async/docs/(libid)/(docid$)/page.33170370.css","static/js/async/docs/(libid)/(docid$)/page.f036e684.js"],"referenceCssAssets":["static/css/async/docs/(libid)/(docid$)/page.33170370.css"]},"docs/(libid)/layout":{"chunkIds":[741],"assets":["static/css/async/docs/(libid)/layout.b6f5b473.css","static/js/async/docs/(libid)/layout.26d011d9.js"],"referenceCssAssets":["static/css/async/docs/(libid)/layout.b6f5b473.css"]},"docs/favorite/page":{"chunkIds":[273],"assets":["static/css/async/docs/favorite/page.be744ac3.css","static/js/async/docs/favorite/page.9184fad3.js"],"referenceCssAssets":["static/css/async/docs/favorite/page.be744ac3.css"]},"docs/material-download/page":{"chunkIds":[175],"assets":["static/css/async/docs/material-download/page.375b643d.css","static/js/async/docs/material-download/page.c9735b1d.js"],"referenceCssAssets":["static/css/async/docs/material-download/page.375b643d.css"]},"docs/practice/page":{"chunkIds":[952],"assets":["static/css/async/docs/practice/page.5ea885f5.css","static/js/async/docs/practice/page.d9e18cac.js"],"referenceCssAssets":["static/css/async/docs/practice/page.5ea885f5.css"]},"docs/practice/layout":{"chunkIds":[675],"assets":["static/css/async/docs/practice/layout.b8b785f9.css","static/js/async/docs/practice/layout.ca5cbd52.js"],"referenceCssAssets":["static/css/async/docs/practice/layout.b8b785f9.css"]},"docs/layout":{"chunkIds":[143],"assets":["static/js/async/docs/layout.46ee9a28.js"],"referenceCssAssets":[]},"viewer-v2":{"chunkIds":[18],"assets":["static/css/async/viewer-v2.ecf5b0de.css","static/js/async/viewer-v2.96abffb3.js"],"referenceCssAssets":["static/css/async/viewer-v2.ecf5b0de.css"]},"highlightjs":{"chunkIds":[940],"assets":["static/js/async/highlightjs.ea241a14.js"],"referenceCssAssets":[]},"inlineCodeWorker":{"chunkIds":[377],"assets":["static/js/async/inlineCodeWorker.089139d7.js"],"referenceCssAssets":[]}}};
+            })();
+          </script><title data-react-helmet="true">产品简介--火山方舟-火山引擎</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover,minimum-scale=1,maximum-scale=1,user-scalable=no"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="renderer" content="webkit"><meta name="layoutmode" content="standard"><meta name="imagemode" content="force"><meta name="wap-font-scale" content="no"><meta name="format-detection" content="telephone=no"><link href="//portal.volccdn.com/obj/volcfe-scm/doccenter/st
+
+--- API RESPONSE ---
+
+URL: https://portal.volccdn.com/obj/volcfe-scm/doccenter/static/css/lib-arco.e82a9c00.css
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */body{--red-1:255,236,232;--red-2:253,205,197;--red-3:251,172,163;--red-4:249,137,129;--red-5:247,101,96;--red-6:245,63,63;--red-7:203,39,45;--red-8:161,21,30;--red-9:119,8,19;--red-10:77,0,10;--orangered-1:255,243,232;--orangered-2:253,221,195;--orangered-3:252,197,159;--orangered-4:250,172,123;--orangered-5:249,144,87;--orangered-6:247,114,52;--orangered-7:204,81,32;--orangered-8:162,53,17;--orangered-9:119,31,6;--orangered-10:77,14,0;--orange-1:255,247,232;--orange-2:255,228,186;--orange-3:255,207,139;--orange-4:255,182,93;--orange-5:255,154,46;--orange-6:255,125,0;--orange-7:210,95,0;--orange-8:166,69,0;--orange-9:121,46,0;--orange-10:77,27,0;--gold-1:255,252,232;--gold-2:253,244,191;--gold-3:252,233,150;--gold-4:250,220,109;--gold-5:249,204,69;--gold-6:247,186,30;--gold-7:204,146,19;--gold-8:162,109,10;--gold-9:119,75,4;--gold-10:77,45,0;--yellow-1:254,255,232;--yellow-2:254,254,190;--yellow-3:253,250,148;--yellow-4:252,242,107;--yellow-5:251,232,66;--yellow-6:250,220,25;--yellow-7:207,175,15;--yellow-8:163,132,8;--yellow-9:120,93,3;--yellow-10:77,56,0;--lime-1:252,255,232;--lime-2:237,248,187;--lime-3:220,241,144;--lime-4:201,233,104;--lime-5:181,226,65;--lime-6:159,219,29;--lime-7:126,183,18;--lime-8:95,148,10;--lime-9:67,112,4;--lime-10:42,77,0;--green-1:232,255,234;--green-2:175,240,181;--green-3:123,225,136;--green-4:76,210,99;--green-5:35,195,67;--green-6:0,180,42;--green-7:0,154,41;--green-8:0,128,38;--green-9:0,102,34;--green-10:0,77,28;--cyan-1:232,255,251;--cyan-2:183,244,236;--cyan-3:137,233,224;--cyan-4:94,223,214;--cyan-5:55,212,207;--cyan-6:20,201,201;--cyan-7:13,165,170;--cyan-8:7,130,139;--cyan-9:3,97,108;--cyan-10:0,66,77;--blue-1:232,247,255;--blue-2:195,231,254;--blue-3:159,212,253;--blue-4:123,192,252;--blue-5:87,169,251;--blue-6:52,145,250;--blue-7:32,108,207;--blue-8:17,75,163;--blue-9:6,48,120;--blue-10:0,26,77;--arcoblue-1:232,243,255;--arcoblue-2:190,218,255;--arcoblue-3:148,191,255;--arcoblue-4:106,161,255;--arcoblue-5:64,128,255;--arcoblue-6:22,93,255;--arcoblue-7:14,66,210;--arcoblue-8:7,44,166;--arcoblue-9:3,26,121;--arcoblue-10:0,13,77;--purple-1:245,232,255;--purple-2:221,190,246;--purple-3:195,150,237;--purple-4:168,113,227;--purple-5:141,78,218;--purple-6:114,46,209;--purple-7:85,29,176;--purple-8:60,16,143;--purple-9:39,6,110;--purple-10:22,0,77;--pinkpurple-1:255,232,251;--pinkpurple-2:247,186,239;--pinkpurple-3:240,142,230;--pinkpurple-4:232,101,223;--pinkpurple-5:225,62,219;--pinkpurple-6:217,26,217;--pinkpurple-7:176,16,182;--pinkpurple-8:138,9,147;--pinkpurple-9:101,3,112;--pinkpurple-10:66,0,77;--magenta-1:255,232,241;--magenta-2:253,194,219;--magenta-3:251,157,199;--magenta-4:249,121,183;--magenta-5:247,84,168;--magenta-6:245,49,157;--magenta-7:203,30,131;--magenta-8:161,16,105;--magenta-9:119,6,79;--magenta-10:77,0,52;--gray-1:247,248,250;--gray-2:242,243,245;--gray-3:229,230,235;--gray-4:201,205,212;--gray-5:169,174,184;--gray-6:134,144,156;--gray-7:107,119,133;--gray-8:78,89,105;--gray-9:39,46,59;--gray-10:29,33,41;--success-1:var(--green-1);--success-2:var(--green-2);--success-3:var(--green-3);--success-4:var(--green-4);--success-5:var(--green-5);--success-6:var(--green-6);--success-7:var(--green-7);--success-8:var(--green-8);--success-9:var(--green-9);--success-10:var(--green-10);--primary-1:var(--arcoblue-1);--primary-2:var(--arcoblue-2);--primary-3:var(--arcoblue-3);--primary-4:var(--arcoblue-4);--primary-5:var(--arcoblue-5);--primary-6:var(--arcoblue-6);--primary-7:var(--arcoblue-7);--primary-8:var(--arcoblue-8);--primary-9:var(--arcoblue-9);--primary-10:var(--arcoblue-10);--danger-1:var(--red-1);--danger-2:var(--red-2);--danger-3:var(--red-3);--danger-4:var(--red-4);--danger-5:var(--red-5);--danger-6:var(--red-6);--danger-7:var(--red-7);--danger-8:var(--red-8);--danger-9:var(--red-9);--danger-10:var(--red-10);--warning-1:var(--orange-1);--warning-2:var(--orange-2);--warning-3:var(--orange-3);--warning-4:var(--orange-4);--warning-5:var(--orange-5);--warning-6:var(--orange-6);--warning-7:var(--orange-7);--warning-8:var(--orange-8);--warning-9:var(--orange-9);--warning-10:var(--orange-10);--link-1:var(--arcoblue-1);--link-2:var(--arcoblue-2);--link-3:var(--arcoblue-3);--link-4:var(--arcoblue-4);--link-5:var(--arcoblue-5);--link-6:var(--arcoblue-6);--link-7:var(--arcoblue-7);--link-8:var(--arcoblue-8);--link-9:var(--arcoblue-9);--link-10:var(--arcoblue-10);--data-1:var(--arcoblue-5);--data-2:var(--arcoblue-2);--data-3:85,197,253;--data-4:156,220,252;--data-5:var(--orange-6);--data-6:var(--orange-3);--data-7:var(--green-4);--data-8:var(--green-2);--data-9:var(--purple-4);--data-10:var(--purple-2);--data-11:var(--gold-6);--data-12:var(--gold-4);--data-13:var(--lime-6);--data-14:var(--lime-4);--data-15:var(--magenta-4);--data-16:var(--magenta-3);--data-17:var(--cyan-6);--data-18:var(--cyan-3);--data-19:var(--pinkpurple-4);--data-20:var(--pinkpurple-2)}body[arco-theme=dark]{--red-1:77,0,
+
+--- API RESPONSE ---
+
+URL: https://portal.volccdn.com/obj/volcfe-scm/doccenter/static/css/async/docs/(libid)/layout.b6f5b473.css
+.feedbackentrywrap-lE0Q{margin-top:12px;position:relative;z-index:699}.feedbackentry-btFq{border-radius:24px;cursor:pointer;display:-moz-box;display:flex;font-size:14px;height:138px;letter-spacing:4px;-webkit-text-orientation:upright;text-orientation:upright;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:48px;-webkit-writing-mode:vertical-lr;writing-mode:vertical-lr;-moz-box-align:center;align-items:center;-moz-box-pack:center;background:#1664ff;border:1px solid #05f;box-shadow:0 15px 35px -2px rgba(0,0,0,.05),0 5px 15px rgba(0,0,0,.05);justify-content:center}@media screen and (max-width:600px){.feedbackentry-btFq{display:none}}.textwrap-m0Sv{color:#fff;font-weight:500;line-height:20px;margin-top:8px;-webkit-writing-mode:vertical-lr;writing-mode:vertical-lr}.wrap-PL3s{display:none}@media (min-width:600px){.wrap-PL3s{-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:.5px solid #dde2e9;border-radius:4px;bottom:36px;box-shadow:0 15px 35px rgba(0,0,0,.05),0 5px 15px rgba(0,0,0,.05);display:-moz-box;display:flex;padding:16px;right:64px;width:318px;z-index:699}.wrap-PL3s,.wrap-PL3s:after{background:#fff;position:absolute}.wrap-PL3s:after{border:1px solid #ebebeb;border-left-color:transparent;border-top-color:transparent;bottom:16px;content:" ";display:block;height:9px;right:-6px;-moz-transform:translateY(-50%) rotate(-45deg);transform:translateY(-50%) rotate(-45deg);width:9px;z-index:-1}.content-JrVY{-moz-box-flex:1;flex:1 1;margin-left:8px}.title-mrtl{color:#020814;font-size:14px;font-weight:500}.desc-oBmO{color:#41464f;font-size:12px;line-height:20px;margin-top:4px}.btnwrap-LNo1{display:-moz-box;display:flex;font-size:12px;margin-top:18px;-moz-box-pack:justify;justify-content:space-between}.btn-pQVs{color:#80838a;cursor:pointer}.btn-pQVs.primary-Mow5{color:#1664ff}}body{--red-1:255,236,232;--red-2:253,205,197;--red-3:251,172,163;--red-4:249,137,129;--red-5:247,101,96;--red-6:245,63,63;--red-7:203,39,45;--red-8:161,21,30;--red-9:119,8,19;--red-10:77,0,10;--orangered-1:255,243,232;--orangered-2:253,221,195;--orangered-3:252,197,159;--orangered-4:250,172,123;--orangered-5:249,144,87;--orangered-6:247,114,52;--orangered-7:204,81,32;--orangered-8:162,53,17;--orangered-9:119,31,6;--orangered-10:77,14,0;--orange-1:255,247,232;--orange-2:255,228,186;--orange-3:255,207,139;--orange-4:255,182,93;--orange-5:255,154,46;--orange-6:255,125,0;--orange-7:210,95,0;--orange-8:166,69,0;--orange-9:121,46,0;--orange-10:77,27,0;--gold-1:255,252,232;--gold-2:253,244,191;--gold-3:252,233,150;--gold-4:250,220,109;--gold-5:249,204,69;--gold-6:247,186,30;--gold-7:204,146,19;--gold-8:162,109,10;--gold-9:119,75,4;--gold-10:77,45,0;--yellow-1:254,255,232;--yellow-2:254,254,190;--yellow-3:253,250,148;--yellow-4:252,242,107;--yellow-5:251,232,66;--yellow-6:250,220,25;--yellow-7:207,175,15;--yellow-8:163,132,8;--yellow-9:120,93,3;--yellow-10:77,56,0;--lime-1:252,255,232;--lime-2:237,248,187;--lime-3:220,241,144;--lime-4:201,233,104;--lime-5:181,226,65;--lime-6:159,219,29;--lime-7:126,183,18;--lime-8:95,148,10;--lime-9:67,112,4;--lime-10:42,77,0;--green-1:232,255,234;--green-2:175,240,181;--green-3:123,225,136;--green-4:76,210,99;--green-5:35,195,67;--green-6:0,180,42;--green-7:0,154,41;--green-8:0,128,38;--green-9:0,102,34;--green-10:0,77,28;--cyan-1:232,255,251;--cyan-2:183,244,236;--cyan-3:137,233,224;--cyan-4:94,223,214;--cyan-5:55,212,207;--cyan-6:20,201,201;--cyan-7:13,165,170;--cyan-8:7,130,139;--cyan-9:3,97,108;--cyan-10:0,66,77;--blue-1:232,247,255;--blue-2:195,231,254;--blue-3:159,212,253;--blue-4:123,192,252;--blue-5:87,169,251;--blue-6:52,145,250;--blue-7:32,108,207;--blue-8:17,75,163;--blue-9:6,48,120;--blue-10:0,26,77;--arcoblue-1:232,243,255;--arcoblue-2:190,218,255;--arcoblue-3:148,191,255;--arcoblue-4:106,161,255;--arcoblue-5:64,128,255;--arcoblue-6:22,93,255;--arcoblue-7:14,66,210;--arcoblue-8:7,44,166;--arcoblue-9:3,26,121;--arcoblue-10:0,13,77;--purple-1:245,232,255;--purple-2:221,190,246;--purple-3:195,150,237;--purple-4:168,113,227;--purple-5:141,78,218;--purple-6:114,46,209;--purple-7:85,29,176;--purple-8:60,16,143;--purple-9:39,6,110;--purple-10:22,0,77;--pinkpurple-1:255,232,251;--pinkpurple-2:247,186,239;--pinkpurple-3:240,142,230;--pinkpurple-4:232,101,223;--pinkpurple-5:225,62,219;--pinkpurple-6:217,26,217;--pinkpurple-7:176,16,182;--pinkpurple-8:138,9,147;--pinkpurple-9:101,3,112;--pinkpurple-10:66,0,77;--magenta-1:255,232,241;--magenta-2:253,194,219;--magenta-3:251,157,199;--magenta-4:249,121,183;--magenta-5:247,84,168;--magenta-6:245,49,157;--magenta-7:203,30,131;--magenta-8:161,16,105;--magenta-9:119,6,79;--magenta-10:77,0,52;--gray-1:247,248,250;--gray-2:242,243,245;--gray-3:229,230,235;--gray-4:201,205,212;--gray-5:169,174,184;--gray-6:134,144,156;--gray-7:107,119,133;--gray-8:78,89,105;--gray-9:39,46,59;--gray-10:29,33,41;--success-1:var(--green-1);--success-2:var(--green-2);--success-3:var(--green-3);--success-4:var(--green-4);--success-5:var(--green-5);--success-6:va
+
+--- API RESPONSE ---
+
+URL: https://portal.volccdn.com/obj/volcfe-scm/doccenter/static/css/async/docs/(libid)/(docid$)/page.33170370.css
+.arco-affix{position:fixed;z-index:999}.searchwrap-i_F4{border-radius:4px;display:-moz-box;display:flex;height:36px;margin:24px 24px 20px 24px;padding:0 12px;-moz-box-align:center;align-items:center;-moz-box-pack:justify;border:1px solid #dde2e9;cursor:pointer;flex-shrink:0;justify-content:space-between;-moz-transition:all .1s;transition:all .1s}.searchwrap-i_F4:hover{background-color:#fafbfc}.searchwrap-i_F4 .left-kM8j{display:-moz-box;display:flex;-moz-box-align:center;align-items:center;gap:4px}.searchwrap-i_F4 .left-kM8j>span{color:#737a87;font-size:13px;font-weight:400;line-height:22px}.searchwrap-i_F4 .right-QFHA{display:-moz-box;display:flex;-moz-box-align:center;align-items:center;gap:2px}.searchwrap-i_F4 .searchicon-eRH5{font-size:14px;height:14px;width:14px}@media screen and (max-width:1099px){.searchwrap-i_F4{display:none}}.arco-divider-horizontal{border-bottom:1px solid var(--color-neutral-3);clear:both;margin:20px 0;max-width:100%;min-width:100%;position:relative;width:100%}.arco-divider-horizontal.arco-divider-with-text{display:-moz-box;display:flex;margin:20px 0;-moz-box-align:center;align-items:center;border-bottom-style:solid;border-bottom-width:0}.arco-divider-horizontal.arco-divider-with-text:after,.arco-divider-horizontal.arco-divider-with-text:before{content:"";height:0;-moz-box-flex:1;border-bottom:1px;border-bottom-color:inherit;border-bottom-style:inherit;flex:1 1}.arco-divider-horizontal.arco-divider-with-text-left:before,.arco-divider-horizontal.arco-divider-with-text-right:after{flex-basis:24px;-moz-box-flex:0;flex-grow:0}.arco-divider-vertical{border-left:1px solid var(--color-neutral-3);display:inline-block;height:1em;margin:0 12px;max-width:1px;min-width:1px;vertical-align:middle}.arco-divider-text{color:var(--color-text-1);font-size:14px;font-weight:500;line-height:2;padding:0 16px}.arco-divider-text,.arco-dropdown-menu{-moz-box-sizing:border-box;box-sizing:border-box}.arco-dropdown-menu{background-color:var(--color-bg-popup);border:1px solid var(--color-fill-3);border-radius:var(--border-radius-medium);box-shadow:0 4px 10px rgba(0,0,0,.1);max-height:200px;overflow:auto;padding:4px 0;position:relative}.arco-dropdown-menu-hidden{display:none}.arco-dropdown-menu-item,.arco-dropdown-menu-pop-header{background-color:transparent;-moz-box-sizing:border-box;box-sizing:border-box;color:var(--color-text-1);cursor:pointer;font-size:14px;height:36px;line-height:36px;overflow:hidden;padding:0 12px;position:relative;text-align:left;text-overflow:ellipsis;white-space:nowrap;width:100%;z-index:1}.arco-dropdown-menu-item.arco-dropdown-menu-selected,.arco-dropdown-menu-pop-header.arco-dropdown-menu-selected{background-color:transparent;color:var(--color-text-1);font-weight:500;-moz-transition:all .1s linear;transition:all .1s linear}.arco-dropdown-menu-item:hover,.arco-dropdown-menu-pop-header:hover{background-color:var(--color-fill-2);color:var(--color-text-1)}.arco-dropdown-menu-item:focus-visible,.arco-dropdown-menu-pop-header:focus-visible{box-shadow:0 0 0 2px rgb(var(--primary-6)) inset}.arco-dropdown-menu-item.arco-dropdown-menu-active,.arco-dropdown-menu-pop-header.arco-dropdown-menu-active{box-shadow:0 0 0 1px rgb(var(--primary-6)) inset}.arco-dropdown-menu-item.arco-dropdown-menu-disabled,.arco-dropdown-menu-pop-header.arco-dropdown-menu-disabled{background-color:transparent;color:var(--color-text-4);cursor:not-allowed}.arco-dropdown-menu-item a,.arco-dropdown-menu-item a:active,.arco-dropdown-menu-item a:focus,.arco-dropdown-menu-item a:hover,.arco-dropdown-menu-pop-header a,.arco-dropdown-menu-pop-header a:active,.arco-dropdown-menu-pop-header a:focus,.arco-dropdown-menu-pop-header a:hover{color:inherit;cursor:inherit;text-decoration:none}.arco-dropdown-menu-item>a:only-child:before,.arco-dropdown-menu-pop-header>a:only-child:before{bottom:0;content:"";left:0;position:absolute;right:0;top:0}.arco-dropdown-menu-pop-header{display:-moz-box;display:flex;-moz-box-align:center;align-items:center;-moz-box-pack:justify;justify-content:space-between}.arco-dropdown-menu-pop-header .arco-dropdown-menu-icon-suffix{margin-left:12px}.arco-dropdown-menu-group:first-child .arco-dropdown-menu-group-title{margin-top:4px}.arco-dropdown-menu-group-title{-moz-box-sizing:border-box;box-sizing:border-box;color:var(--color-text-3);font-size:12px;line-height:20px;margin-top:8px;overflow:hidden;padding:0 12px;text-overflow:ellipsis;white-space:nowrap;width:100%}.arco-dropdown-menu-dark{background-color:var(--color-menu-dark-bg);border-color:var(--color-menu-dark-bg)}.arco-dropdown-menu-dark .arco-dropdown-menu-item,.arco-dropdown-menu-dark .arco-dropdown-menu-pop-header{background-color:transparent;color:var(--color-text-4)}.arco-dropdown-menu-dark .arco-dropdown-menu-item.arco-dropdown-menu-selected,.arco-dropdown-menu-dark .arco-dropdown-menu-pop-header.arco-dropdown-menu-selected{background-color:transparent;color:var(--color-white)}.arco-dropdown-menu-dark .arco-dropdown-menu-item.arco-dropdown-menu-sel
+
+--- API RESPONSE ---
+
+URL: https://portal.volccdn.com/obj/volcfe-scm/doccenter/static/css/896.d861109f.css
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */.loginFrameContent-GfcW{display:-moz-box;display:flex;width:100%;-moz-box-orient:vertical;-moz-box-direction:normal;flex-direction:column;min-height:498px}.loginFrameContent-GfcW a{color:#3370ff;cursor:pointer;text-decoration:none}.loginFrameContentInMobile-TVam{min-height:454px}.hideMode-Hu36{min-height:429px}.loginCard-aMiX{-moz-box-sizing:border-box;box-sizing:border-box;position:relative}.idp-login-jFdV{display:-moz-box;display:flex;flex-wrap:wrap;line-height:20px;margin-top:42px}.idp-login-jFdV .divider-pqQZ{margin:16px 0}.idp-login-jFdV .divider-pqQZ .arco-divider-text{color:#80838a;font-size:12px;font-weight:400;line-height:20px}.text-ojxP{display:-moz-box;display:flex;-moz-box-pack:justify;color:#606a78;font-size:14px;justify-content:space-between}.idps-mbzB{width:100%}.idps-mbzB,.idps-mbzB .logo-cyxv{display:-moz-box;display:flex;-moz-box-pack:center;justify-content:center;-moz-box-align:center;align-items:center}.idps-mbzB .logo-cyxv{border:1px solid #eaedf1;border-radius:32px;-moz-box-sizing:border-box;box-sizing:border-box;height:32px;min-width:32px;width:32px}.idps-mbzB .logo-cyxv:hover{background:#f3f7ff;border:1px solid #97bcff}.idps-mbzB .logo-cyxv:hover .Account-eKw3,.idps-mbzB .logo-cyxv:hover .Mail-DtBc{color:#1664ff}.idps-mbzB .logo-cyxv+.logo-cyxv{margin-left:12px}.idps-mbzB .Account-eKw3,.idps-mbzB .Mail-DtBc{border:1px solid #eaedf1;border-radius:32px;-moz-box-sizing:border-box;box-sizing:border-box;display:-moz-box;display:flex;padding:6px 10px;-moz-box-pack:center;justify-content:center;-moz-box-align:center;align-items:center;color:#41464f;cursor:pointer;font-size:12px;font-weight:400;line-height:20px}.idps-mbzB .Account-eKw3 .icon-iYGf,.idps-mbzB .Mail-DtBc .icon-iYGf{color:#000;font-size:16px;margin-right:10px}.idps-mbzB .Account-eKw3:hover,.idps-mbzB .Account-eKw3:hover .icon-iYGf,.idps-mbzB .Mail-DtBc:hover,.idps-mbzB .Mail-DtBc:hover .icon-iYGf{color:#1664ff}.idps-mbzB .Mail-DtBc{min-width:81px;width:81px}.idps-mbzB .Account-eKw3{min-width:137px;width:147px}.loginCard-KQge{-moz-box-sizing:border-box;box-sizing:border-box;position:relative}.loginFrameContent-zAEn{display:-moz-box;display:flex;width:100%;-moz-box-orient:vertical;-moz-box-direction:normal;flex-direction:column;min-height:498px}.loginFrameContent-zAEn a{color:#3370ff;cursor:pointer;text-decoration:none}.loginFrameContentInMobile-IvLW{min-height:454px}.hideMode-mQyP{min-height:429px}.login-frame .arco-tabs-header-nav-line .arco-tabs-header-title:focus-visible .arco-tabs-header-title-text:before{box-shadow:none!important}.cardHasTab-ImGK{display:-moz-box;display:flex;-moz-box-orient:vertical;-moz-box-direction:normal;flex-direction:column;-moz-box-flex:1;flex:1 1}.cardHasTab-ImGK .cardHasTabCmponent-bEoS,.cardHasTab-ImGK .ouathIdpForLogin-JjYS,.cardHasTab-ImGK .title-kwpG{padding:0 5px}.cardHasTab-ImGK .accountOauthIdp-fKvQ,.cardHasTab-ImGK .ouathIdpForLogin-JjYS{margin-top:auto}.cardHasTab-ImGK .accountTab-et6q .arco-tabs-header-nav{padding:0 5px}.cardHasTab-ImGK .accountTab-et6q .arco-tabs-content .arco-form{-moz-box-sizing:border-box;box-sizing:border-box;padding:0 5px}.cardHasTab-ImGK .suffixNode-QLGL{display:-moz-box;display:flex;-moz-box-pack:center;justify-content:center;-moz-box-align:center;align-items:center;color:#41464f;font-size:13px;font-weight:400;line-height:22px;margin-top:16px}.cardHasTab-ImGK .suffixNode-QLGL .tipA-bS7e{color:#1664ff;cursor:pointer}.cardHasTab-ImGK .suffixNode-QLGL .tipA-bS7e:hover{color:#6694ff}.cardHasTab-ImGK .suffixNodeNoOauth-Yh1Q{margin-top:auto}.cardHasTab-ImGK .phoneVerificationContainer-YpfX{display:-moz-box;display:flex;-moz-box-align:center;align-items:center;-moz-box-pack:center;font-size:24px!important;font-weight:500;justify-content:center;line-height:48px;margin-bottom:20px!important;min-height:48px}.cardHasTab-ImGK .phonePrefixContainer-CE3Q,.cardHasTab-ImGK .phoneSuffixContainer-_Npz{display:-moz-box;display:flex;-moz-box-align:center;align-items:center;-moz-box-pack:center;height:48px;justify-content:center;line-height:48px}.cardHasTab-ImGK .middleFourDigitsFormItem-kHF3,.cardHasTab-ImGK .phoneVerificationInner-KpqQ{display:-moz-box;display:flex;-moz-box-align:center;align-items:center;height:48px}.cardHasTab-ImGK .middleFourDigitsFormItem-kHF3{margin:0 8px!important;margin-bottom:0!important;text-align:center}.cardHasTab-ImGK .middleFourDigitsFormItem-kHF3 .arco-form-item{margin-bottom:0!important}.cardHasTab-ImGK .middleFourDigitsFormItem-kHF3 .arco-form-item-control,.cardHasTab-ImGK .middleFourDigitsFormItem-kHF3 .arco-form-item-control-input{display:-moz-box;display:flex;-moz-box-align:center;align-items:center;height:48px;margin:0}.cardHasTab-ImGK .verificationContainer-cpPO{display:-moz-box;display:flex;min-height:210px;-moz-box-orient:vertical;-moz-box-direction:normal;flex-direction:column;margin-bottom:1
+
+--- API RESPONSE ---
+
+URL: https://portal.volccdn.com/obj/volcfe-scm/doccenter/static/css/main.8414df6c.css
+.bindSuccessModal_0ce54{background:transparent!important;border-radius:16px!important;overflow:visible!important}.bindSuccessModal_0ce54 .arco-modal-close-icon{right:16px!important;top:16px!important;z-index:10!important}.bindSuccessModal_0ce54 .arco-modal-content{background:transparent!important;overflow:visible!important;padding:0!important}.bindSuccessModal_0ce54 .container_0ce54{display:-moz-box;display:flex;-moz-box-pack:center;background:#fff;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.08);height:380px;justify-content:center;overflow:visible;position:relative;width:390px;z-index:1}.topSection_0ce54{height:150px;left:0;right:0;z-index:1}.banner_0ce54,.topSection_0ce54{border-radius:16px 16px 0 0;position:absolute;top:0}.banner_0ce54{background:none;background-repeat:no-repeat;background-size:100% 100%;-moz-box-sizing:border-box;box-sizing:border-box;color:#fff;height:180px;left:50%;padding:16px 18px;-moz-transform:translateX(-50%) translateY(-30px);transform:translateX(-50%) translateY(-30px);width:290px;z-index:2}.content_0ce54{bottom:0;padding:16px 0 90px 0;position:absolute;text-align:center;top:148px;width:290px}.contentTitle_0ce54{color:#0c0d0e;font:FZLanTingHeiS-DB1-GB;font-size:22px;font-weight:600;margin:10px 0 8px;text-align:center}.contentDesc_0ce54{color:#4a4a4a;font:PingFang SC;font-size:14px;font-weight:400;line-height:22px;margin-bottom:20px;text-align:center}.confirmBtn_0ce54{border-radius:4px!important;bottom:24px;height:40px!important;left:50%;margin:0;position:absolute!important;-moz-transform:translateX(-50%)!important;transform:translateX(-50%)!important;width:136px}.confirmBtn_0ce54:focus,.confirmBtn_0ce54:focus-visible{box-shadow:0 0 0 2px rgba(255,44,70,.25);outline:none}.confirmBtn_0ce54 span{font:PingFang SC;font-size:14px;font-weight:500;line-height:22px}@media screen and (max-width:1024px){.bindSuccessModal_0ce54{width:350px!important}.bindSuccessModal_0ce54 .arco-modal-close-icon{right:12px!important;top:12px!important}.bindSuccessModal_0ce54 .container_0ce54{width:350px}.bindSuccessModal_0ce54 .banner_0ce54{height:180px}.bindSuccessModal_0ce54 .content_0ce54{top:150px;width:290px}.bindSuccessModal_0ce54 .confirmBtn_0ce54{border-radius:4px;bottom:24px;height:40px;left:50%;position:absolute;-moz-transform:translateX(-50%);transform:translateX(-50%)}}#fastLogin{left:0;position:fixed;top:0;z-index:5000}.error-msg_571e8{color:#d73229;font-size:12px;font-weight:400;height:15.4px;line-height:15.4px;margin-bottom:-16px;margin-top:2px}.referral-code-input-title_571e8{color:#42464e;font-family:Roboto;font-size:14px;font-weight:400;line-height:20px;margin-bottom:8px}.bp-fast-login-wrap .arco-input-inner-wrapper.referral-code-input_571e8{border-radius:4px!important;height:36px;line-height:36px}.alert_571e8{background:#fef8eb;border-radius:4px;display:-moz-box;display:flex;font-family:Roboto;font-size:14px;font-weight:400;line-height:20px;margin-bottom:24px;padding:8px 16px}.alert-icon_571e8{flex-shrink:0;margin-right:8px;width:20px}.protocol_571e8{color:#42464e;font-family:Roboto;font-size:12px;font-weight:400;letter-spacing:0;line-height:16px;text-align:center}.content-panel_9c59a{border-radius:12px;display:-moz-box;display:flex;height:100%;min-height:520px;overflow:hidden;position:relative}.content-panel_9c59a .left-panel_9c59a{height:100%;width:320px}.content-panel_9c59a .left-panel_9c59a img{object-fit:cover;object-position:top;position:absolute;width:320px}@media screen and (max-width:1023.9px){.content-panel_9c59a .left-panel_9c59a{display:none}}.content-panel_9c59a .right-panel_9c59a{position:relative;-moz-box-flex:1;flex:1 1;padding:71px 27px 40px 27px}.content-panel_9c59a .right-panel_9c59a .back-button_9c59a{cursor:pointer;height:14px;left:20px;position:absolute;top:20px;width:14px;z-index:100}.content-panel_9c59a .right-panel_9c59a .close-button_9c59a{cursor:pointer;height:14px;position:absolute;right:20px;top:20px;width:14px;z-index:99}.content-panel_9c59a .right-panel_9c59a .mobile-logo_9c59a{left:27px;position:absolute;top:16px}@media screen and (min-width:1024px){.content-panel_9c59a .right-panel_9c59a .mobile-logo_9c59a{display:none}}.content-panel_9c59a .right-panel_9c59a .hidden-by-double-check_9c59a{opacity:0;pointer-events:none;position:absolute;visibility:hidden}@media screen and (max-width:1023.9px){.content-panel_9c59a .right-panel_9c59a{width:356px}}@media screen and (min-width:1024px){.content-panel_9c59a .right-panel_9c59a{padding:48px}}.content-panel_9c59a .right-panel_9c59a .invite-block_9c59a{margin-bottom:-29px}.content-panel_9c59a .right-panel_9c59a .invite-block_9c59a.invite-block-no-input_9c59a{margin-bottom:0}.content-panel_9c59a .right-panel_9c59a .invite-block_9c59a .arco-input-group>:first-child{border-bottom-left-radius:4px;border-top-left-radius:4px;font-size:13px}.content-panel_9c59a .right-panel_9c59a .invite-block_9c59a .arco-input-group>:last-child{border-bottom-right-radius:4px;border-top-right-radius:4px}.content-panel_9c59a .right-
+
+--- API RESPONSE ---
+
+URL: https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/browser.cn.js?bid=volc_fe_portal_doccenter&globalName=Slardar
+!function(){"use strict";var y=function(){return(y=Object.assign||function(n){for(var t,e=1,r=arguments.length;e<r;e++)for(var o in t=arguments[e])Object.prototype.hasOwnProperty.call(t,o)&&(n[o]=t[o]);return n}).apply(this,arguments)};function C(n,t){var e="function"==typeof Symbol&&n[Symbol.iterator];if(!e)return n;var r,o,i=e.call(n),u=[];try{for(;(void 0===t||0<t--)&&!(r=i.next()).done;)u.push(r.value)}catch(n){o={error:n}}finally{try{r&&!r.done&&(e=i.return)&&e.call(i)}finally{if(o)throw o.error}}return u}function _(n,t,e){if(e||2===arguments.length)for(var r,o=0,i=t.length;o<i;o++)!r&&o in t||((r=r||Array.prototype.slice.call(t,0,o))[o]=t[o]);return n.concat(r||Array.prototype.slice.call(t))}function v(n){return JSON.stringify({ev_type:"batch",list:n})}var b=function(){return{}};function x(n){return n}function w(n){return"object"==typeof n&&null!==n}var t=Object.prototype;function i(n){if(w(n)){if("function"!=typeof Object.getPrototypeOf)return"[object Object]"===t.toString.call(n);n=Object.getPrototypeOf(n);return n===t||null===n}}function u(n){return"[object Array]"===t.toString.call(n)}function l(n){return"function"==typeof n}function a(n){return"number"==typeof n}function E(n){return"string"==typeof n}function o(n){return"undefined"!=typeof Event&&function(n,t){try{return n instanceof t}catch(n){return}}(n,Event)}function d(n,t){var e,r,o=y({},n);for(e in t)r=e,Object.prototype.hasOwnProperty.call(t,r)&&void 0!==t[e]&&(w(t[e])&&i(t[e])?o[e]=d(w(n[e])?n[e]:{},t[e]):u(t[e])&&u(n[e])?o[e]=function t(n,e){n=u(n)?n:[];e=u(e)?e:[];return Array.prototype.concat.call(n,e).map(function(n){return n instanceof RegExp?n:w(n)&&i(n)?d({},n):u(n)?t([],n):n})}(n[e],t[e]):o[e]=t[e]);return o}function S(n,t){if(!u(n))return!1;if(0===n.length)return!1;for(var e=0;e<n.length;){if(n[e]===t)return!0;e++}return!1}function R(n,t){if(!u(n))return n;var e=n.indexOf(t);if(0<=e){t=n.slice();return t.splice(e,1),t}return n}function p(n,t,e){for(var r,o=(t=C(t.split(".")))[0],i=t.slice(1);n&&0<i.length;)n=n[o],o=(r=C(i))[0],i=r.slice(1);if(n)return e(n,o)}function c(n){return n.replace(/([a-z])([A-Z])/g,function(n,t,e){return t+"-"+e.toLowerCase()})}function e(n){return u(n)&&n.length?function(n){for(var t=[],e=n.length,r=0;r<e;r++){var o=n[r];E(o)?t.push(o.replace(/([.*+?^=!:${}()|[\]/\\])/g,"\\$1")):o&&o.source&&t.push(o.source)}return new RegExp(t.join("|"),"i")}(n):null}function O(n,t){return!!(n=e(n||[]))&&n.test(t)}function f(n){try{return E(n)?n:JSON.stringify(n)}catch(n){return"[FAILED_TO_STRINGIFY]:"+String(n)}}function h(i,u,a,c){return void 0===c&&(c=!0),function(){for(var n=[],t=0;t<arguments.length;t++)n[t]=arguments[t];if(!i)return b;var e=i[u],r=a.apply(void 0,_([e],C(n),!1)),o=r;return l(o)&&c&&(o=function(){for(var t=[],n=0;n<arguments.length;n++)t[n]=arguments[n];try{return r.apply(this,t)}catch(n){return l(e)&&e.apply(this,t)}}),i[u]=o,function(n){n||(o===i[u]?i[u]=e:r=e)}}}function s(i,u,a){return function(){for(var n=[],t=0;t<arguments.length;t++)n[t]=arguments[t];if(!i)return b;var e=i[u],r=a.apply(void 0,_([e],C(n),!1)),o=r;return l(o)&&(o=function(){for(var n=[],t=0;t<arguments.length;t++)n[t]=arguments[t];return r.apply(this,n)}),i[u]=o,function(){o===i[u]?i[u]=e:r=e}}}function j(){for(var n=[],t=0;t<arguments.length;t++)n[t]=arguments[t];console.warn.apply(console,_(["[SDK]",Date.now(),r(""+A++)],C(n),!1))}function I(r){return function(n){for(var t=n,e=0;e<r.length&&t;e++)try{t=r[e](t)}catch(n){m(n)}return t}}var r="".padStart?function(n,t){return n.padStart(t=void 0===t?8:t," ")}:function(n){return n},g=0,m=function(){for(var n=[],t=0;t<arguments.length;t++)n[t]=arguments[t];console.error.apply(console,_(["[SDK]",Date.now(),r(""+g++)],C(n),!1))},A=0,T=function(n){return Math.random()<Number(n)},k=function(n,t){return n<Number(t)},D=function(r){return function(n){for(var t=!0,e=0;e<r.length&&t;e++)try{t=r[e](n)}catch(n){m(n)}return t}};function L(){var n=function(){for(var n=new Array(16),t=0,e=0;e<16;e++)0==(3&e)&&(t=4294967296*Math.random()),n[e]=t>>>((3&e)<<3)&255;return n}();return n[6]=15&n[6]|64,n[8]=63&n[8]|128,function(n){for(var t=[],e=0;e<256;++e)t[e]=(e+256).toString(16).substr(1);var r=0,o=t;return[o[n[r++]],o[n[r++]],o[n[r++]],o[n[r++]],"-",o[n[r++]],o[n[r++]],"-",o[n[r++]],o[n[r++]],"-",o[n[r++]],o[n[r++]],"-",o[n[r++]],o[n[r++]],o[n[r++]],o[n[r++]],o[n[+r]],o[n[15]]].join("")}(n)}function q(r,n){var t=[];try{t=n.reduce(function(n,t){try{var e=t(r);"function"==typeof e&&n.push(e)}catch(n){}return n},[])}catch(n){}return function(n){return q(n,t)}}function P(n,r){var o=C(n,1)[0];return function(t,n){var e=o(function(n){return D(r)(n)?t(n):b});n(function(){e()})}}var N=function(n){function t(n){a=R(a,n),f||s()}var e,r,o,i,u,a=[],c=[],f=!1,s=(r=function(){return a.length},o=function(){f=!0,e&&e[0](),c.forEach(function(n){return n()}),c.length=0,e=void 0},-1===(i=n=void(u=0)===n?3e5:n)?b:function(){if(r())return u&&clearTimeout(u),void(u=0);0===u&&(u=setTimeout(o,i))});return{next:function(n
+
+--- API RESPONSE ---
+
+URL: https://portal.volccdn.com/obj/volcfe-scm/doccenter/static/js/lib-polyfill.a9de56a8.js
+"use strict";(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[740],{381:function(t,r,n){var e,o,i=n(79955),u=n(57782),a=n(5329),c=n(62281),f=n(50335),s=n(51355),l=n(48414),p=n(64031).get,v=n(79489),y=n(5860),h=s("native-string-replace",String.prototype.replace),d=RegExp.prototype.exec,g=d,b=u("".charAt),w=u("".indexOf),x=u("".replace),m=u("".slice),_=(o=/b*/g,i(d,e=/a/,"a"),i(d,o,"a"),0!==e.lastIndex||0!==o.lastIndex),O=f.BROKEN_CARET,S=void 0!==/()??/.exec("")[1];(_||S||O||v||y)&&(g=function(t){var r,n,e,o,u,f,s,v=this,y=p(v),A=a(t),E=y.raw;if(E)return E.lastIndex=v.lastIndex,r=i(g,E,A),v.lastIndex=E.lastIndex,r;var T=y.groups,j=O&&v.sticky,I=i(c,v),P=v.source,R=0,M=A;if(j&&(I=x(I,"y",""),-1===w(I,"g")&&(I+="g"),M=m(A,v.lastIndex),v.lastIndex>0&&(!v.multiline||v.multiline&&"\n"!==b(A,v.lastIndex-1))&&(P="(?: "+P+")",M=" "+M,R++),n=new RegExp("^(?:"+P+")",I)),S&&(n=new RegExp("^"+P+"$(?!\\s)",I)),_&&(e=v.lastIndex),o=i(d,j?n:v,M),j?o?(o.input=m(o.input,R),o[0]=m(o[0],R),o.index=v.lastIndex,v.lastIndex+=o[0].length):v.lastIndex=0:_&&o&&(v.lastIndex=v.global?o.index+o[0].length:e),S&&o&&o.length>1&&i(h,o[0],n,function(){for(u=1;u<arguments.length-2;u++)void 0===arguments[u]&&(o[u]=void 0)}),o&&T)for(o.groups=f=l(null),u=0;u<T.length;u++)f[(s=T[u])[0]]=o[s[1]];return o}),t.exports=g},1514:function(t,r,n){var e=n(22569),o=n(85184),i=RangeError;t.exports=function(t){if(void 0===t)return 0;var r=e(t),n=o(r);if(r!==n)throw new i("Wrong length or index");return n}},2099:function(t,r,n){var e=n(62510),o=n(12523),i=n(89380),u=n(81093)("species"),a=Array;t.exports=function(t){var r;return e(t)&&(r=t.constructor,(o(r)&&(r===a||e(r.prototype))||i(r)&&null===(r=r[u]))&&(r=void 0)),void 0===r?a:r}},2455:function(t,r,n){var e=n(60928),o=n(54066);e({target:"ArrayBuffer",stat:!0,forced:!o.NATIVE_ARRAY_BUFFER_VIEWS},{isView:o.isView})},2507:function(t,r,n){var e=n(60928),o=n(99065),i=n(34667).set,u=n(4590),a=o.setImmediate?u(i,!1):i;e({global:!0,bind:!0,enumerable:!0,forced:o.setImmediate!==a},{setImmediate:a})},2520:function(t,r,n){var e=n(60928),o=n(99065),i=n(47501),u=n(5988),a=n(63166),c=n(84325),f=n(87386);e({global:!0,enumerable:!0,dontCallGetSet:!0,forced:c(function(){return f&&1!==Object.getOwnPropertyDescriptor(o,"queueMicrotask").value.length})},{queueMicrotask:function(t){a(arguments.length,1),i(u(t))}})},3203:function(t,r,n){var e=n(31474);t.exports=/web0s(?!.*chrome)/i.test(e)},4590:function(t,r,n){var e,o=n(99065),i=n(9135),u=n(31167),a=n(59993),c=n(31474),f=n(40182),s=n(63166),l=o.Function,p=/MSIE .\./.test(c)||a&&((e=o.Bun.version.split(".")).length<3||"0"===e[0]&&(e[1]<3||"3"===e[1]&&"0"===e[2]));t.exports=function(t,r){var n=r?2:1;return p?function(e,o){var a=s(arguments.length,1)>n,c=u(e)?e:l(e),p=a?f(arguments,n):[],v=a?function(){i(c,this,p)}:c;return r?t(v,o):t(v)}:t}},5165:function(t,r,n){var e=n(60928),o=n(57782),i=n(38207),u=n(89380),a=n(55839),c=n(14775).f,f=n(20538),s=n(83632),l=n(23982),p=n(92598),v=n(49166),y=!1,h=p("meta"),d=0,g=function(t){c(t,h,{value:{objectID:"O"+d++,weakData:{}}})},b=t.exports={enable:function(){b.enable=function(){},y=!0;var t=f.f,r=o([].splice),n={};n[h]=1,t(n).length&&(f.f=function(n){for(var e=t(n),o=0,i=e.length;o<i;o++)if(e[o]===h){r(e,o,1);break}return e},e({target:"Object",stat:!0,forced:!0},{getOwnPropertyNames:s.f}))},fastKey:function(t,r){if(!u(t))return"symbol"==typeof t?t:("string"==typeof t?"S":"P")+t;if(!a(t,h)){if(!l(t))return"F";if(!r)return"E";g(t)}return t[h].objectID},getWeakData:function(t,r){if(!a(t,h)){if(!l(t))return!0;if(!r)return!1;g(t)}return t[h].weakData},onFreeze:function(t){return v&&y&&l(t)&&!a(t,h)&&g(t),t}};i[h]=!0},5329:function(t,r,n){var e=n(12501),o=String;t.exports=function(t){if("Symbol"===e(t))throw new TypeError("Cannot convert a Symbol value to a string");return o(t)}},5449:function(t,r,n){n.d(r,{_:function(){return i}});var e=n(41551);var o=n(94986);function i(t){return function(t){if(Array.isArray(t))return(0,e.z)(t)}(t)||function(t){if("undefined"!=typeof Symbol&&null!=t[Symbol.iterator]||null!=t["@@iterator"])return Array.from(t)}(t)||(0,o.U)(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}},5503:function(t,r,n){var e=n(34742),o=n(57782),i=n(12725),u=n(90439),a=n(31364),c=n(82563),f=o([].push),s=function(t){var r=1===t,n=2===t,o=3===t,s=4===t,l=6===t,p=7===t,v=5===t||l;return function(y,h,d,g){for(var b,w,x=u(y),m=i(x),_=a(m),O=e(h,d),S=0,A=g||c,E=r?A(y,_):n||p?A(y,0):void 0;_>S;S++)if((v||S in m)&&(w=O(b=m[S],S,x),t))if(r)E[S]=w;else if(w)switch(t){case 3:return!0;case 5:return b;case 6:return S;case 2:f(E,b)}else switch(t){case 4:return!1;case 7:f(E,b)}return l?-1:o||s?s:E}};t.exports={forEach:s(0),map:s(1),filter:s(2),some:s(3),every:s(4),find:s(5),findIndex:s(6),filterReject:s(7)}},5860:function(t,r,n){var e=n(84325),o=n(99065).RegExp;t.exports=e(function(){var t=o("(?<a>b)
+
+--- API RESPONSE ---
+
+URL: https://portal.volccdn.com/obj/volcfe-scm/doccenter/static/js/lib-lodash.8366289f.js
+/*! For license information please see lib-lodash.8366289f.js.LICENSE.txt */
+(self.__LOADABLE_LOADED_CHUNKS__=self.__LOADABLE_LOADED_CHUNKS__||[]).push([[74],{596:function(n,t,r){var e=r(82525),u=r(27556),o=r(19183),i=r(92982),c=Object.getOwnPropertySymbols?function(n){for(var t=[];n;)e(t,o(n)),n=u(n);return t}:i;n.exports=c},2275:function(n){n.exports=function(n,t){for(var r=-1,e=null==n?0:n.length,u=Array(e);++r<e;)u[r]=t(n[r],r,n);return u}},3091:function(n){var t=Object.prototype.hasOwnProperty;n.exports=function(n,r){return null!=n&&t.call(n,r)}},3431:function(n,t,r){var e=r(88295),u=r(24856),o=r(9169),i=u?function(n,t){return u(n,"toString",{configurable:!0,enumerable:!1,value:e(t),writable:!0})}:o;n.exports=i},3511:function(n,t,r){var e=r(89754),u=r(35351),o=r(73069);n.exports=function(n){return o(n)?e(n):u(n)}},3644:function(n,t,r){var e=r(51855);n.exports=function(n){return function(t){return e(t,n)}}},3899:function(n,t,r){var e=r(38309),u=r(77583);n.exports=function n(t,r,o,i,c){return t===r||(null==t||null==r||!u(t)&&!u(r)?t!=t&&r!=r:e(t,r,o,i,n,c))}},4136:function(n,t,r){var e=r(31200);n.exports=function(n,t){var r=e(this,n),u=r.size;return r.set(n,t),this.size+=r.size==u?0:1,this}},4339:function(n,t,r){var e=r(3091),u=r(99663);n.exports=function(n,t){return null!=n&&u(n,t,e)}},4506:function(n,t,r){var e=r(86330),u=r(52363),o=r(9169),i=r(25874),c=r(86830);n.exports=function(n){return"function"==typeof n?n:null==n?o:"object"==typeof n?i(n)?u(n[0],n[1]):e(n):c(n)}},4725:function(n,t,r){var e=r(54965),u=r(98232),o=r(96574),i=o&&o.isMap,c=i?u(i):e;n.exports=c},5940:function(n,t,r){var e=r(79270);n.exports=function(n,t){var r=t?e(n.buffer):n.buffer;return new n.constructor(r,n.byteOffset,n.byteLength)}},6499:function(n,t,r){var e=r(29778),u=r(77583);n.exports=function(n){return u(n)&&"[object Set]"==e(n)}},6821:function(n){n.exports=function(){this.__data__=[],this.size=0}},6882:function(n,t,r){var e=r(73069),u=r(77583);n.exports=function(n){return u(n)&&e(n)}},6902:function(n,t,r){var e=r(85532),u=r(3511);n.exports=function(n,t){return n&&e(t,u(t),n)}},7221:function(n,t,r){var e=r(9438),u=Array.prototype.splice;n.exports=function(n){var t=this.__data__,r=e(t,n);return!(r<0)&&(r==t.length-1?t.pop():u.call(t,r,1),--this.size,!0)}},7223:function(n,t,r){var e=r(99400);n.exports=function(n){return n==n&&!e(n)}},9169:function(n){n.exports=function(n){return n}},9438:function(n,t,r){var e=r(55097);n.exports=function(n,t){for(var r=n.length;r--;)if(e(n[r][0],t))return r;return-1}},9842:function(n){n.exports=function(n){return this.__data__.has(n)}},10552:function(n,t,r){var e=r(9438);n.exports=function(n,t){var r=this.__data__,u=e(r,n);return u<0?(++this.size,r.push([n,t])):r[u][1]=t,this}},11603:function(n,t,r){var e="object"==typeof r.g&&r.g&&r.g.Object===Object&&r.g;n.exports=e},11824:function(n){var t=Date.now;n.exports=function(n){var r=0,e=0;return function(){var u=t(),o=16-(u-e);if(e=u,o>0){if(++r>=800)return arguments[0]}else r=0;return n.apply(void 0,arguments)}}},12495:function(n,t,r){var e=r(34479),u=r(91292)(function(n,t,r){e(n,t,r)});n.exports=u},14014:function(n,t,r){var e=r(47216),u=r(3899);n.exports=function(n,t,r,o){var i=r.length,c=i,f=!o;if(null==n)return!c;for(n=Object(n);i--;){var a=r[i];if(f&&a[2]?a[1]!==n[a[0]]:!(a[0]in n))return!1}for(;++i<c;){var l=(a=r[i])[0],s=n[l],p=a[1];if(f&&a[2]){if(void 0===s&&!(l in n))return!1}else{var v=new e;if(o)var h=o(s,p,l,n,t,v);if(!(void 0===h?u(p,s,3,o,v):h))return!1}}return!0}},14028:function(n,t,r){var e=r(79270),u=r(5940),o=r(85320),i=r(24937),c=r(51532);n.exports=func

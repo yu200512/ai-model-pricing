@@ -1,0 +1,6561 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-05-02",
+  "updatedAt": "2026-05-02T17:58:57.784386+00:00",
+  "sourceRepo": "https://github.com/yu200512/ai-model-pricing",
+  "providers": [
+    {
+      "name": "DeepSeek",
+      "id": "deepseek",
+      "category": "国内",
+      "currency": "USD",
+      "dataSource": {
+        "url": "https://api-docs.deepseek.com/quick_start/pricing",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.768900+00:00"
+      },
+      "officialUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+      "models": [
+        {
+          "name": "输入（缓存命中）",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "DeepSeek-V4-Flash"
+        },
+        {
+          "name": "输入（缓存未命中）",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0,
+              "notes": "输入（缓存未命中） $0.14"
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0,
+              "notes": "输入（缓存未命中） $0.435 $1.74"
+            }
+          ],
+          "notes": "DeepSeek-V4-Flash"
+        },
+        {
+          "name": "输出",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "DeepSeek-V4-Flash"
+        }
+      ]
+    },
+    {
+      "name": "智谱AI（Z.ai）",
+      "id": "zhipu",
+      "category": "国内",
+      "currency": "CNY",
+      "dataSource": {
+        "url": "https://open.bigmodel.cn/pricing",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.769651+00:00"
+      },
+      "officialUrl": "https://open.bigmodel.cn/pricing",
+      "models": [
+        {
+          "name": "GLM-5.1",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 6.0,
+              "output": 24.0,
+              "cacheHit": 1.3,
+              "notes": "GLM-5.1 [0, 32K) — ¥6 ¥24 ¥1.3"
+            }
+          ],
+          "notes": "2.1 旗舰文本模型"
+        },
+        {
+          "name": "GLM-5-Turbo",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 5.0,
+              "output": 22.0,
+              "cacheHit": 1.2,
+              "notes": "GLM-5-Turbo [0, 32K) — ¥5 ¥22 ¥1.2"
+            }
+          ],
+          "notes": "2.1 旗舰文本模型"
+        },
+        {
+          "name": "GLM-5",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.0,
+              "output": 18.0,
+              "cacheHit": 1.0,
+              "notes": "GLM-5 [0, 32K) — ¥4 ¥18 ¥1"
+            }
+          ],
+          "notes": "2.1 旗舰文本模型"
+        },
+        {
+          "name": "GLM-4.7",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "[0, 0.2K)",
+                "max": 200
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.0,
+              "output": 8.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "2.1 旗舰文本模型"
+        },
+        {
+          "name": "GLM-4.5-Air",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "[0, 0.2K)",
+                "max": 200
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 2.0,
+              "cacheHit": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 4.5
+            }
+          ],
+          "notes": "2.1 旗舰文本模型"
+        },
+        {
+          "name": "GLM-4.7-FlashX",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 3.0,
+              "cacheHit": 0.0,
+              "notes": "GLM-4.7-FlashX 200K — ¥0.5 ¥3 ¥0.1"
+            }
+          ],
+          "contextLength": 200000,
+          "notes": "2.1 旗舰文本模型"
+        },
+        {
+          "name": "GLM-4.7-Flash",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0,
+              "notes": "GLM-4.7-Flash 200K — 免费 免费 免费"
+            }
+          ],
+          "contextLength": 200000,
+          "free": true,
+          "notes": "2.1 旗舰文本模型"
+        },
+        {
+          "name": "GLM-5V-Turbo",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "[0, 32K)",
+                "max": 32000
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "input": 5.0,
+              "output": 22.0,
+              "cacheHit": 1.2
+            }
+          ],
+          "notes": "2.2 旗舰视觉模型"
+        },
+        {
+          "name": "GLM-4.6V",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "[0, 32K)",
+                "max": 32000
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "input": 1.0,
+              "output": 3.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "2.2 旗舰视觉模型"
+        },
+        {
+          "name": "GLM-4.6V-FlashX",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "[0, 32K)",
+                "max": 32000
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 1.5,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "2.2 旗舰视觉模型"
+        },
+        {
+          "name": "GLM-4.6V-Flash",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0,
+              "notes": "GLM-4.6V-Flash — 免费 免费 免费 图片/视频/文件/文本"
+            }
+          ],
+          "free": true,
+          "notes": "2.2 旗舰视觉模型"
+        },
+        {
+          "name": "GLM-4.5V",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "[0, 32K)",
+                "max": 32000
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "input": 2.0,
+              "output": 6.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "2.2 旗舰视觉模型"
+        },
+        {
+          "name": "GLM-4-Plus",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 5.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "2.3 GLM-4 系列（标准 API）"
+        },
+        {
+          "name": "GLM-4-Air",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 4.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "2.3 GLM-4 系列（标准 API）"
+        },
+        {
+          "name": "GLM-4-AirX",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "8K",
+                "max": 8000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 10.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 4.0
+            }
+          ],
+          "contextLength": 8000,
+          "notes": "2.3 GLM-4 系列（标准 API）"
+        },
+        {
+          "name": "GLM-4-FlashX-250414",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "2.3 GLM-4 系列（标准 API）"
+        },
+        {
+          "name": "GLM-4-Long",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "1M",
+                "max": 1000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 1.0
+            }
+          ],
+          "contextLength": 1000000,
+          "notes": "2.3 GLM-4 系列（标准 API）"
+        },
+        {
+          "name": "GLM-4-Assistant",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 5.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "2.3 GLM-4 系列（标准 API）"
+        },
+        {
+          "name": "GLM-Z1-Air",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "2.4 推理模型"
+        },
+        {
+          "name": "GLM-Z1-AirX",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 5.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "2.4 推理模型"
+        },
+        {
+          "name": "GLM-Z1-FlashX",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "2.4 推理模型"
+        },
+        {
+          "name": "GLM-4.1V-Thinking-FlashX",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "64K",
+                "max": 64000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 2.0
+            }
+          ],
+          "contextLength": 64000,
+          "notes": "2.4 推理模型"
+        },
+        {
+          "name": "GLM-4V-Plus-0111",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 4.0
+            }
+          ],
+          "contextLength": 8000,
+          "notes": "2.5 多模态（视觉/图像/视频）"
+        },
+        {
+          "name": "CogView-4",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "2.5 多模态（视觉/图像/视频）"
+        },
+        {
+          "name": "CogVideoX-2",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "2.5 多模态（视觉/图像/视频）"
+        },
+        {
+          "name": "CogVideoX-3",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 1.0
+            }
+          ],
+          "notes": "2.5 多模态（视觉/图像/视频）"
+        },
+        {
+          "name": "CogTTS",
+          "type": "tts",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_10k_characters",
+              "currency": "CNY",
+              "unified": 4.0
+            }
+          ],
+          "notes": "2.6 语音/音频模型"
+        },
+        {
+          "name": "CogTTS-Clone",
+          "type": "tts",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 6.0
+            }
+          ],
+          "notes": "2.6 语音/音频模型"
+        },
+        {
+          "name": "GLM-4-Voice",
+          "type": "audio",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 80.0
+            }
+          ],
+          "notes": "2.6 语音/音频模型"
+        },
+        {
+          "name": "GLM-ASR",
+          "type": "stt",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_minute",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "2.6 语音/音频模型"
+        },
+        {
+          "name": "Embedding-3",
+          "type": "embedding",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "8K",
+                "max": 8000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "contextLength": 8000,
+          "notes": "2.7 Embedding"
+        },
+        {
+          "name": "Embedding-2",
+          "type": "embedding",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "8K",
+                "max": 8000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "contextLength": 8000,
+          "notes": "2.7 Embedding"
+        },
+        {
+          "name": "CharGLM-4",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "8K",
+                "max": 8000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 1.0
+            }
+          ],
+          "contextLength": 8000,
+          "notes": "2.8 特色模型"
+        },
+        {
+          "name": "Emohaa",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "8K",
+                "max": 8000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 15.0
+            }
+          ],
+          "contextLength": 8000,
+          "notes": "2.8 特色模型"
+        },
+        {
+          "name": "CodeGeeX-4",
+          "type": "code",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "code"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "2.8 特色模型"
+        },
+        {
+          "name": "Rerank",
+          "type": "embedding",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "4K",
+                "max": 4000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "contextLength": 4000,
+          "notes": "2.8 特色模型"
+        },
+        {
+          "name": "GLM-4-0520",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 100.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "2.9 历史模型（推荐迁移至新模型）"
+        },
+        {
+          "name": "GLM-4V-Plus",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "8K",
+                "max": 8000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 4.0
+            }
+          ],
+          "contextLength": 8000,
+          "notes": "2.9 历史模型（推荐迁移至新模型）"
+        },
+        {
+          "name": "GLM-4V",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "8K",
+                "max": 8000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 50.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 4.0
+            }
+          ],
+          "contextLength": 8000,
+          "notes": "2.9 历史模型（推荐迁移至新模型）"
+        },
+        {
+          "name": "GLM-4",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 100.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "2.9 历史模型（推荐迁移至新模型）"
+        },
+        {
+          "name": "GLM-4-Flash",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0,
+              "notes": "GLM-4-Flash 128K 免费 —"
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 4.0
+            }
+          ],
+          "contextLength": 128000,
+          "free": true,
+          "notes": "2.9 历史模型（推荐迁移至新模型）"
+        },
+        {
+          "name": "Search-Std",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "2.10 搜索工具"
+        },
+        {
+          "name": "Search-Pro",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "2.10 搜索工具"
+        },
+        {
+          "name": "Search-Pro-Sogou",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "2.10 搜索工具"
+        },
+        {
+          "name": "Search-Pro-Quark",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "2.10 搜索工具"
+        },
+        {
+          "name": "GLM-4.5",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 4.5
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 4.5
+            }
+          ],
+          "notes": "2.11 微调定价"
+        },
+        {
+          "name": "GLM-4-9B",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 4.0
+            }
+          ],
+          "notes": "2.11 微调定价"
+        },
+        {
+          "name": "ChatGLM3-6B",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 3.0
+            }
+          ],
+          "notes": "2.11 微调定价"
+        },
+        {
+          "name": "CogView-3",
+          "type": "image_generation",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 3.0
+            }
+          ],
+          "notes": "2.11 微调定价"
+        }
+      ]
+    },
+    {
+      "name": "Qwen（阿里云百炼）",
+      "id": "qwen",
+      "category": "国内",
+      "currency": "USD",
+      "dataSource": {
+        "url": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/?tab=doc#/doc/?type=model&url=prices",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.772686+00:00"
+      },
+      "officialUrl": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/?tab=doc#/doc/?type=model&url=prices",
+      "models": [
+        {
+          "name": "qwen3.6-plus",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "Input ≤ 256K",
+                "max": 256000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 3.0
+            },
+            {
+              "contextRange": {
+                "min": 256000,
+                "description": "256K < Input ≤ 1M",
+                "max": 1000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 2.0,
+              "output": 6.0
+            }
+          ],
+          "contextLength": 256000,
+          "notes": "qwen3.6-plus"
+        },
+        {
+          "name": "qwen3.6-plus-2026-04-02",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "Input ≤ 256K",
+                "max": 256000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 3.0
+            },
+            {
+              "contextRange": {
+                "min": 256000,
+                "description": "256K < Input ≤ 1M",
+                "max": 1000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 2.0,
+              "output": 6.0
+            }
+          ],
+          "contextLength": 256000,
+          "notes": "qwen3.6-plus-2026-04-02"
+        },
+        {
+          "name": "qwen3.5-plus",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "Input ≤ 256K",
+                "max": 256000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 2.4
+            },
+            {
+              "contextRange": {
+                "min": 256000,
+                "description": "256K < Input ≤ 1M",
+                "max": 1000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 3.0
+            }
+          ],
+          "contextLength": 256000,
+          "notes": "qwen3.5-plus"
+        },
+        {
+          "name": "qwen3.5-plus-2026-02-15",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "Input ≤ 256K",
+                "max": 256000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 2.4
+            },
+            {
+              "contextRange": {
+                "min": 256000,
+                "description": "256K < Input ≤ 1M",
+                "max": 1000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 3.0
+            }
+          ],
+          "contextLength": 256000,
+          "notes": "qwen3.5-plus-2026-02-15"
+        }
+      ]
+    },
+    {
+      "name": "Kimi（月之暗面 Moonshot）",
+      "id": "kimi",
+      "category": "国内",
+      "currency": "CNY",
+      "dataSource": {
+        "url": "https://platform.kimi.com/docs/pricing/chat-k26",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.773111+00:00"
+      },
+      "officialUrl": "https://platform.kimi.com/docs/pricing/chat-k26",
+      "models": [
+        {
+          "name": "kimi-k2.6",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "262,144 tokens",
+                "max": 262144
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 6.5,
+              "output": 27.0
+            }
+          ],
+          "contextLength": 262144,
+          "notes": "Kimi K2.6（最新旗舰）"
+        },
+        {
+          "name": "kimi-k2-0905-preview",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "262,144",
+                "max": 262144
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 4.0,
+              "output": 16.0
+            }
+          ],
+          "contextLength": 262144,
+          "notes": "Kimi K2（2026年5月25日下线）"
+        },
+        {
+          "name": "kimi-k2-0711-preview",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "131,072",
+                "max": 131072
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 4.0,
+              "output": 16.0
+            }
+          ],
+          "contextLength": 131072,
+          "notes": "Kimi K2（2026年5月25日下线）"
+        },
+        {
+          "name": "kimi-k2-turbo-preview",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "262,144",
+                "max": 262144
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 8.0,
+              "output": 58.0
+            }
+          ],
+          "contextLength": 262144,
+          "notes": "Kimi K2（2026年5月25日下线）"
+        },
+        {
+          "name": "kimi-k2-thinking",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "262,144",
+                "max": 262144
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 4.0,
+              "output": 16.0
+            }
+          ],
+          "contextLength": 262144,
+          "notes": "Kimi K2（2026年5月25日下线）"
+        },
+        {
+          "name": "kimi-k2-thinking-turbo",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "262,144",
+                "max": 262144
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 8.0,
+              "output": 58.0
+            }
+          ],
+          "contextLength": 262144,
+          "notes": "Kimi K2（2026年5月25日下线）"
+        }
+      ]
+    },
+    {
+      "name": "星火（讯飞）",
+      "id": "spark",
+      "category": "国内",
+      "currency": "CNY",
+      "dataSource": {
+        "url": "https://xinghuo.xfyun.cn/sparkapi",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.773504+00:00"
+      },
+      "officialUrl": "https://xinghuo.xfyun.cn/sparkapi",
+      "models": [
+        {
+          "name": "Spark X2",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 2.0,
+              "notes": "Spark X2 深度推理，最强性能 ¥2/百万tokens —"
+            }
+          ],
+          "notes": "5.1 星火自研模型"
+        },
+        {
+          "name": "Spark Ultra",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "function_call"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0,
+              "notes": "Spark Ultra 高性价比，指令跟随/FunctionCall ¥0.8/百万tokens —"
+            }
+          ],
+          "notes": "5.1 星火自研模型"
+        },
+        {
+          "name": "Spark Pro",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 5.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "5.1 星火自研模型"
+        },
+        {
+          "name": "Spark Lite",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0,
+              "notes": "Spark Lite 免费，高响应速度 免费 —"
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 30.0
+            }
+          ],
+          "free": true,
+          "notes": "5.1 星火自研模型"
+        },
+        {
+          "name": "免费包（个人认证）",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "free": true,
+          "notes": "5.2 Spark X2-Flash 预购套餐包"
+        },
+        {
+          "name": "免费包（企业认证）",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "free": true,
+          "notes": "5.2 Spark X2-Flash 预购套餐包"
+        },
+        {
+          "name": "简享包",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 2.0
+            }
+          ],
+          "notes": "5.2 Spark X2-Flash 预购套餐包"
+        },
+        {
+          "name": "套餐一",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 1.8
+            }
+          ],
+          "notes": "5.2 Spark X2-Flash 预购套餐包"
+        },
+        {
+          "name": "套餐二",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 1.6
+            }
+          ],
+          "notes": "5.2 Spark X2-Flash 预购套餐包"
+        },
+        {
+          "name": "套餐三",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 1.3
+            }
+          ],
+          "notes": "5.2 Spark X2-Flash 预购套餐包"
+        },
+        {
+          "name": "套餐四",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 1.0
+            }
+          ],
+          "notes": "5.2 Spark X2-Flash 预购套餐包"
+        },
+        {
+          "name": "GLM-5.1",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "200K",
+                "max": 200000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 8.0,
+              "output": 28.0
+            }
+          ],
+          "contextLength": 200000,
+          "notes": "5.3 星辰MaaS平台第三方模型（元/百万tokens）"
+        },
+        {
+          "name": "Qwen3.6-35B-A3B",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.0,
+              "output": 3.6
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "5.3 星辰MaaS平台第三方模型（元/百万tokens）"
+        },
+        {
+          "name": "Qwen3.5-2B",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "free": true,
+          "notes": "5.3 星辰MaaS平台第三方模型（元/百万tokens）"
+        },
+        {
+          "name": "Qwen3.5-35B-A3B",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 1.7
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "5.3 星辰MaaS平台第三方模型（元/百万tokens）"
+        },
+        {
+          "name": "Qwen-Image-2512",
+          "type": "image_generation",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "notes": "Qwen-Image-2512 图像生成 限时免费 — —"
+            }
+          ],
+          "free": true,
+          "notes": "5.3 星辰MaaS平台第三方模型（元/百万tokens）"
+        },
+        {
+          "name": "Qwen3-VL-32B-Instruct",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.0,
+              "output": 8.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "5.3 星辰MaaS平台第三方模型（元/百万tokens）"
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Qwen-32B",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 30.0
+            }
+          ],
+          "notes": "5.4 精调模型（元/百万tokens）"
+        },
+        {
+          "name": "Qwen3-14B",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 6.0
+            }
+          ],
+          "notes": "5.4 精调模型（元/百万tokens）"
+        },
+        {
+          "name": "中文识别大模型",
+          "type": "audio",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 202.0
+            }
+          ],
+          "notes": "5.5 语音大模型"
+        },
+        {
+          "name": "多语种识别大模型",
+          "type": "audio",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 37.0
+            }
+          ],
+          "notes": "5.5 语音大模型"
+        },
+        {
+          "name": "超拟人语音合成",
+          "type": "tts",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 4.5
+            }
+          ],
+          "notes": "5.5 语音大模型"
+        }
+      ]
+    },
+    {
+      "name": "百川（Baichuan）",
+      "id": "baichuan",
+      "category": "国内",
+      "currency": "CNY",
+      "dataSource": {
+        "url": "https://platform.baichuan-ai.com/prices",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.774515+00:00"
+      },
+      "officialUrl": "https://platform.baichuan-ai.com/prices",
+      "models": [
+        {
+          "name": "Baichuan-M3-Plus",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan-M3",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 0.0,
+              "notes": "Baichuan-M3 32K 全天 ¥0.01 ¥0.03 —"
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan-M2-Plus",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan-M2",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0,
+              "output": 0.0,
+              "notes": "Baichuan-M2 32K 全天 ¥0.002 ¥0.02 —"
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan4-Turbo",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan4-Air",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan4",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan3-Turbo",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan3-Turbo-128k",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "128K",
+                "max": 128000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0
+            }
+          ],
+          "contextLength": 128000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan2-Turbo",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "Baichuan2-53B",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "6.1 通用大模型"
+        },
+        {
+          "name": "搜索增强服务",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "6.2 搜索服务"
+        },
+        {
+          "name": "医疗搜索",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "6.2 搜索服务"
+        },
+        {
+          "name": "Baichuan-Text-Embedding",
+          "type": "embedding",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "6.3 Embedding & 知识库"
+        },
+        {
+          "name": "文件存储",
+          "type": "embedding",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 1.5
+            }
+          ],
+          "notes": "6.3 Embedding & 知识库"
+        },
+        {
+          "name": "Assistants API 模型调用",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "free": true,
+          "notes": "6.4 Assistants API"
+        }
+      ]
+    },
+    {
+      "name": "MiniMax",
+      "id": "minimax",
+      "category": "国内",
+      "currency": "CNY",
+      "dataSource": {
+        "url": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.775299+00:00"
+      },
+      "officialUrl": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
+      "models": [
+        {
+          "name": "MiniMax-M2.7",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.1,
+              "output": 8.4,
+              "cacheHit": 0.0,
+              "cacheWrite": 2.625
+            }
+          ],
+          "notes": "7.1 文本模型（元/百万tokens）"
+        },
+        {
+          "name": "MiniMax-M2.7-highspeed",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.2,
+              "output": 16.8,
+              "cacheHit": 0.0,
+              "cacheWrite": 2.625
+            }
+          ],
+          "notes": "7.1 文本模型（元/百万tokens）"
+        },
+        {
+          "name": "MiniMax-M2.5",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.1,
+              "output": 8.4,
+              "cacheHit": 0.0,
+              "cacheWrite": 2.625
+            }
+          ],
+          "notes": "7.1 文本模型（元/百万tokens）"
+        },
+        {
+          "name": "MiniMax-M2.5-highspeed",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.2,
+              "output": 16.8,
+              "cacheHit": 0.0,
+              "cacheWrite": 2.625
+            }
+          ],
+          "notes": "7.1 文本模型（元/百万tokens）"
+        },
+        {
+          "name": "M2-her",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.1,
+              "output": 8.4,
+              "notes": "M2-her ¥2.1 ¥8.4 — —"
+            }
+          ],
+          "notes": "7.1 文本模型（元/百万tokens）"
+        },
+        {
+          "name": "speech-2.8-hd / 2.6-hd / 02-hd",
+          "type": "tts",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 3.5
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_10k_characters",
+              "currency": "CNY",
+              "unified": 3.5
+            }
+          ],
+          "notes": "语音合成（元/万字符）"
+        },
+        {
+          "name": "speech-2.8-turbo / 2.6-turbo / 02-turbo",
+          "type": "tts",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 2.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_10k_characters",
+              "currency": "CNY",
+              "unified": 2.0
+            }
+          ],
+          "notes": "语音合成（元/万字符）"
+        },
+        {
+          "name": "全模型",
+          "type": "audio",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 9.9
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 9.9
+            }
+          ],
+          "notes": "音色服务（元/音色）"
+        },
+        {
+          "name": "MiniMax-Hailuo-2.3-Fast",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 1.35
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 2.25
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 2.31
+            }
+          ],
+          "notes": "7.3 视频生成（元/视频）"
+        },
+        {
+          "name": "MiniMax-Hailuo-2.3 / 02",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 2.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 4.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 3.5
+            }
+          ],
+          "notes": "7.3 视频生成（元/视频）"
+        },
+        {
+          "name": "MiniMax-Hailuo-02",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 1.0
+            }
+          ],
+          "notes": "7.3 视频生成（元/视频）"
+        },
+        {
+          "name": "Music-2.6",
+          "type": "music_generation",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "free": true,
+          "notes": "7.4 音乐生成（元/首）"
+        },
+        {
+          "name": "Music-2.5+",
+          "type": "music_generation",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 1.0
+            }
+          ],
+          "notes": "7.4 音乐生成（元/首）"
+        },
+        {
+          "name": "Music-2.5",
+          "type": "music_generation",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 1.0
+            }
+          ],
+          "notes": "7.4 音乐生成（元/首）"
+        },
+        {
+          "name": "Music-2.0",
+          "type": "music_generation",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "7.4 音乐生成（元/首）"
+        },
+        {
+          "name": "歌词生成",
+          "type": "music_generation",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "free": true,
+          "notes": "7.4 音乐生成（元/首）"
+        },
+        {
+          "name": "image-01 / image-01-live",
+          "type": "image_generation",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_image",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "7.5 图像生成"
+        },
+        {
+          "name": "API-vlm",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "7.6 MCP"
+        }
+      ]
+    },
+    {
+      "name": "小米 MiMo（Xiaomi）",
+      "id": "xiaomi",
+      "category": "国内",
+      "currency": "MIXED",
+      "dataSource": {
+        "url": "https://platform.xiaomimimo.com/docs/zh-CN/pricing",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.776340+00:00"
+      },
+      "officialUrl": "https://platform.xiaomimimo.com/docs/zh-CN/pricing",
+      "models": [
+        {
+          "name": "mimo-v2.5-pro / mimo-v2-pro",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 1.4,
+              "output": 42.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "cacheHit": 0.0,
+              "output": 6.0
+            }
+          ],
+          "notes": "8.1 国内定价（元/1M tokens）"
+        },
+        {
+          "name": "mimo-v2.5",
+          "type": "text",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [
+            "thinking",
+            "function_call",
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 0.0,
+              "output": 28.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "cacheHit": 0.0,
+              "output": 4.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "1M",
+                "max": 1000000
+              },
+              "unit": "per_call",
+              "currency": "USD_CNY",
+              "output": 128.0
+            }
+          ],
+          "notes": "8.1 国内定价（元/1M tokens）",
+          "contextLength": 1000000
+        },
+        {
+          "name": "mimo-v2-omni",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 0.0,
+              "output": 14.0,
+              "notes": "mimo-v2-omni ¥0.56 ¥2.80 ¥14.00 — — —"
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "cacheHit": 0.0,
+              "output": 2.0,
+              "notes": "mimo-v2-omni $0.08 $0.40 $2.00 — — —"
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "256K",
+                "max": 256000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD_CNY",
+              "output": 128.0
+            }
+          ],
+          "notes": "8.1 国内定价（元/1M tokens）",
+          "contextLength": 256000
+        },
+        {
+          "name": "mimo-v2-flash",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking",
+            "function_call",
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "cacheHit": 0.0,
+              "output": 2.1,
+              "notes": "mimo-v2-flash ¥0.07 ¥0.70 ¥2.10 — — —"
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "cacheHit": 0.0,
+              "output": 0.0,
+              "notes": "mimo-v2-flash $0.01 $0.10 $0.30 — — —"
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "256K",
+                "max": 256000
+              },
+              "unit": "per_call",
+              "currency": "USD_CNY",
+              "output": 64.0
+            }
+          ],
+          "notes": "8.1 国内定价（元/1M tokens）",
+          "contextLength": 256000
+        },
+        {
+          "name": "TTS 系列（全模型）",
+          "type": "tts",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD_CNY",
+              "cacheHit": 0.0,
+              "unified": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD_CNY",
+              "cacheHit": 0.0,
+              "unified": 0.0
+            }
+          ],
+          "free": true,
+          "notes": "8.1 国内定价（元/1M tokens）"
+        },
+        {
+          "name": "国内",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 25.0
+            }
+          ],
+          "notes": "8.3 联网服务插件"
+        },
+        {
+          "name": "海外",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "USD",
+              "unified": 5.0
+            }
+          ],
+          "notes": "8.3 联网服务插件"
+        },
+        {
+          "name": "mimo-v2.5-pro, mimo-v2-pro",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking",
+            "function_call",
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "1M",
+                "max": 1000000
+              },
+              "unit": "per_call",
+              "currency": "USD_CNY",
+              "output": 128.0
+            }
+          ],
+          "contextLength": 1000000,
+          "notes": "8.4 模型详情"
+        },
+        {
+          "name": "mimo-v2.5-tts / voiceclone / voicedesign / mimo-v2-tts",
+          "type": "tts",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "8K",
+                "max": 8000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD_CNY",
+              "output": 8.0
+            }
+          ],
+          "contextLength": 8000,
+          "notes": "8.4 模型详情"
+        }
+      ]
+    },
+    {
+      "name": "腾讯云大模型服务平台 TokenHub（Hunyuan）",
+      "id": "tencent-hunyuan",
+      "category": "国内",
+      "currency": "CNY",
+      "dataSource": {
+        "url": "https://cloud.tencent.com/document/product/1823/130055",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.777342+00:00"
+      },
+      "officialUrl": "https://cloud.tencent.com/document/product/1823/130055",
+      "models": [
+        {
+          "name": "Hy3 preview",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "≤16K",
+                "max": 16000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.2,
+              "output": 4.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "contextLength": 16000,
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "HY 2.0 Think",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "≤32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 3.975,
+              "output": 15.9,
+              "notes": "HY 2.0 Think ≤32K ¥3.975 ¥15.9 —"
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "HY 2.0 Instruct",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "≤32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 3.18,
+              "output": 7.95,
+              "notes": "HY 2.0 Instruct ≤32K ¥3.18 ¥7.95 —"
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "Hunyuan-role",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.4,
+              "output": 9.6,
+              "notes": "Hunyuan-role — ¥2.4 ¥9.6 —"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "DeepSeek-V4-Flash",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.0,
+              "output": 2.0,
+              "cacheHit": 0.0,
+              "notes": "DeepSeek-V4-Flash — ¥1 ¥2 ¥0.2"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "DeepSeek-V4-Pro",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 12.0,
+              "output": 24.0,
+              "cacheHit": 1.0,
+              "notes": "DeepSeek-V4-Pro — ¥12 ¥24 ¥1"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "Deepseek-v3.2",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.0,
+              "output": 3.0,
+              "notes": "Deepseek-v3.2 — ¥2 ¥3 —"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "Deepseek-v3.1",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.0,
+              "output": 12.0,
+              "notes": "Deepseek-v3.1 — ¥4 ¥12 —"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "Deepseek-r1-0528",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.0,
+              "output": 16.0,
+              "notes": "Deepseek-r1-0528 — ¥4 ¥16 —"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "Deepseek-v3-0324",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.0,
+              "output": 8.0,
+              "notes": "Deepseek-v3-0324 — ¥2 ¥8 —"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "GLM-5.1",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "≤32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 6.0,
+              "output": 24.0,
+              "cacheHit": 1.3
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "≤32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 3.0,
+              "output": 12.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "GLM-5V-Turbo",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "≤32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 5.0,
+              "output": 22.0,
+              "cacheHit": 1.2
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "GLM-5-Turbo",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "≤32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 5.0,
+              "output": 22.0,
+              "cacheHit": 1.2
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "GLM-5",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "≤32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.0,
+              "output": 18.0,
+              "cacheHit": 1.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "≤32K",
+                "max": 32000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.0,
+              "output": 9.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "contextLength": 32000,
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "Kimi-K2.6",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 6.5,
+              "output": 27.0,
+              "cacheHit": 1.1,
+              "notes": "Kimi-K2.6 — ¥6.5 ¥27 ¥1.1"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "Kimi-K2.5",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.0,
+              "output": 21.0,
+              "cacheHit": 0.0,
+              "notes": "Kimi-K2.5 — ¥4 ¥21 ¥0.7"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "MiniMax-M2.7",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.1,
+              "output": 8.4,
+              "cacheHit": 0.0,
+              "notes": "MiniMax-M2.7 — ¥2.1 ¥8.4 ¥0.42"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "MiniMax-M2.5",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.1,
+              "output": 8.4,
+              "cacheHit": 0.0,
+              "notes": "MiniMax-M2.5 — ¥2.1 ¥8.4 ¥0.21"
+            }
+          ],
+          "notes": "9.1 语言模型（在线推理，元/百万tokens）"
+        },
+        {
+          "name": "HY-Image-V3.0",
+          "type": "image_generation",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_image",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "图像生成"
+        },
+        {
+          "name": "HY-Image-Lite",
+          "type": "image_generation",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_image",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "图像生成"
+        },
+        {
+          "name": "HY-Video-1.5",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 1.5
+            }
+          ],
+          "notes": "视频生成"
+        },
+        {
+          "name": "YT-Video-2.0",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 480.0
+            }
+          ],
+          "notes": "视频生成"
+        },
+        {
+          "name": "YT-Video-HumanActor",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_video_second",
+              "currency": "CNY",
+              "unified": 720.0
+            }
+          ],
+          "notes": "视频生成"
+        },
+        {
+          "name": "HY-3D-3.0",
+          "type": "3d_generation",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 15.0
+            }
+          ],
+          "notes": "3D 生成"
+        },
+        {
+          "name": "HY-3D-3.1",
+          "type": "3d_generation",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 15.0
+            }
+          ],
+          "notes": "3D 生成"
+        },
+        {
+          "name": "HY-3D-Express",
+          "type": "3d_generation",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 15.0
+            }
+          ],
+          "notes": "3D 生成"
+        },
+        {
+          "name": "YT-VITA",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.2,
+              "output": 3.5
+            }
+          ],
+          "notes": "9.3 多模态理解模型"
+        }
+      ]
+    },
+    {
+      "name": "OpenAI",
+      "id": "openai",
+      "category": "国外",
+      "currency": "USD",
+      "dataSource": {
+        "url": "https://developers.openai.com/api/docs/pricing",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.778699+00:00"
+      },
+      "officialUrl": "https://developers.openai.com/api/docs/pricing",
+      "models": [
+        {
+          "name": "gpt-5.5",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 10.0,
+              "cacheHit": 0.0,
+              "output": 45.0
+            }
+          ],
+          "notes": "10.1 GPT-5.5 系列（最新旗舰）"
+        },
+        {
+          "name": "gpt-5.5-pro",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 60.0,
+              "output": 270.0,
+              "notes": "gpt-5.5-pro $30.00 — $180.00 $60.00 $270.00"
+            }
+          ],
+          "notes": "10.1 GPT-5.5 系列（最新旗舰）"
+        },
+        {
+          "name": "gpt-5.4",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 5.0,
+              "cacheHit": 0.0,
+              "output": 22.5
+            }
+          ],
+          "notes": "10.2 GPT-5.4 系列"
+        },
+        {
+          "name": "gpt-5.4-mini",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "cacheHit": 0.0,
+              "output": 4.5,
+              "notes": "gpt-5.4-mini $0.75 $0.075 $4.50 — —"
+            }
+          ],
+          "notes": "10.2 GPT-5.4 系列"
+        },
+        {
+          "name": "gpt-5.4-nano",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "cacheHit": 0.0,
+              "output": 1.25,
+              "notes": "gpt-5.4-nano $0.20 $0.02 $1.25 — —"
+            }
+          ],
+          "notes": "10.2 GPT-5.4 系列"
+        },
+        {
+          "name": "gpt-5.4-pro",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 60.0,
+              "output": 270.0,
+              "notes": "gpt-5.4-pro $30.00 — $180.00 $60.00 $270.00"
+            }
+          ],
+          "notes": "10.2 GPT-5.4 系列"
+        },
+        {
+          "name": "gpt-realtime-1.5",
+          "type": "audio",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 32.0,
+              "cacheHit": 0.0,
+              "output": 64.0
+            }
+          ],
+          "notes": "10.3 Realtime 模型"
+        },
+        {
+          "name": "gpt-realtime-mini",
+          "type": "audio",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 10.0,
+              "cacheHit": 0.0,
+              "output": 20.0
+            }
+          ],
+          "notes": "10.3 Realtime 模型"
+        },
+        {
+          "name": "gpt-image-2",
+          "type": "image_generation",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 8.0,
+              "cacheHit": 2.0,
+              "output": 30.0
+            }
+          ],
+          "notes": "10.4 图像生成"
+        },
+        {
+          "name": "gpt-image-1.5",
+          "type": "image_generation",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 8.0,
+              "cacheHit": 2.0,
+              "output": 32.0
+            }
+          ],
+          "notes": "10.4 图像生成"
+        },
+        {
+          "name": "gpt-image-1-mini",
+          "type": "image_generation",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 2.5,
+              "cacheHit": 0.0,
+              "output": 8.0
+            }
+          ],
+          "notes": "10.4 图像生成"
+        },
+        {
+          "name": "sora-2",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_video_second",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "10.5 视频生成（Sora）"
+        },
+        {
+          "name": "sora-2-pro",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_video_second",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "10.5 视频生成（Sora）"
+        },
+        {
+          "name": "gpt-4o-transcribe",
+          "type": "stt",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_minute",
+              "currency": "USD",
+              "input": 2.5,
+              "output": 10.0,
+              "unified": 0.0
+            }
+          ],
+          "notes": "10.6 语音模型"
+        },
+        {
+          "name": "gpt-4o-mini-transcribe",
+          "type": "stt",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_minute",
+              "currency": "USD",
+              "input": 1.25,
+              "output": 5.0,
+              "unified": 0.0
+            }
+          ],
+          "notes": "10.6 语音模型"
+        },
+        {
+          "name": "gpt-5.3-chat-latest",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.75,
+              "output": 14.0
+            }
+          ],
+          "notes": "10.7 专用模型"
+        },
+        {
+          "name": "gpt-5.3-codex",
+          "type": "code",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "code"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.75,
+              "output": 14.0
+            }
+          ],
+          "notes": "10.7 专用模型"
+        },
+        {
+          "name": "gpt-5.3-codex（Priority）",
+          "type": "code",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "code"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 3.5,
+              "output": 28.0
+            }
+          ],
+          "notes": "10.7 专用模型"
+        },
+        {
+          "name": "o3-deep-research",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 5.0,
+              "output": 20.0
+            }
+          ],
+          "notes": "10.7 专用模型"
+        },
+        {
+          "name": "o4-mini-deep-research",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.0,
+              "output": 4.0
+            }
+          ],
+          "notes": "10.7 专用模型"
+        },
+        {
+          "name": "computer-use-preview",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.5,
+              "output": 6.0
+            }
+          ],
+          "notes": "10.7 专用模型"
+        },
+        {
+          "name": "o4-mini-2025-04-16",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 4.0,
+              "output": 16.0
+            }
+          ],
+          "notes": "10.7 专用模型"
+        },
+        {
+          "name": "联网搜索（推理模型）",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking",
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "USD",
+              "unified": 10.0
+            }
+          ],
+          "notes": "10.8 工具与插件定价"
+        },
+        {
+          "name": "联网搜索（非推理模型）",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking",
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "free": true,
+          "notes": "10.8 工具与插件定价"
+        },
+        {
+          "name": "Containers（代码解释器）",
+          "type": "code",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "code"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_minute",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "10.8 工具与插件定价"
+        },
+        {
+          "name": "文件搜索存储",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "free": true,
+          "notes": "10.8 工具与插件定价"
+        },
+        {
+          "name": "文件搜索工具调用",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "USD",
+              "unified": 2.5
+            }
+          ],
+          "notes": "10.8 工具与插件定价"
+        }
+      ]
+    },
+    {
+      "name": "Anthropic（Claude）",
+      "id": "anthropic",
+      "category": "国外",
+      "currency": "USD",
+      "dataSource": {
+        "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.779937+00:00"
+      },
+      "officialUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "models": [
+        {
+          "name": "Claude Opus 4.7",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 5.0,
+              "output": 25.0,
+              "cacheWrite": 10.0,
+              "cacheHit": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 2.5,
+              "output": 12.5
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Opus 4.6",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 5.0,
+              "output": 25.0,
+              "cacheWrite": 10.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Opus 4.5",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 5.0,
+              "output": 25.0,
+              "cacheWrite": 10.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Opus 4.1",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 15.0,
+              "output": 75.0,
+              "cacheWrite": 30.0,
+              "cacheHit": 1.5
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Opus 4",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 15.0,
+              "output": 75.0,
+              "cacheWrite": 30.0,
+              "cacheHit": 1.5
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Sonnet 4.6",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 3.0,
+              "output": 15.0,
+              "cacheWrite": 6.0,
+              "cacheHit": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.5,
+              "output": 7.5
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Sonnet 4.5",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 3.0,
+              "output": 15.0,
+              "cacheWrite": 6.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Sonnet 4",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 3.0,
+              "output": 15.0,
+              "cacheWrite": 6.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.0,
+              "output": 5.0,
+              "cacheWrite": 2.0,
+              "cacheHit": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 2.5
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Haiku 3.5",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 4.0,
+              "cacheWrite": 1.6,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Opus 3 ⚠️",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 15.0,
+              "output": 75.0,
+              "cacheWrite": 30.0,
+              "cacheHit": 1.5
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        },
+        {
+          "name": "Claude Haiku 3",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 1.25,
+              "cacheWrite": 0.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "11.1 模型定价（$/1M tokens）"
+        }
+      ]
+    },
+    {
+      "name": "xAI（Grok）",
+      "id": "xai",
+      "category": "国外",
+      "currency": "USD",
+      "dataSource": {
+        "url": "https://docs.x.ai/developers/models",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.780602+00:00"
+      },
+      "officialUrl": "https://docs.x.ai/developers/models",
+      "models": [
+        {
+          "name": "grok-4.3",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "1M",
+                "max": 1000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.25,
+              "output": 2.5,
+              "cacheHit": 0.0,
+              "batchDiscount": 0.8
+            }
+          ],
+          "contextLength": 1000000,
+          "notes": "12.1 旗舰模型（元/1M tokens）"
+        },
+        {
+          "name": "grok-4-0709",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "256K",
+                "max": 256000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 3.0,
+              "output": 15.0,
+              "cacheHit": 0.0,
+              "batchDiscount": 0.5
+            }
+          ],
+          "contextLength": 256000,
+          "notes": "12.1 旗舰模型（元/1M tokens）"
+        },
+        {
+          "name": "grok-4.20-0309-reasoning",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "2M",
+                "max": 2000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.25,
+              "output": 2.5,
+              "cacheHit": 0.0,
+              "batchDiscount": 0.8
+            }
+          ],
+          "contextLength": 2000000,
+          "notes": "12.2 推理模型（Reasoning）"
+        },
+        {
+          "name": "grok-4-fast-reasoning",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "2M",
+                "max": 2000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0,
+              "batchDiscount": 0.5
+            }
+          ],
+          "contextLength": 2000000,
+          "notes": "12.2 推理模型（Reasoning）"
+        },
+        {
+          "name": "grok-4-1-fast-reasoning",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "2M",
+                "max": 2000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0,
+              "batchDiscount": 0.5
+            }
+          ],
+          "contextLength": 2000000,
+          "notes": "12.2 推理模型（Reasoning）"
+        },
+        {
+          "name": "grok-4.20-0309-non-reasoning",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "2M",
+                "max": 2000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.25,
+              "output": 2.5,
+              "cacheHit": 0.0,
+              "batchDiscount": 0.8
+            }
+          ],
+          "contextLength": 2000000,
+          "notes": "12.3 非推理模型（Non-Reasoning）"
+        },
+        {
+          "name": "grok-4-fast-non-reasoning",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "2M",
+                "max": 2000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0,
+              "batchDiscount": 0.5
+            }
+          ],
+          "contextLength": 2000000,
+          "notes": "12.3 非推理模型（Non-Reasoning）"
+        },
+        {
+          "name": "grok-4-1-fast-non-reasoning",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "2M",
+                "max": 2000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0,
+              "batchDiscount": 0.5
+            }
+          ],
+          "contextLength": 2000000,
+          "notes": "12.3 非推理模型（Non-Reasoning）"
+        },
+        {
+          "name": "grok-3",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "131K",
+                "max": 131000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 3.0,
+              "output": 15.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "contextLength": 131000,
+          "notes": "12.4 其他模型"
+        },
+        {
+          "name": "grok-3-mini",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "131K",
+                "max": 131000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "contextLength": 131000,
+          "notes": "12.4 其他模型"
+        },
+        {
+          "name": "grok-4.20-multi-agent-0309",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "2M",
+                "max": 2000000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.25,
+              "output": 2.5,
+              "cacheHit": 0.0
+            }
+          ],
+          "contextLength": 2000000,
+          "notes": "12.4 其他模型"
+        },
+        {
+          "name": "grok-code-fast-1",
+          "type": "code",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "code"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "256K",
+                "max": 256000
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 1.5,
+              "cacheHit": 0.0
+            }
+          ],
+          "contextLength": 256000,
+          "notes": "12.4 其他模型"
+        },
+        {
+          "name": "grok-imagine-video",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "2M",
+                "max": 2000000
+              },
+              "unit": "per_call",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "contextLength": 2000000,
+          "notes": "12.4 其他模型"
+        },
+        {
+          "name": "Realtime（实时语音）",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_minute",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "12.5 语音/多模态"
+        },
+        {
+          "name": "Text to Speech",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_character",
+              "currency": "USD",
+              "unified": 4.2
+            }
+          ],
+          "notes": "12.5 语音/多模态"
+        },
+        {
+          "name": "Speech to Text（REST）",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "12.5 语音/多模态"
+        },
+        {
+          "name": "Speech to Text（Streaming）",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "12.5 语音/多模态"
+        },
+        {
+          "name": "联网搜索（Web Search）",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "USD",
+              "unified": 5.0
+            }
+          ],
+          "notes": "12.6 工具与存储"
+        },
+        {
+          "name": "X 搜索（X Search）",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "USD",
+              "unified": 5.0
+            }
+          ],
+          "notes": "12.6 工具与存储"
+        },
+        {
+          "name": "代码执行（Code Execution）",
+          "type": "code",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "code"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "USD",
+              "unified": 5.0
+            }
+          ],
+          "notes": "12.6 工具与存储"
+        },
+        {
+          "name": "文件附件搜索",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "USD",
+              "unified": 10.0
+            }
+          ],
+          "notes": "12.6 工具与存储"
+        },
+        {
+          "name": "知识库搜索（Collections RAG）",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_tokens",
+              "currency": "USD",
+              "unified": 2.5
+            }
+          ],
+          "notes": "12.6 工具与存储"
+        },
+        {
+          "name": "文件存储",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "12.6 工具与存储"
+        },
+        {
+          "name": "知识库存储",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "12.6 工具与存储"
+        },
+        {
+          "name": "文件/知识库下载",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "12.6 工具与存储"
+        }
+      ]
+    },
+    {
+      "name": "Google（Gemini）",
+      "id": "google-gemini",
+      "category": "国外",
+      "currency": "USD",
+      "dataSource": {
+        "url": "https://ai.google.dev/pricing",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.781767+00:00"
+      },
+      "officialUrl": "https://ai.google.dev/pricing",
+      "models": [
+        {
+          "name": "Gemini 3.1 Pro Preview",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 4.0,
+              "output": 18.0,
+              "cacheHit": 4.5
+            }
+          ],
+          "notes": "13.1 Gemini 3.1 系列"
+        },
+        {
+          "name": "Gemini 3.1 Flash Preview",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 2.0,
+              "output": 9.0,
+              "cacheHit": 4.5
+            }
+          ],
+          "notes": "13.1 Gemini 3.1 系列"
+        },
+        {
+          "name": "Gemini 3.1 Flash-Lite Preview",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0,
+              "notes": "Gemini 3.1 Flash-Lite Preview $0.125 $0.25 $0.75 — $0.0125~$0.025 $0.50/M/h"
+            }
+          ],
+          "notes": "13.1 Gemini 3.1 系列"
+        },
+        {
+          "name": "Gemini 3.1 Flash Live Preview",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0,
+              "notes": "Gemini 3.1 Flash Live Preview $0.125 $0.25 $0.75 — $0.0125~$0.025 $0.50/M/h"
+            }
+          ],
+          "notes": "13.1 Gemini 3.1 系列"
+        },
+        {
+          "name": "Gemini 3 Flash Preview",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.0,
+              "output": 6.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "13.2 Gemini 3 系列"
+        },
+        {
+          "name": "Gemini 3 Pro Image Preview",
+          "type": "image_generation",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 3.6,
+              "output": 21.6,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "13.2 Gemini 3 系列"
+        },
+        {
+          "name": "Gemini 2.5 Pro",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 1.25,
+              "output": 10.0,
+              "cacheHit": 0.0
+            }
+          ],
+          "notes": "13.3 Gemini 2.5 系列"
+        },
+        {
+          "name": "Gemini 2.5 Flash",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 2.5,
+              "cacheHit": 0.0,
+              "notes": "Gemini 2.5 Flash $0.30 — $2.50 — $0.03 ✅"
+            }
+          ],
+          "notes": "13.3 Gemini 2.5 系列"
+        },
+        {
+          "name": "Gemini 2.5 Flash-Lite",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "cacheHit": 0.0,
+              "notes": "Gemini 2.5 Flash-Lite $0.10 — $0.40 — $0.01 ✅"
+            }
+          ],
+          "notes": "13.3 Gemini 2.5 系列"
+        },
+        {
+          "name": "Gemini 2.0 Flash",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "notes": "Gemini 2.0 Flash $0.15 — $0.60 — — ✅"
+            }
+          ],
+          "notes": "13.3 Gemini 2.5 系列"
+        },
+        {
+          "name": "Imagen 4 Standard",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_image",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "13.4 图像/视频生成"
+        },
+        {
+          "name": "Imagen 4 Fast",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_image",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "13.4 图像/视频生成"
+        },
+        {
+          "name": "Imagen 4 Ultra",
+          "type": "video",
+          "modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_image",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "13.4 图像/视频生成"
+        },
+        {
+          "name": "Veo 3.1 Standard",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_video_second",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "13.4 图像/视频生成"
+        },
+        {
+          "name": "Veo 3.1 Fast",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_video_second",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "13.4 图像/视频生成"
+        },
+        {
+          "name": "Veo 3.1 Lite",
+          "type": "video",
+          "modalities": [
+            "text",
+            "video"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_video_second",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "13.4 图像/视频生成"
+        },
+        {
+          "name": "Chirp 3 HD（TTS）",
+          "type": "tts",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1k_characters",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "13.5 语音模型"
+        },
+        {
+          "name": "Gemini 2.5 Flash TTS",
+          "type": "tts",
+          "modalities": [
+            "text",
+            "audio"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "unified": 1.0
+            }
+          ],
+          "notes": "13.5 语音模型"
+        },
+        {
+          "name": "Gemini 2.5 Flash Native Audio（Live API）",
+          "type": "audio",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_minute",
+              "currency": "USD",
+              "unified": 0.0
+            }
+          ],
+          "notes": "13.5 语音模型"
+        }
+      ]
+    },
+    {
+      "name": "字节豆包（火山引擎 Ark）",
+      "id": "byteplus-volc",
+      "category": "国内",
+      "currency": "CNY",
+      "dataSource": {
+        "url": "https://www.volcengine.com/docs/82379/1544106",
+        "method": "curl",
+        "verifiedAt": "2026-05-02T17:58:57.782649+00:00"
+      },
+      "officialUrl": "https://www.volcengine.com/docs/82379/1544106",
+      "models": [
+        {
+          "name": "doubao-seed-2.0-pro",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 3.2,
+              "cacheHit": 0.64,
+              "output": 16.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "在线推理（常规）",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.8,
+              "cacheHit": 0.96,
+              "output": 24.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 9.6,
+              "cacheHit": 1.92,
+              "output": 48.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.9,
+              "cacheHit": 0.18,
+              "output": 5.4
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.8,
+              "cacheHit": 0.36,
+              "output": 10.8
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.4,
+              "cacheHit": 0.08,
+              "output": 4.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.8,
+              "cacheHit": 0.16,
+              "output": 8.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.8,
+              "cacheHit": 0.96,
+              "output": 24.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 9.6,
+              "cacheHit": 1.92,
+              "output": 48.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.8,
+              "cacheHit": 0.16,
+              "output": 8.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.2,
+              "cacheHit": 0.16,
+              "output": 16.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.4,
+              "cacheHit": 0.16,
+              "output": 24.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.2,
+              "cacheHit": 0.16,
+              "output": 6.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.4,
+              "cacheHit": 0.24,
+              "output": 12.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.8,
+              "cacheHit": 0.24,
+              "output": 16.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.8,
+              "cacheHit": 0.16,
+              "output": 8.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.2,
+              "cacheHit": 0.16,
+              "output": 16.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.4,
+              "cacheHit": 0.16,
+              "output": 24.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.3,
+              "cacheHit": 0.06,
+              "output": 2.4
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.6,
+              "cacheHit": 0.06,
+              "output": 4.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.2,
+              "cacheHit": 0.06,
+              "output": 12.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.3,
+              "cacheHit": 0.03,
+              "output": 3.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.6,
+              "cacheHit": 0.03,
+              "output": 6.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.2,
+              "cacheHit": 0.16,
+              "output": 16.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 2.4,
+              "cacheHit": 0.16,
+              "output": 24.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-2.0-lite",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.6,
+              "cacheHit": 0.12,
+              "output": 3.6
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-2.0-mini",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.2,
+              "cacheHit": 0.04,
+              "output": 2.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-2.0-code",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking",
+            "code"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 3.2,
+              "cacheHit": 0.64,
+              "output": 16.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-1.8",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.8,
+              "cacheHit": 0.16,
+              "output": 2.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-character",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.8,
+              "cacheHit": 0.16,
+              "output": 2.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-code",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking",
+            "code"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.2,
+              "cacheHit": 0.24,
+              "output": 8.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-1.6",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.8,
+              "cacheHit": 0.16,
+              "output": 2.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-1.6-lite",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.3,
+              "cacheHit": 0.06,
+              "output": 0.6
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-1.6-flash ⚡",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.15,
+              "cacheHit": 0.03,
+              "output": 1.5
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-1.6-vision",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.8,
+              "cacheHit": 0.16,
+              "output": 8.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-seed-translation",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 1.2,
+              "output": 3.6,
+              "notes": "doubao-seed-translation — 1.20 — — 3.60"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-1.5-pro-32k",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.8,
+              "cacheHit": 0.16,
+              "output": 2.0,
+              "notes": "doubao-1.5-pro-32k — 0.80 0.017 0.16 2.00"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-1.5-lite-32k",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 0.3,
+              "cacheHit": 0.06,
+              "output": 0.6,
+              "notes": "doubao-1.5-lite-32k — 0.30 0.017 0.06 0.60"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "doubao-1.5-vision-pro",
+          "type": "vision",
+          "modalities": [
+            "text",
+            "image"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 3.0,
+              "output": 9.0,
+              "notes": "doubao-1.5-vision-pro — 3.00 — — 9.00"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        }
+      ]
+    }
+  ]
+}
