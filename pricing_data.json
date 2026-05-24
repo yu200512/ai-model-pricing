@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "updated": "2026-05-02",
-  "updatedAt": "2026-05-11T05:10:31.967356+00:00",
+  "updated": "2026-05-11",
+  "updatedAt": "2026-05-24T23:01:09.778031+00:00",
   "sourceRepo": "https://github.com/yu200512/ai-model-pricing",
   "providers": [
     {
@@ -12,7 +12,7 @@
       "dataSource": {
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.957586+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.768419+00:00"
       },
       "officialUrl": "https://api-docs.deepseek.com/quick_start/pricing",
       "models": [
@@ -115,7 +115,7 @@
       "dataSource": {
         "url": "https://open.bigmodel.cn/pricing",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.957995+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.769517+00:00"
       },
       "officialUrl": "https://open.bigmodel.cn/pricing",
       "models": [
@@ -1291,7 +1291,7 @@
       "dataSource": {
         "url": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/?tab=doc#/doc/?type=model&url=prices",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.959866+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.771347+00:00"
       },
       "officialUrl": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/?tab=doc#/doc/?type=model&url=prices",
       "models": [
@@ -1441,7 +1441,7 @@
       "dataSource": {
         "url": "https://platform.kimi.com/docs/pricing/chat-k26",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.960091+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.771564+00:00"
       },
       "officialUrl": "https://platform.kimi.com/docs/pricing/chat-k26",
       "models": [
@@ -1597,7 +1597,7 @@
       "dataSource": {
         "url": "https://xinghuo.xfyun.cn/sparkapi",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.960286+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.771753+00:00"
       },
       "officialUrl": "https://xinghuo.xfyun.cn/sparkapi",
       "models": [
@@ -2099,7 +2099,7 @@
       "dataSource": {
         "url": "https://platform.baichuan-ai.com/prices",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.961319+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.772342+00:00"
       },
       "officialUrl": "https://platform.baichuan-ai.com/prices",
       "models": [
@@ -2470,7 +2470,7 @@
       "dataSource": {
         "url": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.961753+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.772745+00:00"
       },
       "officialUrl": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
       "models": [
@@ -2945,7 +2945,7 @@
       "dataSource": {
         "url": "https://platform.xiaomimimo.com/docs/zh-CN/pricing",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.962409+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.773337+00:00"
       },
       "officialUrl": "https://platform.xiaomimimo.com/docs/zh-CN/pricing",
       "models": [
@@ -3256,7 +3256,7 @@
       "dataSource": {
         "url": "https://cloud.tencent.com/document/product/1823/130055",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.963048+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.774010+00:00"
       },
       "officialUrl": "https://cloud.tencent.com/document/product/1823/130055",
       "models": [
@@ -3934,7 +3934,7 @@
       "dataSource": {
         "url": "https://developers.openai.com/api/docs/pricing",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.964139+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.774763+00:00"
       },
       "officialUrl": "https://developers.openai.com/api/docs/pricing",
       "models": [
@@ -3949,7 +3949,8 @@
             {
               "contextRange": {
                 "min": 0,
-                "description": "未注明"
+                "description": "$45.00",
+                "max": 45
               },
               "unit": "per_1m_tokens",
               "currency": "USD",
@@ -3971,7 +3972,8 @@
             {
               "contextRange": {
                 "min": 0,
-                "description": "未注明"
+                "description": "$270.00",
+                "max": 270
               },
               "unit": "per_1m_tokens",
               "currency": "USD",
@@ -4073,6 +4075,29 @@
           "notes": "10.2 GPT-5.4 系列"
         },
         {
+          "name": "gpt-realtime-2",
+          "type": "audio",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 32.0,
+              "cacheHit": 0.0,
+              "output": 64.0
+            }
+          ],
+          "notes": "10.3 Realtime 模型"
+        },
+        {
           "name": "gpt-realtime-1.5",
           "type": "audio",
           "modalities": [
@@ -4114,6 +4139,28 @@
               "input": 10.0,
               "cacheHit": 0.0,
               "output": 20.0
+            }
+          ],
+          "notes": "10.3 Realtime 模型"
+        },
+        {
+          "name": "gpt-realtime-translate",
+          "type": "audio",
+          "modalities": [
+            "audio",
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_minute",
+              "currency": "USD",
+              "output": 0.0,
+              "notes": "gpt-realtime-translate 音频 — — $0.034/分钟"
             }
           ],
           "notes": "10.3 Realtime 模型"
@@ -4290,8 +4337,9 @@
               },
               "unit": "per_1m_tokens",
               "currency": "USD",
-              "input": 1.75,
-              "output": 14.0
+              "input": 5.0,
+              "cacheHit": 0.0,
+              "output": 30.0
             }
           ],
           "notes": "10.7 专用模型"
@@ -4314,6 +4362,7 @@
               "unit": "per_1m_tokens",
               "currency": "USD",
               "input": 1.75,
+              "cacheHit": 0.0,
               "output": 14.0
             }
           ],
@@ -4337,6 +4386,7 @@
               "unit": "per_1m_tokens",
               "currency": "USD",
               "input": 3.5,
+              "cacheHit": 0.0,
               "output": 28.0
             }
           ],
@@ -4360,7 +4410,8 @@
               "unit": "per_1m_tokens",
               "currency": "USD",
               "input": 5.0,
-              "output": 20.0
+              "output": 20.0,
+              "notes": "o3-deep-research 深度研究 $5.00 — $20.00"
             }
           ],
           "notes": "10.7 专用模型"
@@ -4383,7 +4434,8 @@
               "unit": "per_1m_tokens",
               "currency": "USD",
               "input": 1.0,
-              "output": 4.0
+              "output": 4.0,
+              "notes": "o4-mini-deep-research 深度研究 Mini $1.00 — $4.00"
             }
           ],
           "notes": "10.7 专用模型"
@@ -4404,7 +4456,8 @@
               "unit": "per_1m_tokens",
               "currency": "USD",
               "input": 1.5,
-              "output": 6.0
+              "output": 6.0,
+              "notes": "computer-use-preview 计算机操作 $1.50 — $6.00"
             }
           ],
           "notes": "10.7 专用模型"
@@ -4425,6 +4478,7 @@
               "unit": "per_1m_tokens",
               "currency": "USD",
               "input": 4.0,
+              "cacheHit": 1.0,
               "output": 16.0
             }
           ],
@@ -4554,7 +4608,7 @@
       "dataSource": {
         "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.964831+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.775531+00:00"
       },
       "officialUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
       "models": [
@@ -4874,7 +4928,7 @@
       "dataSource": {
         "url": "https://docs.x.ai/developers/models",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.965271+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.775920+00:00"
       },
       "officialUrl": "https://docs.x.ai/developers/models",
       "models": [
@@ -5477,7 +5531,7 @@
       "dataSource": {
         "url": "https://ai.google.dev/pricing",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.965863+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.776522+00:00"
       },
       "officialUrl": "https://ai.google.dev/pricing",
       "models": [
@@ -5908,7 +5962,7 @@
       "dataSource": {
         "url": "https://www.volcengine.com/docs/82379/1544106",
         "method": "curl",
-        "verifiedAt": "2026-05-11T05:10:31.966363+00:00"
+        "verifiedAt": "2026-05-24T23:01:09.777003+00:00"
       },
       "officialUrl": "https://www.volcengine.com/docs/82379/1544106",
       "models": [
