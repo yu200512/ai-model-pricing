@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "updated": "2026-05-25",
-  "updatedAt": "2026-06-22T01:58:15.327197+00:00",
+  "updated": "2026-07-15",
+  "updatedAt": "2026-08-19T14:43:48.650320+00:00",
   "sourceRepo": "https://github.com/yu200512/ai-model-pricing",
   "providers": [
     {
@@ -12,7 +12,7 @@
       "dataSource": {
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.316771+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.639479+00:00"
       },
       "officialUrl": "https://api-docs.deepseek.com/quick_start/pricing",
       "models": [
@@ -71,7 +71,7 @@
               "unit": "per_1m_tokens",
               "currency": "USD",
               "unified": 0.0,
-              "notes": "输入（缓存未命中） $0.435 $1.74"
+              "notes": "输入（缓存未命中） $0.435"
             }
           ],
           "notes": "DeepSeek-V4-Flash"
@@ -115,10 +115,34 @@
       "dataSource": {
         "url": "https://open.bigmodel.cn/pricing",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.317966+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.640218+00:00"
       },
       "officialUrl": "https://open.bigmodel.cn/pricing",
       "models": [
+        {
+          "name": "GLM-5.2",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "—"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 8.0,
+              "output": 28.0,
+              "cacheHit": 2.0,
+              "notes": "GLM-5.2 1M — ¥8 ¥28 ¥2"
+            }
+          ],
+          "contextLength": 1000000,
+          "notes": "2.1 旗舰文本模型"
+        },
         {
           "name": "GLM-5.1",
           "type": "text",
@@ -291,31 +315,6 @@
           "contextLength": 200000,
           "free": true,
           "notes": "2.1 旗舰文本模型"
-        },
-        {
-          "name": "GLM-5V-Turbo",
-          "type": "video",
-          "modalities": [
-            "text",
-            "image",
-            "video"
-          ],
-          "capabilities": [],
-          "pricing": [
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "[0, 32K)",
-                "max": 32000
-              },
-              "unit": "per_call",
-              "currency": "CNY",
-              "input": 5.0,
-              "output": 22.0,
-              "cacheHit": 1.2
-            }
-          ],
-          "notes": "2.2 旗舰视觉模型"
         },
         {
           "name": "GLM-4.6V",
@@ -1291,7 +1290,7 @@
       "dataSource": {
         "url": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/?tab=doc#/doc/?type=model&url=prices",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.320048+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.642222+00:00"
       },
       "officialUrl": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/?tab=doc#/doc/?type=model&url=prices",
       "models": [
@@ -1441,7 +1440,7 @@
       "dataSource": {
         "url": "https://platform.kimi.com/docs/pricing/chat-k26",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.320269+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.642472+00:00"
       },
       "officialUrl": "https://platform.kimi.com/docs/pricing/chat-k26",
       "models": [
@@ -1597,7 +1596,7 @@
       "dataSource": {
         "url": "https://xinghuo.xfyun.cn/sparkapi",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.320459+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.642842+00:00"
       },
       "officialUrl": "https://xinghuo.xfyun.cn/sparkapi",
       "models": [
@@ -2099,7 +2098,7 @@
       "dataSource": {
         "url": "https://platform.baichuan-ai.com/prices",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.321021+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.643523+00:00"
       },
       "officialUrl": "https://platform.baichuan-ai.com/prices",
       "models": [
@@ -2470,10 +2469,56 @@
       "dataSource": {
         "url": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.321426+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.644115+00:00"
       },
       "officialUrl": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
       "models": [
+        {
+          "name": "MiniMax-M3",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 4.2,
+              "output": 16.8,
+              "cacheHit": 0.0,
+              "cacheWrite": 0.0
+            }
+          ],
+          "notes": "7.1 文本模型（元/百万tokens）"
+        },
+        {
+          "name": "MiniMax-M3 （>512K输入）",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "CNY",
+              "input": 8.4,
+              "output": 33.6,
+              "cacheHit": 0.0,
+              "cacheWrite": 3.36
+            }
+          ],
+          "notes": "7.1 文本模型（元/百万tokens）"
+        },
         {
           "name": "MiniMax-M2.7",
           "type": "text",
@@ -2516,74 +2561,6 @@
               "output": 16.8,
               "cacheHit": 0.0,
               "cacheWrite": 2.625
-            }
-          ],
-          "notes": "7.1 文本模型（元/百万tokens）"
-        },
-        {
-          "name": "MiniMax-M2.5",
-          "type": "text",
-          "modalities": [
-            "text"
-          ],
-          "capabilities": [],
-          "pricing": [
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "未注明"
-              },
-              "unit": "per_1m_tokens",
-              "currency": "CNY",
-              "input": 2.1,
-              "output": 8.4,
-              "cacheHit": 0.0,
-              "cacheWrite": 2.625
-            }
-          ],
-          "notes": "7.1 文本模型（元/百万tokens）"
-        },
-        {
-          "name": "MiniMax-M2.5-highspeed",
-          "type": "text",
-          "modalities": [
-            "text"
-          ],
-          "capabilities": [],
-          "pricing": [
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "未注明"
-              },
-              "unit": "per_1m_tokens",
-              "currency": "CNY",
-              "input": 4.2,
-              "output": 16.8,
-              "cacheHit": 0.0,
-              "cacheWrite": 2.625
-            }
-          ],
-          "notes": "7.1 文本模型（元/百万tokens）"
-        },
-        {
-          "name": "M2-her",
-          "type": "text",
-          "modalities": [
-            "text"
-          ],
-          "capabilities": [],
-          "pricing": [
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "未注明"
-              },
-              "unit": "per_1m_tokens",
-              "currency": "CNY",
-              "input": 2.1,
-              "output": 8.4,
-              "notes": "M2-her ¥2.1 ¥8.4 — —"
             }
           ],
           "notes": "7.1 文本模型（元/百万tokens）"
@@ -2934,6 +2911,28 @@
             }
           ],
           "notes": "7.6 MCP"
+        },
+        {
+          "name": "web_search",
+          "type": "text",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "web_search"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_call",
+              "currency": "CNY",
+              "unified": 0.0
+            }
+          ],
+          "notes": "7.7 服务端工具"
         }
       ]
     },
@@ -2945,17 +2944,21 @@
       "dataSource": {
         "url": "https://platform.xiaomimimo.com/docs/zh-CN/pricing",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.322125+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.644860+00:00"
       },
       "officialUrl": "https://platform.xiaomimimo.com/docs/zh-CN/pricing",
       "models": [
         {
-          "name": "mimo-v2.5-pro / mimo-v2-pro",
+          "name": "mimo-v2.5-pro",
           "type": "text",
           "modalities": [
             "text"
           ],
-          "capabilities": [],
+          "capabilities": [
+            "thinking",
+            "function_call",
+            "web_search"
+          ],
           "pricing": [
             {
               "contextRange": {
@@ -2964,8 +2967,8 @@
               },
               "unit": "per_1m_tokens",
               "currency": "CNY",
-              "cacheHit": 1.4,
-              "output": 42.0
+              "cacheHit": 0.0,
+              "output": 6.0
             },
             {
               "contextRange": {
@@ -2975,10 +2978,21 @@
               "unit": "per_1m_tokens",
               "currency": "USD",
               "cacheHit": 0.0,
-              "output": 6.0
+              "output": 0.0
+            },
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "1M",
+                "max": 1000000
+              },
+              "unit": "per_call",
+              "currency": "USD_CNY",
+              "output": 128.0
             }
           ],
-          "notes": "8.1 国内定价（元/1M tokens）"
+          "notes": "8.1 国内定价（元/1M tokens）",
+          "contextLength": 1000000
         },
         {
           "name": "mimo-v2.5",
@@ -3001,7 +3015,7 @@
               "unit": "per_1m_tokens",
               "currency": "CNY",
               "cacheHit": 0.0,
-              "output": 28.0
+              "output": 2.0
             },
             {
               "contextRange": {
@@ -3011,7 +3025,7 @@
               "unit": "per_1m_tokens",
               "currency": "USD",
               "cacheHit": 0.0,
-              "output": 4.0
+              "output": 0.0
             },
             {
               "contextRange": {
@@ -3028,105 +3042,12 @@
           "contextLength": 1000000
         },
         {
-          "name": "mimo-v2-omni",
-          "type": "vision",
+          "name": "mimo-v2.5-asr",
+          "type": "stt",
           "modalities": [
-            "text",
-            "image"
-          ],
-          "capabilities": [],
-          "pricing": [
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "未注明"
-              },
-              "unit": "per_1m_tokens",
-              "currency": "CNY",
-              "cacheHit": 0.0,
-              "output": 14.0,
-              "notes": "mimo-v2-omni ¥0.56 ¥2.80 ¥14.00 — — —"
-            },
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "未注明"
-              },
-              "unit": "per_1m_tokens",
-              "currency": "USD",
-              "cacheHit": 0.0,
-              "output": 2.0,
-              "notes": "mimo-v2-omni $0.08 $0.40 $2.00 — — —"
-            },
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "256K",
-                "max": 256000
-              },
-              "unit": "per_1m_tokens",
-              "currency": "USD_CNY",
-              "output": 128.0
-            }
-          ],
-          "notes": "8.1 国内定价（元/1M tokens）",
-          "contextLength": 256000
-        },
-        {
-          "name": "mimo-v2-flash",
-          "type": "text",
-          "modalities": [
+            "audio",
             "text"
           ],
-          "capabilities": [
-            "thinking",
-            "function_call",
-            "web_search"
-          ],
-          "pricing": [
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "未注明"
-              },
-              "unit": "per_1m_tokens",
-              "currency": "CNY",
-              "cacheHit": 0.0,
-              "output": 2.1,
-              "notes": "mimo-v2-flash ¥0.07 ¥0.70 ¥2.10 — — —"
-            },
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "未注明"
-              },
-              "unit": "per_1m_tokens",
-              "currency": "USD",
-              "cacheHit": 0.0,
-              "output": 0.0,
-              "notes": "mimo-v2-flash $0.01 $0.10 $0.30 — — —"
-            },
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "256K",
-                "max": 256000
-              },
-              "unit": "per_call",
-              "currency": "USD_CNY",
-              "output": 64.0
-            }
-          ],
-          "notes": "8.1 国内定价（元/1M tokens）",
-          "contextLength": 256000
-        },
-        {
-          "name": "TTS 系列（全模型）",
-          "type": "tts",
-          "modalities": [
-            "text",
-            "audio"
-          ],
           "capabilities": [],
           "pricing": [
             {
@@ -3135,23 +3056,21 @@
                 "description": "未注明"
               },
               "unit": "per_1m_tokens",
-              "currency": "USD_CNY",
-              "cacheHit": 0.0,
+              "currency": "USD",
               "unified": 0.0
             },
             {
               "contextRange": {
                 "min": 0,
-                "description": "未注明"
+                "description": "—"
               },
               "unit": "per_1m_tokens",
               "currency": "USD_CNY",
-              "cacheHit": 0.0,
-              "unified": 0.0
+              "unified": 2.5,
+              "notes": "ASR mimo-v2.5-asr 语音识别 — — 语音识别，OpenAI API 兼容 —"
             }
           ],
-          "free": true,
-          "notes": "8.1 国内定价（元/1M tokens）"
+          "notes": "8.3 ASR 语音识别"
         },
         {
           "name": "国内",
@@ -3170,10 +3089,10 @@
               },
               "unit": "per_call",
               "currency": "CNY",
-              "unified": 25.0
+              "unified": 16.0
             }
           ],
-          "notes": "8.3 联网服务插件"
+          "notes": "8.5 联网服务插件"
         },
         {
           "name": "海外",
@@ -3195,36 +3114,10 @@
               "unified": 5.0
             }
           ],
-          "notes": "8.3 联网服务插件"
+          "notes": "8.5 联网服务插件"
         },
         {
-          "name": "mimo-v2.5-pro, mimo-v2-pro",
-          "type": "reasoning",
-          "modalities": [
-            "text"
-          ],
-          "capabilities": [
-            "thinking",
-            "function_call",
-            "web_search"
-          ],
-          "pricing": [
-            {
-              "contextRange": {
-                "min": 0,
-                "description": "1M",
-                "max": 1000000
-              },
-              "unit": "per_call",
-              "currency": "USD_CNY",
-              "output": 128.0
-            }
-          ],
-          "contextLength": 1000000,
-          "notes": "8.4 模型详情"
-        },
-        {
-          "name": "mimo-v2.5-tts / voiceclone / voicedesign / mimo-v2-tts",
+          "name": "mimo-v2.5-tts / voiceclone / voicedesign",
           "type": "tts",
           "modalities": [
             "text",
@@ -3244,7 +3137,7 @@
             }
           ],
           "contextLength": 8000,
-          "notes": "8.4 模型详情"
+          "notes": "8.6 模型详情"
         }
       ]
     },
@@ -3256,7 +3149,7 @@
       "dataSource": {
         "url": "https://cloud.tencent.com/document/product/1823/130055",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.322689+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.645219+00:00"
       },
       "officialUrl": "https://cloud.tencent.com/document/product/1823/130055",
       "models": [
@@ -3934,7 +3827,7 @@
       "dataSource": {
         "url": "https://developers.openai.com/api/docs/pricing",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.323404+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.646093+00:00"
       },
       "officialUrl": "https://developers.openai.com/api/docs/pricing",
       "models": [
@@ -4608,7 +4501,7 @@
       "dataSource": {
         "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.324501+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.646938+00:00"
       },
       "officialUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
       "models": [
@@ -4928,7 +4821,7 @@
       "dataSource": {
         "url": "https://docs.x.ai/developers/models",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.324908+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.647337+00:00"
       },
       "officialUrl": "https://docs.x.ai/developers/models",
       "models": [
@@ -5531,7 +5424,7 @@
       "dataSource": {
         "url": "https://ai.google.dev/pricing",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.325649+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.648213+00:00"
       },
       "officialUrl": "https://ai.google.dev/pricing",
       "models": [
@@ -5962,7 +5855,7 @@
       "dataSource": {
         "url": "https://www.volcengine.com/docs/82379/1544106",
         "method": "curl",
-        "verifiedAt": "2026-06-22T01:58:15.326209+00:00"
+        "verifiedAt": "2026-08-19T14:43:48.648775+00:00"
       },
       "officialUrl": "https://www.volcengine.com/docs/82379/1544106",
       "models": [
@@ -6605,6 +6498,332 @@
               "input": 3.0,
               "output": 9.0,
               "notes": "doubao-1.5-vision-pro — 3.00 — — 9.00"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "Baichuan4-Air",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "notes": "1 Baichuan4-Air $0.019 ¥0.00098/K — 百川"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "Baichuan-M2",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "Baichuan-M3",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "DeepSeek-V4-Flash",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "GLM-4.7-FlashX",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 3.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "GLM-4.5-Air",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 2.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "Baichuan4-Turbo",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "notes": "7 Baichuan4-Turbo $0.405 ¥0.015/K — 百川"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "GLM-4.7",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 2.0,
+              "output": 8.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "MiniMax-M3 ⚡",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 2.1,
+              "output": 8.4
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "GLM-5",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 4.0,
+              "output": 18.0
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "qwen3.5-plus",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 2.4,
+              "notes": "— qwen3.5-plus $1.200 $0.40/M $2.40/M Qwen"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "GLM-5-Turbo",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 5.0,
+              "output": 22.0,
+              "notes": "— GLM-5-Turbo $1.542 ¥5/M ¥22/M 智谱AI"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "Kimi-K2.6",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 6.5,
+              "output": 27.0,
+              "notes": "— Kimi-K2.6 $3.143 ¥6.50/M ¥27/M Kimi"
+            }
+          ],
+          "notes": "在线推理（常规）"
+        },
+        {
+          "name": "DeepSeek-V4-Pro",
+          "type": "reasoning",
+          "modalities": [
+            "text"
+          ],
+          "capabilities": [
+            "thinking"
+          ],
+          "pricing": [
+            {
+              "contextRange": {
+                "min": 0,
+                "description": "未注明"
+              },
+              "unit": "per_1m_tokens",
+              "currency": "USD",
+              "input": 0.0,
+              "output": 0.0,
+              "notes": "— DeepSeek-V4-Pro $3.828 $0.435/M $0.87/M DeepSeek"
             }
           ],
           "notes": "在线推理（常规）"
