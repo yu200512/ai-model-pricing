@@ -1,0 +1,64 @@
+Documentation Index
+
+Fetch the complete documentation index at: /docs/llms.txt
+
+Use this file to discover all available pages before exploring further.
+
+跳转到主要内容
+
+🎉 Kimi K3 旗舰模型已正式发布，快来体验吧！
+
+Kimi API 开放平台 home page
+搜索...
+Ctrl K
+企业订阅
+联系销售
+加入社群
+开发工作台
+用户中心
+使用指南
+API 接口说明
+产品定价
+常见问题
+资源
+模型推理定价
+计费说明
+Kimi K3
+Kimi K2.7 Code
+Kimi K2.6
+Kimi K2.5
+Moonshot V1
+功能定价
+批量推理定价
+联网搜索定价
+充值与限速
+在此页面
+产品定价
+模型说明
+模型推理定价
+旗舰模型 Kimi K3 定价
+复制页面
+
+查看 Kimi K3 旗舰模型的输入、输出和缓存命中 token 价格及计费说明。
+
+​
+产品定价
+模型	计费单位	输入价格（缓存命中）	输入价格（缓存未命中）	输出价格	上下文窗口
+kimi-k3	1M tokens	¥2.00	¥20.00	¥100.00	1,048,576 tokens
+此处 1M = 1,000,000，表格中的价格代表每消耗 1M tokens 的价格。
+​
+模型说明
+联网搜索（web_search）正在更新升级中，近期不建议使用该功能，当前文档已经过时，请关注后续内容更新。
+Kimi K3 是 Kimi 的旗舰模型，面向长程编程与端到端知识工作，1M token 上下文，综合智能达到领先水平，详见 Kimi K3 模型介绍
+始终进行推理，支持通过请求顶层 reasoning_effort 配置推理强度（low / high / max，默认 max），详见推理强度
+支持自动上下文缓存、工具调用（ToolCalls）、JSON Mode、结构化输出（response_format / JSON Schema）、Partial Mode、联网搜索等能力
+K3 新增 API 能力：工具调用约束（tool_choice）、动态加载工具，组合用法见 K3 工具调用最佳实践
+
+此页面对您有帮助吗？
+
+是
+否
+计费说明
+Kimi K2.7 Code
+github
+website

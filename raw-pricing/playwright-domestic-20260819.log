@@ -1,0 +1,496 @@
+
+============================================================
+SCRAPING: MiniMax — https://platform.minimaxi.com/docs/guides/pricing-paygo
+============================================================
+  Title: 按量计费 - MiniMax 开放平台文档中心
+  Page text length: 3668 chars
+  --- PAGE TEXT (first 8000 chars) ---
+Documentation Index
+
+Fetch the complete documentation index at: /docs/llms.txt
+
+Use this file to discover all available pages before exploring further.
+
+跳转到主要内容
+
+🎉 MiniMax H3 全新发布！新一代开放通用多模态视频模型。查看文档 ➔
+
+MiniMax 开放平台文档中心 home page
+搜索...
+Ctrl K
+文档
+定价
+控制台
+登录
+开发指南
+API
+Token Plan
+定价
+更新日志
+产品定价
+概览
+API 价格
+按量计费
+语音资源包
+视频资源包
+订阅套餐
+Token Plan
+Token Plan 团队版
+在此页面
+语言模型
+语音
+视频
+音乐
+图像
+MCP
+服务端工具
+API 价格
+按量计费
+复制页面
+
+MiniMax按量计费定价
+
+按量计费使用开放平台普通 API Key，并按实际用量消耗账户余额。积分是通过订阅 Key 使用的独立预付余额，资源覆盖范围与 Token Plan 相同。积分定价和使用规则请参考 Token Plan 定价。
+​
+语言模型
+立即充值
+标准
+优先*
+模型	输入价格
+元/百万 tokens	输出价格
+元/百万 tokens	缓存读取
+元/百万 tokens
+MiniMax-M3
+≤ 512k 输入 tokens 永久五折	4.20 2.10	16.80 8.40	0.84 0.42
+MiniMax-M3
+> 512k 输入 tokens* 永久五折	8.40 4.20	33.60 16.80	1.68 0.84
+模型	输入价格
+元/百万 tokens	输出价格
+元/百万 tokens	缓存读取
+元/百万 tokens	缓存写入
+元/百万 tokens
+MiniMax-M2.7	2.1	8.4	0.42	2.625
+MiniMax-M2.7-highspeed	4.2	16.8	0.42	2.625
+
+历史模型
+
+请注意：
+计费项是token数；tokens字符比值根据使用场景的不同略有浮动，以实际消耗为准，字符数包括标点等
+Token与字符比（估算）：1600 中文字符约消耗 1000 tokens
+​
+语音
+立即充值
+MiniMax 语音大模型能够根据上下文，智能预测文本的情绪、语调等信息，并生成超自然、高保真、个性化的语音。在社交、播客、有声书、新闻资讯、教育、数字人等多种场景中展现出强大的实力。
+计费项	模型	接口说明	单价
+元/万字符
+同步语音合成
+T2A	speech-2.8-hd	支持音量、语调、语速调整和混音功能，支持比特率、采样率相关参数调整特性，支持音频时长、音频大小等返回参数，适用于需要短文本快速得到结果的场景，比如闲聊、对话等场景	3.5
+同步语音合成
+T2A	speech-2.8-turbo	支持音量、语调、语速调整和混音功能，支持比特率、采样率相关参数调整特性，支持音频时长、音频大小等返回参数，适用于需要短文本快速得到结果的场景，比如闲聊、对话等场景	2
+异步长文本语音合成
+T2A Async	speech-2.8-hd	支持基于文本到语音的异步生成，单次文本生成传输最大支持 100 万字符，生成的完整音频结果支持异步的方式进行检索。	3.5
+异步长文本语音合成
+T2A Async	speech-2.8-turbo	支持基于文本到语音的异步生成，单次文本生成传输最大支持 100 万字符，生成的完整音频结果支持异步的方式进行检索。	2
+计费项	模型	接口说明	单价
+元/音色
+音色设计
+Voice Design	所有模型	支持基于用户输入的声音描述 prompt，来生成音色（voice_id）；并支持使用该生成的音色（voice_id）在同步语音合成、异步长文本语音合成接口中进行语音合成。	9.9
+调用本接口获得新设计的音色时，不会立即收取音色设计费用。音色生成费用将在首次使用此音色进行语音合成时收取。
+本接口内的试听语音合成会收取 2 元/万字符的费用。
+快速复刻
+Voice Cloning	所有模型	基于大语言模型的音色克隆更加精准快速，无需数小时时长的超高质量原音频、无需传统 TTS 的超长工期，可以在极短时间内完成音色复刻，并通过大语言模型加持，使复刻后的音色与原音色进行高质量还原，从而满足客户需求。	9.9
+调用本接口获得复刻音色时，不会立即收取音色复刻费用。音色的复刻费用将在首次使用此复刻音色进行语音合成时收取。
+试听字符根据选择的试听模型收费。
+
+历史模型
+
+注：计费项是字符数，以10000个字符（输入）为单位，1个汉字算2个字符，英文字母、希腊字母、标点符号、特殊符号、空格、回车等算1个字符。
+​
+视频
+立即充值
+视频生成-输出价格
+模型/接口	分辨率	计费规则	刊例价
+
+MiniMax-H3
+	2K	按秒计费	0.80 元/秒
+
+MiniMax-H3
+	768P	按秒计费	0.50 元/秒
+视频生成-输入素材价格
+模型/接口	素材类型	计费规则
+
+MiniMax-H3
+	音频	免费
+
+MiniMax-H3
+	图片	5 张以内免费，超出部分 0.20 元/张
+
+MiniMax-H3
+	视频	按输入视频时长及生成视频分辨率计费：2K 0.80 元/秒，768P 0.50 元/秒
+视频再生成-输出价格
+将已生成的 768P 视频进一步生成为 2K 视频，按视频再生成输出秒数计费。
+模型/接口	分辨率	计费规则	刊例价
+
+MiniMax-H3-Regeneration
+	768P → 2K	按视频再生成输出秒数计费	0.30 元/秒
+视频再生成-输入素材价格
+原 768P 生成任务中使用的输入素材需要重新计费。
+模型/接口	素材类型	计费规则
+
+MiniMax-H3-Regeneration
+	音频	免费
+
+MiniMax-H3-Regeneration
+	图片	5 张以内免费，超出部分 0.15 元/张
+
+MiniMax-H3-Regeneration
+	视频	按原 768P 生成任务中输入视频的秒数计费：0.30 元/秒
+H3-Context-IR 任务价格
+模型/接口	输入价格	输出价格
+
+MiniMax-H3-Context-IR
+	5.80 元/百万 tokens	23.00 元/百万 tokens
+
+历史模型
+
+​
+音乐
+自 2026 年 8 月 20 日起，付费接口（音乐生成、歌词生成）不再面向新用户提供服务，历史付费用户可继续使用现有 API 服务；免费音乐生成接口（Music-3.0-free、Music-2.6-free、music-cover-free）停止服务。
+如需体验或使用音乐生成能力，可前往 MiniMax Audio，或使用已发布在 Hugging Face 和 魔搭 ModelScope 的 MiniMax Music 3 开源模型。
+模型	接口说明	单价
+元/首
+Music-3.0（已下线）	RPM = 120，若需提升可联系销售定制	1.0
+Music-2.6（已下线）	RPM = 120，若需提升可联系销售定制	1.0
+歌词生成（已下线）	歌词生成/编辑	0.05
+
+历史模型
+
+​
+图像
+立即充值
+模型	接口说明	单价
+元/张
+image-01
+image-01-live	支持用户通过文本描述或参考图片生成图片	0.025
+​
+MCP
+立即充值
+模型	接口说明	输入价格
+元/次
+API-vlm	通过 Token Plan MCP 插件或工具自带的视觉接口调用	0.025
+通过 Token Plan 调用 API-vlm 时，会按其按量计费价格扣减套餐内 Token Plan 额度；套餐内额度耗尽且已购积分可用时，超出部分可由已购积分自动补充支付。
+🔔 定价调整预告：自2026年7月22日起，API-vlm 按量价格调整为 ¥0.025 元/次。Token Plan 套餐内单次 API-vlm 调用扣减的 token 额度将同步减少，同等套餐可支持更多次调用。接口与能力保持不变，无需任何代码调整。
+​
+服务端工具 
+立即充值
+服务端工具	接口说明	单价
+元/次
+web_search	联网搜索，模型在服务端自动执行搜索并基于结果作答，详见服务端工具	0.03
+
+此页面对您有帮助吗？
+
+是
+否
+概览
+语音资源包
+MiniMax 开放平台文档中心 home page
+discord
+x
+linkedin
+github
+
+备案信息
+
+沪公网安备31010402010179号
+沪ICP备2023003282号-38
+
+MiniMax官方客服
+
+MiniMax官方客服
+
+开放平台公众号
+
+开放平台公众号
+
+飞书交流群
+
+飞书交流群
+  --- END ---
+  Tables found: 18
+  [Table 0]
+模型	输入价格
+元/百万 tokens	输出价格
+元/百万 tokens	缓存读取
+元/百万 tokens
+MiniMax-M3
+≤ 512k 输入 tokens 永久五折	4.20 2.10	16.80 8.40	0.84 0.42
+MiniMax-M3
+> 512k 输入 tokens* 永久五折	8.40 4.20	33.60 16.80	1.68 0.84
+
+  [Table 1]
+模型输入价格 元/百万 tokens输出价格 元/百万 tokens缓存读取 元/百万 tokensMiniMax-M3≤ 512k 输入 tokens 永久五折6.30 3.1525.20 12.601.26 0.63MiniMax-M3> 512k 输入 tokens 永久五折12.60 6.3050.40 25.202.52 1.26
+
+  [Table 2]
+模型	输入价格
+元/百万 tokens	输出价格
+元/百万 tokens	缓存读取
+元/百万 tokens	缓存写入
+元/百万 tokens
+MiniMax-M2.7	2.1	8.4	0.42	2.625
+MiniMax-M2.7-highspeed	4.2	16.8	0.42	2.625
+
+  [Table 3]
+
+
+  [Table 4]
+计费项	模型	接口说明	单价
+元/万字符
+同步语音合成
+T2A	speech-2.8-hd	支持音量、语调、语速调整和混音功能，支持比特率、采样率相关参数调整特性，支持音频时长、音频大小等返回参数，适用于需要短文本快速得到结果的场景，比如闲聊、对话等场景	3.5
+同步语音合成
+T2A	speech-2.8-turbo	支持音量、语调、语速调整和混音功能，支持比特率、采样率相关参数调整特性，支持音频时长、音频大小等返回参数，适用于需要短文本快速得到结果的场景，比如闲聊、对话等场景	2
+异步长文本语音合成
+T2A Async	speech-2.8-hd	支持基于文本到语音的异步生成，单次文本生成传输最大支持 100 万字符，生成的完整音频结果支持异步的方式进行检索。	3.5
+异步长文本语音合成
+T2A Async	speech-2.8-turbo	支持基于文本到语音的异步生成，单次文本生成传输最大支持 100 万字符，生成的完整音频结果支持异步的方式进行检索。	2
+
+  [Table 5]
+计费项	模型	接口说明	单价
+元/音色
+音色设计
+Voice Design	所有模型	支持基于用户输入的声音描述 prompt，来生成音色（voice_id）；并支持使用该生成的音色（voice_id）在同步语音合成、异步长文本语音合成接口中进行语音合成。	9.9
+调用本接口获得新设计的音色时，不会立即收取音色设计费用。音色生成费用将在首次使用此音色进行语音合成时收取。
+本接口内的试听语音合成会收取 2 元/万字符的费用。
+快速复刻
+Voice Cloning	所有模型	基于大语言模型的音色克隆更加精准快速，无需数小时时长的超高质量原音频、无需传统 TTS 的超长工期，可以在极短时间内完成音色复刻，并通过大语言模型加持，使复刻后的音色与原音色进行高质量还原，从而满足客户需求。	9.9
+调用本接口获得复刻音色时，不会立即收取音色复刻费用。音色的复刻费用将在首次使用此复刻音色进行语音合成时收取。
+试听字符根据选择的试听模型收费。
+
+  [Table 6]
+
+
+  [Table 7]
+模型/接口	分辨率	计费规则	刊例价
+
+MiniMax-H3
+	2K	按秒计费	0.80 元/秒
+
+MiniMax-H3
+	768P	按秒计费	0.50 元/秒
+
+  [Table 8]
+模型/接口	素材类型	计费规则
+
+MiniMax-H3
+	音频	免费
+
+MiniMax-H3
+	图片	5 张以内免费，超出部分 0.20 元/张
+
+MiniMax-H3
+	视频	按输入视频时长及生成视频分辨率计费：2K 0.80 元/秒，768P 0.50 元/秒
+
+  [Table 9]
+模型/接口	分辨率	计费规则	刊例价
+
+MiniMax-H3-Regeneration
+	768P → 2K	按视频再生成输出秒数计费	0.30 元/秒
+
+  [Table 10]
+模型/接口	素材类型	计费规则
+
+MiniMax-H3-Regeneration
+	音频	免费
+
+MiniMax-H3-Regeneration
+	图片	5 张以内免费，超出部分 0.15 元/张
+
+MiniMax-H3-Regeneration
+	视频	按原 768P 生成任务中输入视频的秒数计费：0.30 元/秒
+
+  [Table 11]
+模型/接口	输入价格	输出价格
+
+MiniMax-H3-Context-IR
+	5.80 元/百万 tokens	23.00 元/百万 tokens
+
+  [Table 12]
+
+
+  [Table 13]
+模型	接口说明	单价
+元/首
+Music-3.0（已下线）	RPM = 120，若需提升可联系销售定制	1.0
+Music-2.6（已下线）	RPM = 120，若需提升可联系销售定制	1.0
+歌词生成（已下线）	歌词生成/编辑	0.05
+
+  [Table 14]
+
+
+  [Table 15]
+模型	接口说明	单价
+元/张
+image-01
+image-01-live	支持用户通过文本描述或参考图片生成图片	0.025
+
+  [Table 16]
+模型	接口说明	输入价格
+元/次
+API-vlm	通过 Token Plan MCP 插件或工具自带的视觉接口调用	0.025
+
+  [Table 17]
+服务端工具	接口说明	单价
+元/次
+web_search	联网搜索，模型在服务端自动执行搜索并基于结果作答，详见服务端工具	0.03
+
+
+============================================================
+SCRAPING: 百川Baichuan — https://platform.baichuan-ai.com/prices
+============================================================
+  Title: 百川大模型-汇聚世界知识 创作妙笔生花-百川智能
+  Page text length: 2256 chars
+  --- PAGE TEXT (first 8000 chars) ---
+首页
+文档中心
+产品定价
+场景示例
+体验中心
+知识库
+简体中文
+登录
+价格说明
+计费模式
+
+按照实际使用的数据量（千tokens）收费。Token在这里指的是文本中的一个最小单位，可以是一个词、一个数字或一个标点符号等。一般情况下百川大模型1个token约等于1.5个中文汉字。
+
+价格说明
+通用大模型
+计费项	上下文长度	时间（每日）	价格	备注
+模型调用 Baichuan-M3-Plus	32k	00:00 ~ 24:00	输入：0.005元/千tokens
+输出：0.009元/千tokens	包括对话全流程节点产生的Token总数
+此外，调用过程会自动触发“医疗搜索”并单独计费见下表
+模型调用 Baichuan-M3	32k	00:00 ~ 24:00	输入：0.01元/千tokens
+输出：0.03元/千tokens	
+模型调用 Baichuan-M2-Plus	32k	00:00 ~ 24:00	输入：0.01元/千tokens
+输出：0.03元/千tokens	包括对话全流程节点产生的Token总数
+此外，调用过程会自动触发“医疗搜索”并单独计费见下表
+模型调用 Baichuan-M2	32k	00:00 ~ 24:00	输入：0.002元/千tokens
+输出：0.02元/千tokens	
+模型调用 Baichuan4-Turbo	32k	00:00 ~ 24:00	0.015元/千tokens	包含输入和输出
+模型调用 Baichuan4-Air	32k	00:00 ~ 24:00	0.00098元/千tokens	包含输入和输出
+模型调用 Baichuan4	32k	00:00 ~ 24:00	0.1元/千tokens	包含输入和输出
+模型调用 Baichuan3-Turbo	32k	00:00 ~ 24:00	0.012元/千tokens	包含输入和输出
+模型调用 Baichuan3-Turbo-128k	128k	00:00 ~ 24:00	0.024元/千tokens	包含输入和输出
+模型调用 Baichuan2-Turbo	32k	00:00 ~ 24:00	0.008元/千tokens	包含输入和输出
+模型调用 Baichuan2-53B	32k	00:00 ~ 8:00	0.01元/千tokens	包含输入和输出
+8:00 ~ 24:00	0.02元/千tokens
+搜索增强服务	-	00:00 ~ 24:00	0.03元/次	开启 web_search 后，接口自动判断调用搜索增强服务的次数
+医疗搜索	-	00:00 ~ 24:00	0.03元/次	调用Baichuan-M3-Plus和Baichuan-M2-Plus对话会自动触发医疗搜索
+假设您的请求包含了1500tokens的文本，您将被收取1.5次的“千tokens”费用，即此次API调用将收取1.5*调用时段的千tokens费用。
+搜索可以为模型引入更多相关信息，有助于提高输出的质量、及时性等。如果您不需要引入搜索结果，可以通过传参 with_search_enhance 关闭。
+百川大模型 Baichuan2-Turbo-192k 已于2024年08月16日下线， 调用 Baichuan2-Turbo-192k 将会路由到Baichuan3-Turbo-128k。
+知识库
+
+知识库API接口，对Embeddings模型和文件数据存储两部分分别收费，具体收费明细如下：
+
+计费项	时间（每日）	价格
+模型调用 Baichuan-Text-Embedding	00:00 ~ 24:00	0.0005元/千tokens
+文件存储	00:00 ~ 24:00	1.5元/GB/天
+知识库API在2024年1月19日结束免费公测、正式开启收费，单个用户限制5G存储容量。
+向量化模型 Embeddings
+
+使用百川自研的向量模型Baichuan-Text-Embedding，具体价格如下：
+
+计费项	时间（每日）	价格
+模型调用 Baichuan-Text-Embedding	00:00 ~ 24:00	0.0005元/千tokens
+向量化模型Embeddings（包含独立Embedding模型调用、通用/角色模型对话中的Embedding模型调用）在2024年1月19日结束免费公测、正式开启收费。
+Assistants API
+
+使用百川 Assistants API，具体价格如下：
+
+计费项	时间（每日）	价格
+模型调用 Assistants API	00:00 ~ 24:00	限时免费
+赠送金说明
+
+2024 年 5 月 22 日下午起新注册的用户，免费赠送金由 8 元提升至 80 元，相当于Baichuan 2 -Turbo 1000 万 Tokens，有效期 3 个月，账号注册后生效。
+
+2024 年 5 月 22 日下午前已注册的认证用户，额外给予 40 元赠送金，相当于Baichuan 2 -Turbo 500 万 Tokens，有效期 3 个月，2024 年 5 月 22 日下午起生效。
+
+联系与支持
+
+如有进一步合作的诉求，请联系对应客户经理或邮件发送openapi@baichuan-inc.com
+
+更新与变更
+
+价格可能会发生变动，百川智能保留修改价格的权利，建议定期查看此页面以获知最新价格信息。
+
+申请体验
+联系我们
+使用指南
+  --- END ---
+  Tables found: 4
+  [Table 0]
+计费项	上下文长度	时间（每日）	价格	备注
+模型调用 Baichuan-M3-Plus	32k	00:00 ~ 24:00	输入：0.005元/千tokens
+输出：0.009元/千tokens	包括对话全流程节点产生的Token总数
+此外，调用过程会自动触发“医疗搜索”并单独计费见下表
+模型调用 Baichuan-M3	32k	00:00 ~ 24:00	输入：0.01元/千tokens
+输出：0.03元/千tokens	
+模型调用 Baichuan-M2-Plus	32k	00:00 ~ 24:00	输入：0.01元/千tokens
+输出：0.03元/千tokens	包括对话全流程节点产生的Token总数
+此外，调用过程会自动触发“医疗搜索”并单独计费见下表
+模型调用 Baichuan-M2	32k	00:00 ~ 24:00	输入：0.002元/千tokens
+输出：0.02元/千tokens	
+模型调用 Baichuan4-Turbo	32k	00:00 ~ 24:00	0.015元/千tokens	包含输入和输出
+模型调用 Baichuan4-Air	32k	00:00 ~ 24:00	0.00098元/千tokens	包含输入和输出
+模型调用 Baichuan4	32k	00:00 ~ 24:00	0.1元/千tokens	包含输入和输出
+模型调用 Baichuan3-Turbo	32k	00:00 ~ 24:00	0.012元/千tokens	包含输入和输出
+模型调用 Baichuan3-Turbo-128k	128k	00:00 ~ 24:00	0.024元/千tokens	包含输入和输出
+模型调用 Baichuan2-Turbo	32k	00:00 ~ 24:00	0.008元/千tokens	包含输入和输出
+模型调用 Baichuan2-53B	32k	00:00 ~ 8:00	0.01元/千tokens	包含输入和输出
+8:00 ~ 24:00	0.02元/千tokens
+搜索增强服务	-	00:00 ~ 24:00	0.03元/次	开启 web_search 后，接口自动判断调用搜索增强服务的次数
+医疗搜索	-	00:00 ~ 24:00	0.03元/次	调用Baichuan-M3-Plus和Baichuan-M2-Plus对话会自动触发医疗搜索
+
+  [Table 1]
+计费项	时间（每日）	价格
+模型调用 Baichuan-Text-Embedding	00:00 ~ 24:00	0.0005元/千tokens
+文件存储	00:00 ~ 24:00	1.5元/GB/天
+
+  [Table 2]
+计费项	时间（每日）	价格
+模型调用 Baichuan-Text-Embedding	00:00 ~ 24:00	0.0005元/千tokens
+
+  [Table 3]
+计费项	时间（每日）	价格
+模型调用 Assistants API	00:00 ~ 24:00	限时免费
+
+  API hits: 2
+  [API] https://platform.baichuan-ai.com/prices
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0"/><meta name="format-detection" content="telephone=no, date=no, email=no, address=no"/><meta name="keywords" content="百川大模型，百川智能大语言模型，百川大语言模型，大语言模型，千亿大模型、百川千亿大模型，百川千亿大语言模型，百川 4，百川 4大语言模型，百川4 大模型，百川智能开发者中心，百川体验中心，百川场景示例，function call， 函数调用，工具调用，system role，系统指令，assistant api，免费 token 领取"/><meta name="description" content="百川大模型系列API，支持搜索增强+企业知识库，实现互联网实时信息+企业完整知识的融合，并能最多支持192k上下文窗口，解决大部分定制化场景。"/><title>百川大模型-汇聚世界知识 创作妙笔生花-百川智能</title><meta name="next-head-count" content="6"/><link rel="preload" href="/_next/static/css/bf269db89998ee47.css" as="style"/><link rel="stylesheet" href="/_next/static/css/bf269db89998ee47.css" data-n-g=""/><link rel="preload" href="/_next/static/css/6a5b5104feaa14ab.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6a5b5104feaa14ab.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="https://o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js" defer="" data-nscript="beforeInteractive"></script><script src="/_next/static/chunks/webpack-ceb50e06c053ec40.js" defer=""></script><script src="/_next/static/chunks/main-d15de07ff3a21dac.js" defer=""></script><script src="/_next/static/chunks/framework-5fad03759a163239.js" defer=""></script><script src="/_next/static/chunks/pages/_app-65e6f4fe3a5d54ba.js" defer=""></script><script src="/_next/static/chunks/pages/prices-94a264949af1eb29.js" defer=""></script><script src="/_next/static/8QX9_aLoGBJhvDlNHNhp7/_buildManifest.js" defer=""></script><script src="/_next/static/8QX9_aLoGBJhvDlNHNhp7/_ssgManifest.js" defer=""></script><style>.anticon{display:inline-flex;align-items:center;color:inherit;font-style:normal;line-height:0;text-align:center;text-transform:none;vertical-align:-0.125em;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.anticon >*{line-height:1;}.anticon svg{display:inline-block;}.anticon .anticon .anticon-icon{display:block;}.data-ant-cssinjs-cache-path{content:"13rbmj|ant-design-icons|anticon:e2fru3";}</style></head><body><script>
+        window.__bl = {
+          config:  {
+            pid: "bc7akk1cwt@09dd181f2a472a0", // prod
+            appType: "web",
+            imgUrl: "https://arms-retcode.aliyuncs.com/r.png?",
+            sendResource: true,
+            enableLinkTrace: true,
+            behavior: true,
+            useFmp: true,
+            enableSPA: true
+          }
+        };
+      </script><script type="text/javascript" src="https://retcode.alicdn.com/retcode/bl.js" crossorigin="anonymous"></script><div id="__next"><div class="header z-[2]"></div><div class="prices_container__6lqG3"><h2>价格说明</h2><div class="prices_card__bqYxz"><h3>计费模式</h3><p>按照实际使用的数据量（千tokens）收费。Token在这里指的是文本中的一个最小单位，可以是一个词、一
+
+  [API] https://platform.baichuan-ai.com/_next/static/chunks/pages/prices-94a264949af1eb29.js
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3266],{56532:function(s,d,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/prices",function(){return e(97508)}])},97508:function(s,d,e){"use strict";e.r(d);var n=e(58205);e(2703);var c=e(85603),i=e.n(c);d.default=function(){return(0,n.jsxs)("div",{className:i().container,children:[(0,n.jsx)("h2",{children:"价格说明"}),(0,n.jsxs)("div",{className:i().card,children:[(0,n.jsx)("h3",{children:"计费模式"}),(0,n.jsx)("p",{children:"按照实际使用的数据量（千tokens）收费。Token在这里指的是文本中的一个最小单位，可以是一个词、一个数字或一个标点符号等。一般情况下百川大模型1个token约等于1.5个中文汉字。"})]}),(0,n.jsxs)("div",{className:i().card,children:[(0,n.jsx)("h3",{children:"价格说明"}),(0,n.jsx)("h4",{children:"通用大模型"}),(0,n.jsxs)("table",{children:[(0,n.jsxs)("colgroup",{children:[(0,n.jsx)("col",{style:{width:"30%"}}),(0,n.jsx)("col",{style:{width:"10%"}}),(0,n.jsx)("col",{style:{width:"15%"}}),(0,n.jsx)("col",{style:{width:"24%"}}),(0,n.jsx)("col",{style:{width:"21%"}})]}),(0,n.jsxs)("tbody",{children:[(0,n.jsxs)("tr",{className:"odd",children:[(0,n.jsx)("td",{children:"计费项"}),(0,n.jsx)("td",{children:"上下文长度"}),(0,n.jsx)("td",{children:"时间（每日）"}),(0,n.jsx)("td",{children:"价格"}),(0,n.jsx)("td",{children:"备注"})]}),(0,n.jsxs)("tr",{className:"even",children:[(0,n.jsx)("td",{children:"模型调用 Baichuan-M3-Plus"}),(0,n.jsx)("td",{children:"32k"}),(0,n.jsx)("td",{children:"00:00 ~ 24:00"}),(0,n.jsxs)("td",{children:["输入：0.005元/千tokens",(0,n.jsx)("br",{}),"输出：0.009元/千tokens"]}),(0,n.jsxs)("td",{style:{lineHeight:"24px"},children:["包括对话全流程节点产生的Token总数",(0,n.jsx)("br",{}),"此外，调用过程会自动触发“医疗搜索”并单独计费见下表"]})]}),(0,n.jsxs)("tr",{className:"even",children:[(0,n.jsx)("td",{children:"模型调用 Baichuan-M3"}),(0,n.jsx)("td",{children:"32k"}),(0,n.jsx)("td",{children:"00:00 ~ 24:00"}),(0,n.jsxs)("td",{children:["输入：0.01元/千tokens",(0,n.jsx)("br",{}),"输出：0.03元/千tokens"]}),(0,n.jsx)("td",{style:{lineHeight:"24px"}})]}),(0,n.jsxs)("tr",{className:"even",children:[(0,n.jsx)("td",{children:"模型调用 Baichuan-M2-Plus"}),(0,n.jsx)("td",{children:"32k"}),(0,n.jsx)("td",{children:"00:00 ~ 24:00"}),(0,n.jsxs)("td",{children:["输入：0.01元/千tokens",(0,n.jsx)("br",{}),"输出：0.03元/千tokens"]}),(0,n.jsxs)("td",{style:{lineHeight:"24px"},children:["包括对话全流程节点产生的Token总数",(0,n.jsx)("br",{}),"此外，调用过程会自动触发“医疗搜索”并单独计费见下表"]})]}),(0,n.jsxs)("tr",{className:"even",children:[(0,n.jsx)("td",{children:"模型调用 Baichuan-M2"}),(0,n.jsx)("td",{children:"32k"}),(0,n.jsx)("td",{children:"00:00 ~ 24:00"}),(0,n.jsxs)("td",{children:["输入：0.002元/千tokens",(0,n.jsx)("br",{}),"输出：0.02元/千tokens"]}),(0,n.jsx)("td",{})]}),(0,n.jsxs)("tr",{className:"even",children:[(0,n.jsx)("td",{children:"模型调用 Baichuan4-Turbo"}),(0,n.jsx)("td",{children:"32k"}),(0,n.jsx)("td",{children:"00:00 ~ 24:00"}),(0,n.jsx)("td",{children:"0.015元/千tokens"}),(0,n.jsx)("td",{children:"包含输入和输出"})]})," ",(0,n.jsxs)("tr",{className:"even",children:[(0,n.jsx)("td",{children:"模型调用 Baichuan4-Air"}),(0,n.jsx)("td",{children:"32k"}),(0,n.jsx)("td",{children:"00:00 ~ 24:00"}),(0,n.jsx)("td",{childr
+
+  __NEXT_DATA__: {"props":{"pageProps":{}},"page":"/prices","query":{},"buildId":"8QX9_aLoGBJhvDlNHNhp7","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
+
+============================================================
+SCRAPING: 星火Spark — https://xinghuo.xfyun.cn/sparkapi
+============================================================
+  ERROR: page.goto: Timeout 45000ms exceeded.
+Call log:
+  - navigating to "https://xinghuo.xfyun.cn/sparkapi", waiting until "networkidle"
+

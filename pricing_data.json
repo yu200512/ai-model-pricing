@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "updated": "2026-07-15",
-  "updatedAt": "2026-08-19T14:43:48.650320+00:00",
+  "updatedAt": "2026-09-05T13:45:53.989162+00:00",
   "sourceRepo": "https://github.com/yu200512/ai-model-pricing",
   "providers": [
     {
@@ -12,7 +12,7 @@
       "dataSource": {
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.639479+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.979156+00:00"
       },
       "officialUrl": "https://api-docs.deepseek.com/quick_start/pricing",
       "models": [
@@ -115,7 +115,7 @@
       "dataSource": {
         "url": "https://open.bigmodel.cn/pricing",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.640218+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.979682+00:00"
       },
       "officialUrl": "https://open.bigmodel.cn/pricing",
       "models": [
@@ -1290,7 +1290,7 @@
       "dataSource": {
         "url": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/?tab=doc#/doc/?type=model&url=prices",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.642222+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.981807+00:00"
       },
       "officialUrl": "https://modelstudio.console.alibabacloud.com/ap-southeast-1/?tab=doc#/doc/?type=model&url=prices",
       "models": [
@@ -1440,7 +1440,7 @@
       "dataSource": {
         "url": "https://platform.kimi.com/docs/pricing/chat-k26",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.642472+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.982042+00:00"
       },
       "officialUrl": "https://platform.kimi.com/docs/pricing/chat-k26",
       "models": [
@@ -1596,7 +1596,7 @@
       "dataSource": {
         "url": "https://xinghuo.xfyun.cn/sparkapi",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.642842+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.982250+00:00"
       },
       "officialUrl": "https://xinghuo.xfyun.cn/sparkapi",
       "models": [
@@ -2098,7 +2098,7 @@
       "dataSource": {
         "url": "https://platform.baichuan-ai.com/prices",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.643523+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.982994+00:00"
       },
       "officialUrl": "https://platform.baichuan-ai.com/prices",
       "models": [
@@ -2469,7 +2469,7 @@
       "dataSource": {
         "url": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.644115+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.983433+00:00"
       },
       "officialUrl": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
       "models": [
@@ -2944,7 +2944,7 @@
       "dataSource": {
         "url": "https://platform.xiaomimimo.com/docs/zh-CN/pricing",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.644860+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.984064+00:00"
       },
       "officialUrl": "https://platform.xiaomimimo.com/docs/zh-CN/pricing",
       "models": [
@@ -3149,7 +3149,7 @@
       "dataSource": {
         "url": "https://cloud.tencent.com/document/product/1823/130055",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.645219+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.984396+00:00"
       },
       "officialUrl": "https://cloud.tencent.com/document/product/1823/130055",
       "models": [
@@ -3827,7 +3827,7 @@
       "dataSource": {
         "url": "https://developers.openai.com/api/docs/pricing",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.646093+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.985250+00:00"
       },
       "officialUrl": "https://developers.openai.com/api/docs/pricing",
       "models": [
@@ -4501,7 +4501,7 @@
       "dataSource": {
         "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.646938+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.986058+00:00"
       },
       "officialUrl": "https://docs.anthropic.com/en/docs/about-claude/pricing",
       "models": [
@@ -4821,7 +4821,7 @@
       "dataSource": {
         "url": "https://docs.x.ai/developers/models",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.647337+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.986620+00:00"
       },
       "officialUrl": "https://docs.x.ai/developers/models",
       "models": [
@@ -5424,7 +5424,7 @@
       "dataSource": {
         "url": "https://ai.google.dev/pricing",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.648213+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.987245+00:00"
       },
       "officialUrl": "https://ai.google.dev/pricing",
       "models": [
@@ -5855,7 +5855,7 @@
       "dataSource": {
         "url": "https://www.volcengine.com/docs/82379/1544106",
         "method": "curl",
-        "verifiedAt": "2026-08-19T14:43:48.648775+00:00"
+        "verifiedAt": "2026-09-05T13:45:53.987738+00:00"
       },
       "officialUrl": "https://www.volcengine.com/docs/82379/1544106",
       "models": [
